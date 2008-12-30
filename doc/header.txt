@@ -1,0 +1,205 @@
+javascript: alert(document.cookie)
+
+hainei 登陆成功的cookie写法：
+__utmz=78622349.1219157234.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); s=u0va0rf4pscuv2siff75sakm24; u=110622; m=drswinghead%40163.com; __utma=78622349.2427072069933113000.1219157234.1224896364.1224899478.109; __utmc=78622349; __utmb=78622349.8.10.1224899478
+
+登陆成功可以检查： cookie的 om 长度。
+			或者看 Location
+			
+"Server" :  "nginx"
+"Date" :  "Thu, 21 Aug 2008 10:55:54 GMT"
+"Content-Type" :  "text/html; charset=UTF-8"
+"Connection" :  "close"
+"Expires" :  "Sat, 01 Jan 2000 00:00:00 GMT"
+"Last-Modified" :  "Thu, 21 Aug 2008 10:55:54 GMT"
+"Cache-Control" :  "no-cache, private, must-revalidate, proxy-revalidate"
+"Pragma" :  "no-cache"
+"Set-Cookie" :  "s=tnmip3t09rpk64abu45kcmbcu5; path=/; domain=.hainei.com"
+"Set-Cookie" :  "u=602136; path=/; domain=.hainei.com"
+"Set-Cookie" :  "m=drswinghead%40tom.com; expires=Sat, 20-Sep-2008 10:55:54 GMT; path=/; domain=.hainei.com"
+"Set-Cookie" :  "l=7R2IeWxKxeVdd7d0gNrSzvWhzzSc3CLM; expires=Sat, 20-Sep-2008 10:55:54 GMT; path=/; domain=.hainei.com"
+"Location" :  "/home"
+"Content-Length" :  "0"
+2 false "Unknown error"
+false "Unknown error"
+
+
+错误的返回头：
+
+"Server" :  "nginx"
+"Date" :  "Wed, 20 Aug 2008 12:40:36 GMT"
+"Content-Type" :  "text/html; charset=UTF-8"
+"Connection" :  "close"
+"Expires" :  "Sat, 01 Jan 2000 00:00:00 GMT"
+"Last-Modified" :  "Wed, 20 Aug 2008 12:40:36 GMT"
+"Cache-Control" :  "no-cache, private, must-revalidate, proxy-revalidate"
+"Pragma" :  "no-cache"
+"Set-Cookie" :  "s=chtfm2s71fc7pkckrsimcv1n55; path=/; domain=.hainei.com"
+"Set-Cookie" :  "rf=L2FjY291bnQ; expires=Thu, 21-Aug-2008 00:40:36 GMT; path=/; domain=.hainei.com"
+"Set-Cookie" :  "om=czo3Mjoi5rW35YaF5rOo6YeN6ZqQ56eB5L-d5oqk77yM5L2g6K6_6Zeu55qE6aG16Z2i6ZyA6KaB55m75b2V5ZCO5omN6IO95p-l55yLIjs; path=/; domain=.hainei.com"
+"Location" :  "/account?a=login"
+"Content-Length" :  "0"
+2 false "Unknown error"
+false "Unknown error"
+
+
+"Server" :  "nginx"                                                                                                          
+"Date" :  "Wed, 20 Aug 2008 12:39:03 GMT"                                                                                    
+"Content-Type" :  "text/html; charset=UTF-8"                                                                                 
+"Connection" :  "close"                                                                                                      
+"Expires" :  "Sat, 01 Jan 2000 00:00:00 GMT"                                                                                 
+"Last-Modified" :  "Wed, 20 Aug 2008 12:39:03 GMT"                                                                           
+"Cache-Control" :  "no-cache, private, must-revalidate, proxy-revalidate"                                                    
+"Pragma" :  "no-cache"                                                                                                       
+"Set-Cookie" :  "s=h9gootfnkp3gq01m2pu99pl323; path=/; domain=.hainei.com"                                                   
+"Set-Cookie" :  "sm=deleted; expires=Tue, 21-Aug-2007 12:39:02 GMT; path=/; domain=.hainei.com"                              
+"Set-Cookie" :  "om=deleted; expires=Tue, 21-Aug-2007 12:39:02 GMT; path=/; domain=.hainei.com"                              
+"Content-Length" :  "3015"                                                                   
+	
+<div class="msg-error">Email 或密码错误，登录失败</div>
+
+
+
+"Server" :  "nginx"                                                              
+"Date" :  "Wed, 20 Aug 2008 12:37:25 GMT"                                                                                    
+"Content-Type" :  "text/html; charset=UTF-8"                                                                                 
+"Connection" :  "close"        
+"Expires" :  "Sat, 01 Jan 2000 00:00:00 GMT"                                              
+"Last-Modified" :  "Wed, 20 Aug 2008 12:37:25 GMT"                                            
+"Cache-Control" :  "no-cache, private, must-revalidate, proxy-revalidate"                                
+"Pragma" :  "no-cache"          
+"Set-Cookie" :  "s=6lrfi4fevkb6dgkhqgki8jl8f5; path=/; domain=.hainei.com"                                                   
+"Location" :  "http://www.hainei.com/account%3Fa%3Dlogin"                           
+"Content-Length" :  "0"                                                     
+
+
+######################################################
+############
+######################################################
+成功：
+"Server" :  "Resin/3.0.21"
+"Vary" :  "Accept-Encoding"
+"Cache-Control" :  "no-cache"
+"Pragma" :  "no-cache"
+"Expires" :  "Thu, 01 Jan 1970 00:00:00 GMT"
+"Location" :  "http://home.xiaonei.com/Home.do"
+"Set-Cookie" :  "kl=null; domain=.xiaonei.com; path=/; expires=Thu, 01-Dec-1994 16:00:00 GMT"
+"Set-Cookie" :  "societyguester=null; domain=.xiaonei.com; path=/; expires=Thu, 01-Dec-1994 16:00:00 GMT"
+"Set-Cookie" :  "_de=drswinghead@tom.com; domain=.xiaonei.com; expires=Sat, 15-Aug-2009 13:17:21 GMT"
+"Set-Cookie" :  "login_email=null; domain=.xiaonei.com; path=/; expires=Thu, 01-Dec-1994 16:00:00 GMT"
+"Set-Cookie" :  "userid=251041824; domain=xiaonei.com; path=/"
+"Set-Cookie" :  "univid=60001001; domain=xiaonei.com; path=/"
+"Set-Cookie" :  "gender=1; domain=xiaonei.com; path=/"
+"Set-Cookie" :  "univyear=0; domain=xiaonei.com; path=/"
+"Set-Cookie" :  "WebOnLineNotice_251041824=1; domain=.xiaonei.com; path=/; expires=Wed, 20-Aug-2008 13:22:21 GMT"
+"Set-Cookie" :  "societyguester=00f042c6d33e84f664072e49caf053ad4; domain=.xiaonei.com; path=/; expires=Fri, 19-Sep-2008 13:17:21 GMT"
+"Set-Cookie" :  "kl=ae31c9cc82ab38c2d42963dab3987527_251041824; domain=.xiaonei.com; path=/; expires=Fri, 19-Sep-2008 13:17:21 GMT"
+"Set-Cookie" :  "hostid=251041824; domain=.xiaonei.com; path=/"
+"Set-Cookie" :  "XNESSESSIONID=abcwokquwQJU1gwFXqGVr; domain=.xiaonei.com; path=/"
+"Content-Type" :  "text/html"
+"Content-Length" :  "69"
+"Connection" :  "close"
+"Date" :  "Wed, 20 Aug 2008 13:17:21 GMT"
+"Set-Cookie" :  "BIGipServerpool_profile=2546472458.20480.0000; path=/"
+"The URL has moved <a href="http://home.xiaonei.com/Home.do">here</a>
+"
+
+<guide.xiaonei.com>
+
+mop_uniq_ckid=220.181.34.171_1214837787_425122892;
+ syshomeforreg=1;
+ _gscid=1653687641%5E251041824;
+ _gscr=referral%7C%7C%7Chttp%3A//bjapp4.mail.tom.com/coremail/fcg/ldmsapp%3Ffuncid%3Dreadlett%26sid%3DSAzRCPJMVMeAAfyg%26mid%3D1tbiDAIKKkQL5gYMaQADsn%25250A12%25250A8%25250A1%26fid%3D1%26ord%3D0%26desc%3D1%26start%3D0%5Ereferral%7C%7C%7Chttp%3A//bjapp4.mail.tom.com/coremail/fcg/ldmsapp%3Ffuncid%3Dreadlett%26sid%3DSAzRCPJMVMeAAfyg%26mid%3D1tbiDAIKKkQL5gYMaQADsn%25250A12%25250A8%25250A1%26fid%3D1%26ord%3D0%26desc%3D1%26start%3D0%5Ereferral%7C%7C%7Chttp%3A//bjapp4.mail.tom.com/coremail/fcg/ldmsapp%3Ffuncid%3Dreadlett%26sid%3DSAzRCPJMVMeAAfyg%26mid%3D1tbiDAIKKkQL5gYMaQADsn%25250A12%25250A8%25250A1%26fid%3D1%26ord%3D0%26desc%3D1%26start%3D0;
+ _gscc=0%5E1%5E0;
+ _gsck=;
+ _de=drswinghead@tom.com;
+ userid=251041824;
+ univid=60001001;
+ gender=1;
+ univyear=0;
+ WebOnLineNotice_251041824=1;
+ societyguester=51dbab819180b79a07dc63b7b6a64fd34;
+ kl=ae31c9cc82ab38c2d42963dab3987527_251041824;
+ hostid=251041824;
+ id=251041824;
+ XNESSESSIONID=abceGNNM94wEM8Tb83LVr;
+ __sui_xiaonei=292a860d230206c9daa6434a1eab5b57;
+ __utma=204579609.1795586084.1219156174.1219315965.1219332391.7;
+ __utmb=204579609;
+ __utmc=204579609;
+ __utmz=204579609.1219332391.7.4.utmccn=(referral)|utmcsr=login.xiaonei.com|utmcct=/|utmcmd=referral
+错误：
+
+BIGipServerpool_profile=2445809162.20480.0000;
+ mop_uniq_ckid=220.181.34.171_1214837787_425122892;
+ syshomeforreg=1;
+ _gscid=1653687641%5E251041824;
+ _gscr=referral%7C%7C%7Chttp%3A//bjapp4.mail.tom.com/coremail/fcg/ldmsapp%3Ffuncid%3Dreadlett%26sid%3DSAzRCPJMVMeAAfyg%26mid%3D1tbiDAIKKkQL5gYMaQADsn%25250A12%25250A8%25250A1%26fid%3D1%26ord%3D0%26desc%3D1%26start%3D0%5Ereferral%7C%7C%7Chttp%3A//bjapp4.mail.tom.com/coremail/fcg/ldmsapp%3Ffuncid%3Dreadlett%26sid%3DSAzRCPJMVMeAAfyg%26mid%3D1tbiDAIKKkQL5gYMaQADsn%25250A12%25250A8%25250A1%26fid%3D1%26ord%3D0%26desc%3D1%26start%3D0%5Ereferral%7C%7C%7Chttp%3A//bjapp4.mail.tom.com/coremail/fcg/ldmsapp%3Ffuncid%3Dreadlett%26sid%3DSAzRCPJMVMeAAfyg%26mid%3D1tbiDAIKKkQL5gYMaQADsn%25250A12%25250A8%25250A1%26fid%3D1%26ord%3D0%26desc%3D1%26start%3D0;
+ _gscc=0%5E1%5E0;
+ _gsck=;
+ userid=251041824;
+ univid=60001001;
+ gender=1;
+ univyear=0;
+ hostid=251041824;
+ id=251041824;
+ XNESSESSIONID=abceGNNM94wEM8Tb83LVr;
+ __sui_xiaonei=292a860d230206c9daa6434a1eab5b57;
+ __utma=204579609.1795586084.1219156174.1219315965.1219332391.7;
+ __utmc=204579609;
+ __utmz=204579609.1219332391.7.4.utmccn=(referral)|utmcsr=login.xiaonei.com|utmcct=/|utmcmd=referral;
+ _de=drswinghead@tom.com;
+ __utmb=204579609
+
+"Server" :  "Resin/3.0.21"                                                                                                   
+"Vary" :  "Accept-Encoding"                                                                                                  
+"Cache-Control" :  "no-cache"                                                                                                
+"Pragma" :  "no-cache"                                                                                                       
+"Expires" :  "Thu, 01 Jan 1970 00:00:00 GMT"                                                                                 
+"Set-Cookie" :  "kl=null; domain=.xiaonei.com; path=/; expires=Thu, 01-Dec-1994 16:00:00 GMT"                                
+"Set-Cookie" :  "societyguester=null; domain=.xiaonei.com; path=/; expires=Thu, 01-Dec-1994 16:00:00 GMT"                    
+"Set-Cookie" :  "_de=null; domain=.xiaonei.com; expires=Sat, 15-Aug-2009 12:56:37 GMT"                                       
+"Set-Cookie" :  "login_email=null; domain=.xiaonei.com; path=/; expires=Thu, 01-Dec-1994 16:00:00 GMT"                       
+"Set-Cookie" :  "XNESSESSIONID=abcm3trPhMVrK5cFcmGVr; domain=.xiaonei.com; path=/"                                           
+"Content-Type" :  "text/html;charset=UTF-8"    
+
+
+<input type="hidden" value='null'/>
+<div class="errors_div"><p>登录账号或密码错误，请重试</p></div>
+
+
+<input type="hidden" value='null'/>
+<div class="errors_div"><p>email不能为空</p></div>
+
+"Server" :  "Resin/3.0.21" 
+"Vary" :  "Accept-Encoding" 
+"Cache-Control" :  "no-cache" 
+"Pragma" :  "no-cache"        
+"Expires" :  "Thu, 01 Jan 1970 00:00:00 GMT" 
+"Set-Cookie" :  "kl=null; domain=.xiaonei.com; path=/; expires=Thu, 01-Dec-1994 16:00:00 GMT" 
+"Set-Cookie" :  "societyguester=null; domain=.xiaonei.com; path=/; expires=Thu, 01-Dec-1994 16:00:00 GMT" 
+"Set-Cookie" :  "_de=; domain=.xiaonei.com; expires=Sun, 16-Aug-2009 15:44:15 GMT"                        
+"Set-Cookie" :  "login_email=null; domain=.xiaonei.com; path=/; expires=Thu, 01-Dec-1994 16:00:00 GMT"    
+"Set-Cookie" :  "XNESSESSIONID=abc_6eeszqiGl4_5-7LVr; domain=.xiaonei.com; path=/"                        
+"Content-Type" :  "text/html;charset=UTF-8"                                                               
+"Connection" :  "close"                                                                                   
+"Transfer-Encoding" :  "chunked"                                                                          
+"Date" :  "Thu, 21 Aug 2008 15:44:15 GMT"                                                                 
+"Set-Cookie" :  "BIGipServerpool_profile=2445809162.20480.0000; path=/"
+
+
+######################################################
+############  kaixin
+######################################################
+SERVERID=_srv19_;
+ _email=drswinghead%40163.com;
+ _invisible=0;
+ _user=057da849cea560f04889597ee6334f8c_2051075_1219762168
+ 
+ xs_seccode=e3807n5JM9N7GAcF8nB6B3TTzdc%2BCBw66qoMBbC76aeV  3339
+ xs_seccode=38a5es25tgxnLK9ZsfNLCE4ra6EVFYNQrKhdh4qPUdHV     4g9j
+ xs_seccode=6b88fl5VlvDb7M3at5ZfO2rqELVirxENrymte1MqS5%2B%2B  cket
+ 
+xs_seccode=21c194s1bXTZGZSQl8IN2G6rAX%2BSGZjGgGaaz9GtXT9y; xs_loginuser=liuguangzhao; xs_synfriend=1; xs_auth=bf4bAoy4BrratEVnF3dhcinne5i5x1i%2Fyt28xSaZorZR96C5Fh8SO5Th6SDK7XJ0ifTrpLPduCfuXPcZsspTmoMC5tY
+
+javascript: alert(document.cookie)

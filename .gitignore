@@ -1,0 +1,12 @@
+*.cmake
+*.o
+moc_*.cxx
+ui_*.h
+*.patch
+CMakeFiles
+CMakeCache.txt
+Makefile
+.svn*
+CMakeCache.txt
+CMakeFiles
+*.o

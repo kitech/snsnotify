@@ -1,0 +1,715 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=gbk" />
+<title>动态 - liuguangzhao - Manyou开发者站点 - Powered by UCenter Home</title>
+<link rel="shortcut icon" href="image/favicon.ico" />
+<script language="javascript" type="text/javascript" src="source/script_common.js"></script>
+<script language="javascript" type="text/javascript" src="source/script_menu.js"></script>
+<script language="javascript" type="text/javascript" src="source/script_ajax.js"></script>
+<script language="javascript" type="text/javascript" src="source/script_drag.js"></script>
+<script language="javascript" type="text/javascript" src="source/script_face.js"></script>
+<style type="text/css">
+@import url(template/default/common.css);
+</style>
+<link rel="alternate" type="application/rss+xml" href="rss.php?uid=817893" title="liuguangzhao" />
+<link rel="edituri" type="application/rsd+xml" title="rsd" href="xmlrpc.php?rsd=1" />
+</head>
+<body>
+<div id="append_parent"></div>
+<div id="ajaxwaitid"></div>
+<div id="wrap">
+<div id="header">
+<div id="menubar">
+<h2><a href="index.php"><img src="image/logo.gif" alt="Manyou开发者站点" /></a></h2>
+<ul id="menu">
+<li>
+<a href="space.php?do=home">首页</a>
+<a href="space.php?do=home&view=all" class="edit">网站近况</a>
+</li>
+<li><a href="space.php">个人主页</a></li>
+<li><a href="space.php?do=friend">好友</a><a href="javascript:;" onclick="openSub(this,'friend',1);" class="drop">&nbsp;</a></li>
+<li><a href="network.php">随便看看</a><a href="javascript:;" onclick="openSub(this,'network',1);" class="drop">&nbsp;</a></li>
+<li><a href="space.php?do=pm">私信</a><a href="javascript:;" onclick="openSub(this,'pm',1);" class="drop">&nbsp;</a></li>
+</ul>
+<div id="op">
+<a href="cp.php">设置</a><span class="pipe">|</span>
+<a href="cp.php?ac=privacy">隐私</a><span class="pipe">|</span>
+<a href="cp.php?ac=task">活动</a><span class="pipe">|</span>
+<a href="cp.php?ac=common&op=logout">退出</a>
+</div>
+</div>
+<div id="taskbar" class="s_clear">
+<div id="start">
+<div><span></span><a href="javascript:;" id="startmenu" onmouseover="calculagraph();" onmouseout="stopCalculagraph();" onclick="openSub(this,'app',1);">Start</a></div>
+</div>
+<div id="taskbody">
+<ul id="task">
+<li  id="39620f391c3a52f3"  onmouseover="setLiMouseOver(this);" onmouseout="setLiMouseOut(this);">
+<a href="javascript:;" title="从该位置移除" class="sticky" onclick="window_colse('39620f391c3a52f3');">移除</a>
+<img src="http://appicon.manyou.com/icons/1003049" alt="icon" title="拖动到新位置" class="icon" />
+<a href="userapp.php?id=1003049" title="每天进步" class="task">每天进步</a>
+</li>
+<li  id="89470337b0194288"  onmouseover="setLiMouseOver(this);" onmouseout="setLiMouseOut(this);">
+<a href="javascript:;" title="从该位置移除" class="sticky" onclick="window_colse('89470337b0194288');">移除</a>
+<img src="http://appicon.manyou.com/icons/1000394" alt="icon" title="拖动到新位置" class="icon" />
+<a href="userapp.php?id=1000394" title="茶花女" class="task">茶花女</a>
+</li>
+<li  id="16f12d64717672bd"  onmouseover="setLiMouseOver(this);" onmouseout="setLiMouseOut(this);">
+<a href="javascript:;" title="从该位置移除" class="sticky" onclick="window_colse('16f12d64717672bd');">移除</a>
+<img src="http://appicon.manyou.com/icons/1015817" alt="icon" title="拖动到新位置" class="icon" />
+<a href="userapp.php?id=1015817" title="同城" class="task">同城</a>
+</li>
+<li  id="3a1d68175a1f924a"  onmouseover="setLiMouseOver(this);" onmouseout="setLiMouseOut(this);">
+<a href="javascript:;" title="从该位置移除" class="sticky" onclick="window_colse('3a1d68175a1f924a');">移除</a>
+<img src="http://appicon.manyou.com/icons/1010415" alt="icon" title="拖动到新位置" class="icon" />
+<a href="userapp.php?id=1010415" title="大盗贼" class="task">大盗贼</a>
+</li>
+<li  id="38eb94104622a201"  onmouseover="setLiMouseOver(this);" onmouseout="setLiMouseOut(this);">
+<a href="javascript:;" title="从该位置移除" class="sticky" onclick="window_colse('38eb94104622a201');">移除</a>
+<img src="http://appicon.manyou.com/icons/1009255" alt="icon" title="拖动到新位置" class="icon" />
+<a href="userapp.php?id=1009255" title="好友比比看" class="task">好友比比看</a>
+</li>
+<li  id="7623bebcb33ab098"  onmouseover="setLiMouseOver(this);" onmouseout="setLiMouseOut(this);">
+<a href="javascript:;" title="从该位置移除" class="sticky" onclick="window_colse('7623bebcb33ab098');">移除</a>
+<img src="http://appicon.manyou.com/icons/1006616" alt="icon" title="拖动到新位置" class="icon" />
+<a href="userapp.php?id=1006616" title="博客园IT新闻" class="task">博客园IT新闻</a>
+</li>
+</ul>
+
+</div>
+<div id="finger">
+<img src="image/drag_target.gif" />
+</div>
+<div id="task-tab" class="task-tab"></div>
+<script type="text/javascript">
+var dragTaskTabObj = new dragDrop('task-tab');
+</script>
+</div>
+</div>
+
+
+<div id="content" class="s_clear">
+<div class="mainarea_bottom">
+<div>
+  <div style="" id="help_notice" class="notice" style="width:795px;">
+    <p style="line-height:20px;">用户系统与discuz.net整合己完成，您可以使用discuz.net帐号登录了。</p></div></div></div>
+
+<div id="mainarea">
+
+
+
+<div class="side_right s_clear">
+<div class="wide">
+
+<div class="quick_update s_clear">
+<img src="http://www.discuz.net/uc_server/avatar.php?uid=817893&size=small" alt="liuguangzhao" class="avatar" width="48" height="48" />
+<div id="mystate">
+<span class="r_option"><a href="javascript:;" onclick="mood_from();">更新状态</a></span>
+<div class="state">
+<a href="space.php?do=mood">现在浏览器的缓存太厉害，眼睛经常被骗。</a></div>
+</div>
+<div class="quick_bar">
+<script language="javascript" src="image/editor/editor_function.js"></script>
+<ul>
+<li id="quick_tab_doing"><img src="image/app/doing.gif" alt="写迷你博客" align="absmiddle" /><a id="quick_a_doing" href="javascript:;" onclick="quick_op('doing');" title="写迷你博客">迷你博客</a></li>
+<li id="quick_tab_blog"><img src="image/app/blog.gif" alt="撰写日志" align="absmiddle" /><a id="quick_a_blog" href="javascript:;" onclick="quick_op('blog');" title="撰写日志">写日志</a></li>
+<li id="quick_tab_upload"><img src="image/app/album.gif" alt="上传图片" align="absmiddle" /><a id="quick_a_upload" href="javascript:;" onclick="quick_op('upload');" title="上传图片">传图片</a></li>
+<li id="quick_tab_thread"><img src="image/app/mtag.gif" alt="发表话题" align="absmiddle" /><a id="quick_a_thread" href="javascript:;" onclick="quick_op('thread');" title="发表话题">发话题</a></li>
+<li id="quick_tab_share"><img src="image/app/share.gif" alt="分享一下" align="absmiddle" /><a id="quick_a_share" href="javascript:;" onclick="quick_op('share');" title="分享一下">分享网址</a></li>
+<li><img src="image/app/setting.gif" alt="更多应用" align="absmiddle" /><a href="cp.php?ac=userapp" title="更多应用">更多应用</a></li></ul>
+</div>
+</div>
+<div id="quick_box" style="display:none; border-top: 1px solid #CCC;"></div>
+
+<div id="friendfeed" class="box feed hslice">
+<div class="feedtime" style="font-weight:bold;font-size:14px;">
+<p class="r_option">
+<a href="space.php?uid=817893&do=feed">全部</a><span class="pipe">|</span>
+<a href="space.php?uid=817893&do=feed&filter=site">站内</a><span class="pipe">|</span>
+<a href="space.php?uid=817893&do=feed&filter=myapp">应用</a><span class="pipe">|</span>
+<a href="cp.php?ac=privacy&op=view">筛选设置</a>
+</p>
+<span class="entry-title">好友动态</span><span class="pipe">|</span>
+<a href="space.php?do=home&view=all">网站近况</a></div>
+
+<div id="feed_div" class="enter-content">
+<ul>
+<li class="type_1016668" id="feed_686242_li">
+<a href="space.php?do=feed&icon=1016668&view=we" class="type"><img src="http://appicon.manyou.com/icons/1016668" /></a>
+<h6>
+<a href="space.php?uid=959553">richil</a> 正在“<a href="userapp.php?id=1016668&amp;my_suffix=L2luZGV4LnBocA%3D%3D" target="_top">人在江湖飘</a>”里打拼</h6>
+<div class="detail" >他刚从饭店出来就被 <a href="userapp.php?id=1016668&amp;my_suffix=L3BlcnNvbmFsLnBocD9waWQ9ODg2MTQ1NzQ%3D" target="_top">eastphoto</a> 领着一帮小弟砍了，丢钱又丢人啊！</div>
+<a href="cp.php?ac=feed&op=ignore&icon=1016668&uid=959553&feedid=686242" id="a_feedicon_686242" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_1016668" id="feed_686241_li">
+<a href="space.php?do=feed&icon=1016668&view=we" class="type"><img src="http://appicon.manyou.com/icons/1016668" /></a>
+<h6>
+<a href="space.php?uid=959553">richil</a> 正在“<a href="userapp.php?id=1016668&amp;my_suffix=L2luZGV4LnBocA%3D%3D" target="_top">人在江湖飘</a>”里打拼</h6>
+<div class="detail" >他刚从饭店出来就被 <a href="userapp.php?id=1016668&amp;my_suffix=L3BlcnNvbmFsLnBocD9waWQ9MTQ5ODg2MTE5" target="_top">afeng0943</a> 领着一帮小弟砍了，丢钱又丢人啊！</div>
+<a href="cp.php?ac=feed&op=ignore&icon=1016668&uid=959553&feedid=686241" id="a_feedicon_686241" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_1016668" id="feed_686240_li">
+<a href="space.php?do=feed&icon=1016668&view=we" class="type"><img src="http://appicon.manyou.com/icons/1016668" /></a>
+<h6>
+<a href="space.php?uid=959553">richil</a> 正在“<a href="userapp.php?id=1016668&amp;my_suffix=L2luZGV4LnBocA%3D%3D" target="_top">人在江湖飘</a>”里打拼</h6>
+<div class="detail" >他刚从饭店出来就被 <a href="userapp.php?id=1016668&amp;my_suffix=L3BlcnNvbmFsLnBocD9waWQ9MTY3MzgwNg%3D%3D" target="_top">cncici</a> 领着一帮小弟砍了，丢钱又丢人啊！</div>
+<a href="cp.php?ac=feed&op=ignore&icon=1016668&uid=959553&feedid=686240" id="a_feedicon_686240" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_1009902" id="feed_686010_li">
+<a href="space.php?do=feed&icon=1009902&view=we" class="type"><img src="http://appicon.manyou.com/icons/1009902" /></a>
+<h6>
+<a href="space.php?uid=975039">DukeHui</a> 正在玩:<a href="userapp.php?id=1009902&amp;my_suffix=L2luZGV4LnBocA%3D%3D" target="_top">[miu!圣光战记]</a></h6>
+<div class="detail" >miu!圣光战记，绝对好玩的网页游戏！一起来玩<a href="userapp.php?id=1009902&amp;my_suffix=L2luZGV4LnBocA%3D%3D" target="_top">miu!圣光战记！</a>吧！</div>
+<a href="cp.php?ac=feed&op=ignore&icon=1009902&uid=975039&feedid=686010" id="a_feedicon_686010" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_1016668" id="feed_686006_li">
+<a href="space.php?do=feed&icon=1016668&view=we" class="type"><img src="http://appicon.manyou.com/icons/1016668" /></a>
+<h6>
+<a href="space.php?uid=961770">胡东海</a> 正在“<a href="userapp.php?id=1016668&amp;my_suffix=L2luZGV4LnBocA%3D%3D" target="_top">人在江湖飘</a>”里打拼</h6>
+<div class="detail" >他领着一帮小弟跟 <a href="userapp.php?id=1016668&amp;my_suffix=L3BlcnNvbmFsLnBocD9waWQ9MTYwMTIxMg%3D%3D" target="_top">qiubowinter</a> 大战三百回合，砍得 <a href="userapp.php?id=1016668&amp;my_suffix=L3BlcnNvbmFsLnBocD9waWQ9" target="_top"></a> 稀里哗啦，估计没有三天是出不了院了！</div>
+<a href="cp.php?ac=feed&op=ignore&icon=1016668&uid=961770&feedid=686006" id="a_feedicon_686006" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_1016668" id="feed_686003_li">
+<a href="space.php?do=feed&icon=1016668&view=we" class="type"><img src="http://appicon.manyou.com/icons/1016668" /></a>
+<h6>
+<a href="space.php?uid=961770">胡东海</a> 正在“<a href="userapp.php?id=1016668&amp;my_suffix=L2luZGV4LnBocA%3D%3D" target="_top">人在江湖飘</a>”里打拼</h6>
+<div class="detail" >他领着一帮小弟跟 <a href="userapp.php?id=1016668&amp;my_suffix=L3BlcnNvbmFsLnBocD9waWQ9MTU5MjYyNg%3D%3D" target="_top">ywindf</a> 大战三百回合，砍得 <a href="userapp.php?id=1016668&amp;my_suffix=L3BlcnNvbmFsLnBocD9waWQ9" target="_top"></a> 稀里哗啦，估计没有三天是出不了院了！</div>
+<a href="cp.php?ac=feed&op=ignore&icon=1016668&uid=961770&feedid=686003" id="a_feedicon_686003" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_1016668" id="feed_686002_li">
+<a href="space.php?do=feed&icon=1016668&view=we" class="type"><img src="http://appicon.manyou.com/icons/1016668" /></a>
+<h6>
+<a href="space.php?uid=961770">胡东海</a> 正在“<a href="userapp.php?id=1016668&amp;my_suffix=L2luZGV4LnBocA%3D%3D" target="_top">人在江湖飘</a>”里打拼</h6>
+<div class="detail" >他刚从饭店出来就被 <a href="userapp.php?id=1016668&amp;my_suffix=L3BlcnNvbmFsLnBocD9waWQ9MTU5MjYyNg%3D%3D" target="_top">ywindf</a> 领着一帮小弟砍了，丢钱又丢人啊！</div>
+<a href="cp.php?ac=feed&op=ignore&icon=1016668&uid=961770&feedid=686002" id="a_feedicon_686002" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_1018034" id="feed_685991_li">
+<a href="space.php?do=feed&icon=1018034&view=we" class="type"><img src="http://appicon.manyou.com/icons/1018034" /></a>
+<h6>
+★<a href="space.php?uid=961770">胡东海</a>、<a href="space.php?uid=959553">richil</a>、<a href="space.php?uid=975039">DukeHui</a> 正在 <a href="userapp.php?id=1018034&amp;my_suffix=L2luZGV4LnBocA%3D%3D" target="_top">人在江湖</a> 中拼杀 感慨总是缺少你这个兄弟的帮助。★</h6>
+<div class="detail" >▲你赶快加入进来，和兄弟一起拼杀吧！▲</div>
+<div class="quote"><span class="q">人在江湖，身不由己！</span></div>
+<a href="cp.php?ac=feed&op=ignore&icon=1018034&uid=961770&feedid=685991" id="a_feedicon_685991" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_1016668" id="feed_685957_li">
+<a href="space.php?do=feed&icon=1016668&view=we" class="type"><img src="http://appicon.manyou.com/icons/1016668" /></a>
+<h6>
+<a href="space.php?uid=959553">richil</a> 正在“<a href="userapp.php?id=1016668&amp;my_suffix=L2luZGV4LnBocA%3D%3D" target="_top">人在江湖飘</a>”里打拼</h6>
+<div class="detail" >他刚从饭店出来就被 <a href="userapp.php?id=1016668&amp;my_suffix=L3BlcnNvbmFsLnBocD9waWQ9MTY5NzI1NjI5" target="_top">ceshiceshi</a> 领着一帮小弟砍了，丢钱又丢人啊！</div>
+<a href="cp.php?ac=feed&op=ignore&icon=1016668&uid=959553&feedid=685957" id="a_feedicon_685957" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_1016668" id="feed_685956_li">
+<a href="space.php?do=feed&icon=1016668&view=we" class="type"><img src="http://appicon.manyou.com/icons/1016668" /></a>
+<h6>
+<a href="space.php?uid=959553">richil</a> 正在“<a href="userapp.php?id=1016668&amp;my_suffix=L2luZGV4LnBocA%3D%3D" target="_top">人在江湖飘</a>”里打拼</h6>
+<div class="detail" >他领着一帮小弟跟 <a href="userapp.php?id=1016668&amp;my_suffix=L3BlcnNvbmFsLnBocD9waWQ9MTY3MzgwNg%3D%3D" target="_top">cncici</a> 大战三百回合，砍得 <a href="userapp.php?id=1016668&amp;my_suffix=L3BlcnNvbmFsLnBocD9waWQ9" target="_top"></a> 稀里哗啦，估计没有三天是出不了院了！</div>
+<a href="cp.php?ac=feed&op=ignore&icon=1016668&uid=959553&feedid=685956" id="a_feedicon_685956" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_1016668" id="feed_685954_li">
+<a href="space.php?do=feed&icon=1016668&view=we" class="type"><img src="http://appicon.manyou.com/icons/1016668" /></a>
+<h6>
+<a href="space.php?uid=959553">richil</a> 正在“<a href="userapp.php?id=1016668&amp;my_suffix=L2luZGV4LnBocA%3D%3D" target="_top">人在江湖飘</a>”里打拼</h6>
+<div class="detail" >他刚从饭店出来就被 <a href="userapp.php?id=1016668&amp;my_suffix=L3BlcnNvbmFsLnBocD9waWQ9MTU5MTEwOA%3D%3D" target="_top">fengxue</a> 领着一帮小弟砍了，丢钱又丢人啊！</div>
+<a href="cp.php?ac=feed&op=ignore&icon=1016668&uid=959553&feedid=685954" id="a_feedicon_685954" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_1016040" id="feed_685948_li">
+<a href="space.php?do=feed&icon=1016040&view=we" class="type"><img src="http://appicon.manyou.com/icons/1016040" /></a>
+<h6>
+<a href="space.php?uid=959553">richil</a> 添加了&nbsp;<a href="userapp.php?id=1016040" >视频搜索</a>&nbsp;应用</h6>
+<a href="cp.php?ac=feed&op=ignore&icon=1016040&uid=959553&feedid=685948" id="a_feedicon_685948" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_1017490" id="feed_685947_li">
+<a href="space.php?do=feed&icon=1017490&view=we" class="type"><img src="http://appicon.manyou.com/icons/1017490" /></a>
+<h6>
+<a href="space.php?uid=959553">richil</a> 添加了&nbsp;<a href="userapp.php?id=1017490" >保险大世界</a>&nbsp;应用</h6>
+<a href="cp.php?ac=feed&op=ignore&icon=1017490&uid=959553&feedid=685947" id="a_feedicon_685947" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_1004755" id="feed_685876_li">
+<a href="space.php?do=feed&icon=1004755&view=we" class="type"><img src="http://appicon.manyou.com/icons/1004755" /></a>
+<h6>
+<a href="space.php?uid=975039">DukeHui</a> 在 <a href="userapp.php?id=1004755&amp;my_suffix=L21haW4vaW5kZXg%3D" target="_top">喜欢我吗</a> 应用中表达了喜欢 <a href="userapp.php?id=1004755&amp;my_suffix=L21haW4vaS8xOTU5MDg1" target="_top">夏天</a></h6>
+<a href="cp.php?ac=feed&op=ignore&icon=1004755&uid=975039&feedid=685876" id="a_feedicon_685876" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_1003094" id="feed_685865_li">
+<a href="space.php?do=feed&icon=1003094&view=we" class="type"><img src="http://appicon.manyou.com/icons/1003094" /></a>
+<h6>
+<a href="space.php?uid=959553">richil</a>、<a href="space.php?uid=975039">DukeHui</a> 今天登录<a href="userapp.php?id=1003094&amp;my_suffix=L2luZGV4LnBocA%3D%3D" target="_top">争车位</a>游戏获赠200元游戏币！</h6>
+<a href="cp.php?ac=feed&op=ignore&icon=1003094&uid=959553&feedid=685865" id="a_feedicon_685865" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_1011554" id="feed_685864_li">
+<a href="space.php?do=feed&icon=1011554&view=we" class="type"><img src="http://appicon.manyou.com/icons/1011554" /></a>
+<h6>
+<a href="space.php?uid=959553">richil</a> 在 <a href="userapp.php?id=1011554&amp;my_suffix=L2luZGV4LnBocA%3D%3D" target="_top">超级大富翁</a> 中进行了买卖：</h6>
+<div class="quote"><span class="q">richil 出售了 5 个 珠宝厂,使用双利卡盈利了 3亿2000万元，缴纳了 3200万元的所得税</span></div>
+<a href="cp.php?ac=feed&op=ignore&icon=1011554&uid=959553&feedid=685864" id="a_feedicon_685864" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_1017549" id="feed_685862_li">
+<a href="space.php?do=feed&icon=1017549&view=we" class="type"><img src="http://appicon.manyou.com/icons/1017549" /></a>
+<h6>
+<a href="space.php?uid=959553">richil</a>玩了 “<a href="http://uchome.developer.manyou.com/uchome/userapp.php?id=1017549" target="_top">是男人就上一万转</a>”</h6>
+<div class="detail" >Ta在30秒内转了10821圈，噢噢，我们这又出一大男人咯！</div>
+<a href="cp.php?ac=feed&op=ignore&icon=1017549&uid=959553&feedid=685862" id="a_feedicon_685862" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+</ul>
+<h4 class="feedtime">昨天</h4><ul>
+<li class="type_1016668" id="feed_685737_li">
+<a href="space.php?do=feed&icon=1016668&view=we" class="type"><img src="http://appicon.manyou.com/icons/1016668" /></a>
+<h6>
+<a href="space.php?uid=959553">richil</a> 正在“<a href="userapp.php?id=1016668&amp;my_suffix=L2luZGV4LnBocA%3D%3D" target="_top">人在江湖飘</a>”里打拼</h6>
+<div class="detail" >他刚从饭店出来就被 <a href="userapp.php?id=1016668&amp;my_suffix=L3BlcnNvbmFsLnBocD9waWQ9MTYwMTIxMg%3D%3D" target="_top">qiubowinter</a> 领着一帮小弟砍了，丢钱又丢人啊！</div>
+<a href="cp.php?ac=feed&op=ignore&icon=1016668&uid=959553&feedid=685737" id="a_feedicon_685737" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_1006780" id="feed_685697_li">
+<a href="space.php?do=feed&icon=1006780&view=we" class="type"><img src="http://appicon.manyou.com/icons/1006780" /></a>
+<h6>
+<a href="space.php?uid=959553">richil</a> 添加了&nbsp;<a href="userapp.php?id=1006780" >分享我的快乐！</a>&nbsp;应用</h6>
+<a href="cp.php?ac=feed&op=ignore&icon=1006780&uid=959553&feedid=685697" id="a_feedicon_685697" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_1010415" id="feed_685547_li">
+<a href="space.php?do=feed&icon=1010415&view=we" class="type"><img src="http://appicon.manyou.com/icons/1010415" /></a>
+<h6>
+<a href="space.php?uid=975039">DukeHui</a> 来到 <a href="userapp.php?id=1010415&amp;my_suffix=L2luZGV4LnBocA%3D%3D" target="_top">我是大盗贼</a> TA一定又去好友家偷金币去了。</h6>
+<div class="detail" >关好家门，不要让TA得逞！</div>
+<a href="cp.php?ac=feed&op=ignore&icon=1010415&uid=975039&feedid=685547" id="a_feedicon_685547" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_1004804" id="feed_685546_li">
+<a href="space.php?do=feed&icon=1004804&view=we" class="type"><img src="http://appicon.manyou.com/icons/1004804" /></a>
+<h6>
+<a href="space.php?uid=975039">DukeHui</a> 混迹于 <a href="userapp.php?id=1004804&amp;my_suffix=L2luZGV4LnBocA%3D%3D" target="_top">葵花点穴手</a> 的江湖日子开始了新一天。</h6>
+<div class="detail" >TA向你发下战书，不服就来点我呀！</div>
+<div class="quote"><span class="q">葵花点穴手--快意恩仇，驰骋武林</span></div>
+<a href="cp.php?ac=feed&op=ignore&icon=1004804&uid=975039&feedid=685546" id="a_feedicon_685546" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_1009854" id="feed_685467_li">
+<a href="space.php?do=feed&icon=1009854&view=we" class="type"><img src="http://appicon.manyou.com/icons/1009854" /></a>
+<h6>
+<a href="space.php?uid=975039">DukeHui</a> 测试出了Ta与 <a href="http://uchome.manyou.com/profile/134107838" target="_top">沙狼玩一把</a>的前生缘。</h6>
+<div class="detail" ><a href="userapp.php?id=1009854&amp;my_suffix=L2luZGV4LnBocA%3D%3D" target="_top">佛说，今生的相聚是因为前世的因缘。对于今生的好友，你知道你们前世有着怎么样的因缘际会吗？</a></div>
+<a href="cp.php?ac=feed&op=ignore&icon=1009854&uid=975039&feedid=685467" id="a_feedicon_685467" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_1009854" id="feed_685465_li">
+<a href="space.php?do=feed&icon=1009854&view=we" class="type"><img src="http://appicon.manyou.com/icons/1009854" /></a>
+<h6>
+<a href="space.php?uid=975039">DukeHui</a> 正在测试<a href="userapp.php?id=1009854&amp;my_suffix=L2luZGV4LnBocA%3D%3D" target="_top">与好友的前生缘</a>。</h6>
+<div class="detail" >佛说，今生的相聚是因为前世的因缘。对于今生的好友，你知道你们前世有着怎么样的因缘际会吗？</div>
+<a href="cp.php?ac=feed&op=ignore&icon=1009854&uid=975039&feedid=685465" id="a_feedicon_685465" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_1009719" id="feed_685396_li">
+<a href="space.php?do=feed&icon=1009719&view=we" class="type"><img src="http://appicon.manyou.com/icons/1009719" /></a>
+<h6>
+<a href="space.php?uid=975729">ToniMoore</a> 添加了&nbsp;<a href="userapp.php?id=1009719" >救出你的朋友</a>&nbsp;应用</h6>
+<a href="cp.php?ac=feed&op=ignore&icon=1009719&uid=975729&feedid=685396" id="a_feedicon_685396" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_1009944" id="feed_685394_li">
+<a href="space.php?do=feed&icon=1009944&view=we" class="type"><img src="http://appicon.manyou.com/icons/1009944" /></a>
+<h6>
+<a href="space.php?uid=975729">ToniMoore</a> 邀请朋友们安装<a href="http://uchome.developer.manyou.com/uchome/cp.php?ac=userapp&amp;appid=1009944" target="_top">“送您一束玫瑰”</a></h6>
+<a href="http://uchome.developer.manyou.com/uchome/cp.php?ac=userapp&appid=1009944"><img src="http://appicon.manyou.com/logos/1009944" class="summaryimg" /></a>
+<div class="quote"><span class="q">送给好友一束精美的玫瑰，表达一份温馨的情谊,<a href="http://uchome.developer.manyou.com/uchome/cp.php?ac=userapp&amp;appid=1009944" target="_top">点击这</a>给您的好友送玫瑰吧!</span></div>
+<a href="cp.php?ac=feed&op=ignore&icon=1009944&uid=975729&feedid=685394" id="a_feedicon_685394" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_1004186" id="feed_685373_li">
+<a href="space.php?do=feed&icon=1004186&view=we" class="type"><img src="http://appicon.manyou.com/icons/1004186" /></a>
+<h6>
+<a href="userapp.php?id=1004186&amp;my_suffix=L2luZGV4LnBocD92aWV3VWlkPTE1OTIwMjQ%3D" target="_top">richil</a> 在 <a href="userapp.php?id=1004186&amp;my_suffix=L2luZGV4LnBocA%3D%3D" target="_top">朋友买卖</a> 中购买了 <a href="userapp.php?id=1004186&amp;my_suffix=L2luZGV4LnBocD92aWV3VWlkPTE2MzQxNTM%3D" target="_top">媛来后爱</a> 为奴隶，乐得脸上笑开了花</h6>
+<div class="quote"><span class="q">richil 目前身价为2237、拥有7个奴隶、总资产37104</span></div>
+<a href="cp.php?ac=feed&op=ignore&icon=1004186&uid=959553&feedid=685373" id="a_feedicon_685373" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_friend" id="feed_685359_li">
+<a href="space.php?do=feed&icon=friend&view=we" class="type"><img src="image/icon/friend.gif" /></a>
+<h6>
+<a href="space.php?uid=879300">snowrui</a> 和 <a href="space.php?uid=907035">wanghc_1981</a> 成为了好友</h6>
+<a href="cp.php?ac=feed&op=ignore&icon=friend&uid=879300&feedid=685359" id="a_feedicon_685359" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_developer" id="feed_685358_li">
+<a href="space.php?do=feed&icon=developer&view=we" class="type"><img src="image/icon/developer.gif" /></a>
+<h6>
+<a href="space.php?uid=879300">snowrui</a> 回复了 <a href="space.php?uid=1003037">zhiyuanzwf</a> 的话题 <a href="space.php?uid=1003037&do=developer&type=discuss&id=139">问一个很菜的问题，为什么我完全按照manyou要求，去测试茶花女这个示例代码，都不能成</a></h6>
+<a href="cp.php?ac=feed&op=ignore&icon=developer&uid=879300&feedid=685358" id="a_feedicon_685358" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+</ul>
+<h4 class="feedtime">2008-12-03</h4><ul>
+<li class="type_friend" id="feed_685211_li">
+<a href="space.php?do=feed&icon=friend&view=we" class="type"><img src="image/icon/friend.gif" /></a>
+<h6>
+<a href="space.php?uid=975039">DukeHui</a>、<a href="space.php?uid=961770">胡东海</a>、<a href="space.php?uid=959553">richil</a> 和 <a href="space.php?uid=1017673">manyouuser</a> 成为了好友</h6>
+<a href="cp.php?ac=feed&op=ignore&icon=friend&uid=975039&feedid=685211" id="a_feedicon_685211" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_1002988" id="feed_685120_li">
+<a href="space.php?do=feed&icon=1002988&view=we" class="type"><img src="http://appicon.manyou.com/icons/1002988" /></a>
+<h6>
+在<a href="userapp.php?id=1002988&amp;my_suffix=L2luZGV4LnBocA%3D%3D" title="进入潮男潮女" target="_top">潮男潮女</a>中，<a href="space.php?uid=961770">胡东海</a> 很欣赏 <a href="http://uchome.manyou.com/profile/1592024" target="_top">richil</a>，打了10分 ，<a href="userapp.php?id=1002988&amp;my_suffix=L2luZGV4LnBocD9waWQ9MTU5MjAyNA%3D%3D" title="点击给他打分" target="_top">我也去打分</a></h6>
+<a href="cp.php?ac=feed&op=ignore&icon=1002988&uid=961770&feedid=685120" id="a_feedicon_685120" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_doing" id="feed_685091_li">
+<a href="space.php?do=feed&icon=doing&view=we" class="type"><img src="image/icon/doing.gif" /></a>
+<h6>
+<a href="space.php?uid=959553">richil</a>：神仙？妖怪？谢谢！ (<a href="space.php?uid=959553&do=doing&doid=981&goto=yes" target="_blank">回复</a>)</h6>
+<a href="cp.php?ac=feed&op=ignore&icon=doing&uid=959553&feedid=685091" id="a_feedicon_685091" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_1016130" id="feed_685089_li">
+<a href="space.php?do=feed&icon=1016130&view=we" class="type"><img src="http://appicon.manyou.com/icons/1016130" /></a>
+<h6>
+<a href="space.php?uid=959553">richil</a>、<a href="space.php?uid=975039">DukeHui</a>正在<a href="http://uchome.developer.manyou.com/uchome/userapp.php?id=1016130" target="_top">奥运知识大PK</a>中挑战自己！</h6>
+<a href="http://uchome.developer.manyou.com/uchome/userapp.php?id=1016130"><img src="http://211.166.9.249/fplatform/beijingolympics/images/bg.gif" class="summaryimg" /></a>
+<div class="detail" ><a href="http://uchome.developer.manyou.com/uchome/userapp.php?id=1016130" target="_top">奥运问答</a></div>
+<div class="quote"><span class="q"><a href="http://uchome.developer.manyou.com/uchome/userapp.php?id=1016130&amp;my_suffix=c2hvd1F1ZXN0aW9uLnBocD9xdWVzdGlvbklEPTM5JnBhZ2U9MQ%3D%3D" target="_top">04年奥运会田径比赛，中国队获得金牌的人是？</a></span></div>
+<a href="cp.php?ac=feed&op=ignore&icon=1016130&uid=959553&feedid=685089" id="a_feedicon_685089" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_1016130" id="feed_685088_li">
+<a href="space.php?do=feed&icon=1016130&view=we" class="type"><img src="http://appicon.manyou.com/icons/1016130" /></a>
+<h6>
+<a href="space.php?uid=959553">richil</a> 添加了&nbsp;<a href="userapp.php?id=1016130" >奥运知识大PK</a>&nbsp;应用</h6>
+<a href="cp.php?ac=feed&op=ignore&icon=1016130&uid=959553&feedid=685088" id="a_feedicon_685088" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_doing" id="feed_685087_li">
+<a href="space.php?do=feed&icon=doing&view=we" class="type"><img src="image/icon/doing.gif" /></a>
+<h6>
+<a href="space.php?uid=959553">richil</a>：神仙？妖怪？谢谢！ (<a href="space.php?uid=959553&do=doing&doid=980&goto=yes" target="_blank">回复</a>)</h6>
+<a href="cp.php?ac=feed&op=ignore&icon=doing&uid=959553&feedid=685087" id="a_feedicon_685087" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_1018034" id="feed_685031_li">
+<a href="space.php?do=feed&icon=1018034&view=we" class="type"><img src="http://appicon.manyou.com/icons/1018034" /></a>
+<h6>
+<a href="space.php?uid=959553">richil</a>、<a href="space.php?uid=961770">胡东海</a>、<a href="space.php?uid=975039">DukeHui</a>、<a href="space.php?uid=148">freeman</a> 添加了&nbsp;<a href="userapp.php?id=1018034" >人在江湖</a>&nbsp;应用</h6>
+<a href="cp.php?ac=feed&op=ignore&icon=1018034&uid=959553&feedid=685031" id="a_feedicon_685031" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_1015817" id="feed_685026_li">
+<a href="space.php?do=feed&icon=1015817&view=we" class="type"><img src="http://appicon.manyou.com/icons/1015817" /></a>
+<h6>
+<a href="space.php?uid=961770">胡东海</a> 发布了活动 <a href="http://uchome.developer.manyou.com/uchome/userapp.php?id=1015817&amp;my_suffix=L2RldGFpbC9pZC8xMjI4MjcxNzk4NjE4" target="_top">一起滑雪吧</a></h6>
+<div class="detail" >{description} {join},{new}活动</div>
+<a href="cp.php?ac=feed&op=ignore&icon=1015817&uid=961770&feedid=685026" id="a_feedicon_685026" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_1015817" id="feed_685023_li">
+<a href="space.php?do=feed&icon=1015817&view=we" class="type"><img src="http://appicon.manyou.com/icons/1015817" /></a>
+<h6>
+<a href="space.php?uid=961770">胡东海</a>、<a href="space.php?uid=148">freeman</a>、<a href="space.php?uid=959553">richil</a>、<a href="space.php?uid=975039">DukeHui</a> 添加了&nbsp;<a href="userapp.php?id=1015817" >同城</a>&nbsp;应用</h6>
+<a href="cp.php?ac=feed&op=ignore&icon=1015817&uid=961770&feedid=685023" id="a_feedicon_685023" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+</ul>
+<h4 class="feedtime">2008-12-02</h4><ul>
+<li class="type_1015817" id="feed_684598_li">
+<a href="space.php?do=feed&icon=1015817&view=we" class="type"><img src="http://appicon.manyou.com/icons/1015817" /></a>
+<h6>
+<a href="space.php?uid=975039">DukeHui</a> 发布了活动 <a href="http://uchome.developer.manyou.com/uchome/userapp.php?id=1015817&amp;my_suffix=L2RldGFpbC9pZC8xMjI4MTg3NDI4OTI2" target="_top">111111111</a></h6>
+<div class="detail" >{description} {join},{new}活动</div>
+<a href="cp.php?ac=feed&op=ignore&icon=1015817&uid=975039&feedid=684598" id="a_feedicon_684598" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_1005778" id="feed_684589_li">
+<a href="space.php?do=feed&icon=1005778&view=we" class="type"><img src="http://appicon.manyou.com/icons/1005778" /></a>
+<h6>
+<a href="space.php?uid=975039">DukeHui</a> 添加了自选股 <a href="http://uchome.developer.manyou.com/uchome/userapp.php?id=1005778&amp;my_suffix=" target="_top">600005</a></h6>
+<a href="cp.php?ac=feed&op=ignore&icon=1005778&uid=975039&feedid=684589" id="a_feedicon_684589" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_1005778" id="feed_684588_li">
+<a href="space.php?do=feed&icon=1005778&view=we" class="type"><img src="http://appicon.manyou.com/icons/1005778" /></a>
+<h6>
+<a href="space.php?uid=975039">DukeHui</a> 添加了自选股 <a href="http://uchome.developer.manyou.com/uchome/userapp.php?id=1005778&amp;my_suffix=" target="_top">600001</a></h6>
+<a href="cp.php?ac=feed&op=ignore&icon=1005778&uid=975039&feedid=684588" id="a_feedicon_684588" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_1018092" id="feed_684585_li">
+<a href="space.php?do=feed&icon=1018092&view=we" class="type"><img src="http://appicon.manyou.com/icons/1018092" /></a>
+<h6>
+<a href="space.php?uid=959553">richil</a> 添加了&nbsp;<a href="userapp.php?id=1018092" >肚皮应用测试</a>&nbsp;应用</h6>
+<a href="cp.php?ac=feed&op=ignore&icon=1018092&uid=959553&feedid=684585" id="a_feedicon_684585" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_1017549" id="feed_684568_li">
+<a href="space.php?do=feed&icon=1017549&view=we" class="type"><img src="http://appicon.manyou.com/icons/1017549" /></a>
+<h6>
+<a href="space.php?uid=959553">richil</a>玩了 “<a href="http://uchome.developer.manyou.com/uchome/userapp.php?id=1017549" target="_top">是男人就上一万转</a>”</h6>
+<div class="detail" >Ta在30秒内转了10010圈，噢噢，我们这又出一大男人咯！</div>
+<a href="cp.php?ac=feed&op=ignore&icon=1017549&uid=959553&feedid=684568" id="a_feedicon_684568" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_1017549" id="feed_684567_li">
+<a href="space.php?do=feed&icon=1017549&view=we" class="type"><img src="http://appicon.manyou.com/icons/1017549" /></a>
+<h6>
+<a href="space.php?uid=959553">richil</a>、<a href="space.php?uid=975039">DukeHui</a> 添加了&nbsp;<a href="userapp.php?id=1017549" >是男人就上一万转</a>&nbsp;应用</h6>
+<a href="cp.php?ac=feed&op=ignore&icon=1017549&uid=959553&feedid=684567" id="a_feedicon_684567" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+<li class="type_1016414" id="feed_684540_li">
+<a href="space.php?do=feed&icon=1016414&view=we" class="type"><img src="http://appicon.manyou.com/icons/1016414" /></a>
+<h6>
+<a href="space.php?uid=959553">richil</a> 在<a href="userapp.php?id=1016414&amp;my_suffix=Ly4vaW5kZXgucGhwP3JlZj0zOTk%3D" target="_top">游戏吧</a>中玩 <a href="userapp.php?id=1016414&amp;my_suffix=Ly4vaW5kZXgucGhwP2RvPXBsYXkmcmVmPTM5OSZnaWQ9Mzg1" target="_top">泡泡任务</a></h6>
+<a href="cp.php?ac=feed&op=ignore&icon=1016414&uid=959553&feedid=684540" id="a_feedicon_684540" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+</ul>
+<h4 class="feedtime">2008-12-01</h4><ul>
+<li class="type_friend" id="feed_684338_li">
+<a href="space.php?do=feed&icon=friend&view=we" class="type"><img src="image/icon/friend.gif" /></a>
+<h6>
+<a href="space.php?uid=959553">richil</a> 和 <a href="space.php?uid=1022368">ninhaochina</a> 成为了好友</h6>
+<a href="cp.php?ac=feed&op=ignore&icon=friend&uid=959553&feedid=684338" id="a_feedicon_684338" onclick="ajaxmenu(event, this.id, 99999)" class="float_del float_block" title="屏蔽">屏蔽</a>
+</li>
+
+</ul>
+</div>
+
+<ul>
+<li><a href="javascript:;" onclick="feed_more();" id="a_feed_more">&gt;&gt; 查看更多</a></li>
+</ul>
+</div>
+</div>
+
+<div class="narrow">
+
+
+<div class="task_notice">
+<h2>
+<a href="cp.php?ac=task" class="r_option">查看全部</a>
+好消息，有新的有奖活动
+</h2>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td><img src="image/task/profile.gif" width="64" height="64" alt="Icon" class="icon" /></td>
+<td>
+<strong><a href="cp.php?ac=task&op=do&taskid=2">将个人资料补充完整</a></strong>
+<br>奖励积分：<em>20</em><p>把自己的个人资料填写完整吧。<br>这样您会被更多的朋友找到的，系统也会帮您找到朋友。</p>
+<p><a href="cp.php?ac=task&op=do&taskid=2"><img src="image/start_task.gif" alt="立即参与该活动" /></a></p>
+</td>
+</tr>
+</table>
+</div>
+
+
+
+<div class="mtag_invite">
+<h2>
+<a href="cp.php?ac=userapp" class="r_option">我的应用</a>
+应用
+</h2>
+<ul>
+<li><a href="space.php?do=notice&view=userapp"><strong>2</strong> 个应用请求</a></li>
+</ul>
+</div>
+
+<div class="f_request">
+<h2>
+<a href="cp.php?ac=friend&op=request" class="r_option">查看全部</a>
+好友
+</h2>
+<ul>
+<li><a href="cp.php?ac=friend&op=request"><strong>1</strong> 个新好友申请</a></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+<div>
+<h2>邀请好友</h2>
+<ul>
+<li><a href="cp.php?ac=invite">邀请好友</a>，让好友加入进来，分享点点滴滴</li>
+</ul>
+</div>
+<div>
+<h2>寻找好友</h2>
+<ul>
+<li><a href="cp.php?ac=friend&op=find">寻找好友</a>，发现更多志同道合的朋友</li>
+<li>
+<form method="post" action="cp.php?ac=friend">
+<input type="text" name="username" value="请输入用户名" class="t_input" onkeydown="ctrlEnter(event, 'findsubmit_btn', 1);" onclick="if(this.value == '请输入用户名'){this.value = '';}" onblur="if(this.value == ''){this.value = '请输入用户名';}" />
+<input type="hidden" name="findsubmit" value="true" />
+<input type="submit" name="findsubmit_btn" value="快速定位" id="findsubmit_btn" class="submit" style="width:70px" />
+<input type="hidden" name="formhash" value="6a055f63" /></form>
+</li>
+</ul>
+</div>
+
+
+</div>
+</div>
+
+<div id="mood_form" style="display:none">
+<form method="post" action="cp.php?ac=doing" id="moodform">
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td width="40"><a href="###" id="face" onclick="showFace(this.id, 'message');"><img src="image/facelist.gif" align="absmiddle" /></a></td>
+<td>
+<input type="text" name="message" id="message" value="" size="40" class="t_input" />
+<input type="hidden" name="addsubmit" value="true" />
+<input type="hidden" name="spacenote" value="true" />
+</td>
+<td>&nbsp;<input type="button" id="add" name="add" value="更新" class="submit" onclick="ajaxpost('moodform', 'mystate', 'reloadMood');" /></td>
+<td>&nbsp;<a href="javascript:;" onclick="mood_form_cancel();">取消</a></td>
+</tr>
+</table>
+<input type="hidden" name="formhash" value="6a055f63" />
+</form>
+</div>
+
+<script type="text/javascript">
+var old_html = '';
+var next = 0;
+function reloadMood(showid, result) {
+var x = new Ajax();
+x.get('do.php?ac=ajax&op=getmood', function(s){
+$('mystate').innerHTML = s;
+});
+}
+function mood_from() {
+old_html = $('mystate').innerHTML;
+$('mystate').innerHTML = $('mood_form').innerHTML;
+}
+function mood_form_cancel() {
+$('mystate').innerHTML = old_html;
+}
+function feed_more() {
+var x = new Ajax();
+next = next + 100;
+x.get('cp.php?ac=feed&op=get&start='+next+'&view=we&appid=&icon=&filter=', function(s){
+$('feed_div').innerHTML += s;
+});
+}
+</script>
+
+<div class="f_status f_status_w s_clear">
+<a href="javascript:;" onclick="window.scrollTo(0,0);" id="a_top" title="TOP">TOP</a>
+</div>
+</div>
+
+
+</div>
+
+<div id="footer" class="s_clear" title="Processed in 0.012727 second(s), 14 queries, Gzip enabled">
+<p class="r_option smalltext">
+        <!-- *** Vdoing Code *** -->
+        <script type="text/javascript" charset="UTF-8" src="http://s.vdoing.com/u/57/29420.js"></script>
+        <noscript><a href="link.php?url=http://www.vdoing.com" title="Vdoing StatsX No.29420"><img src="http://simg.vdoing.com/m/29420/x01.gif?noscript" border="0"></a></noscript>
+        <!-- *** End of Vdoing Code *** -->
+Powered by <a  href="http://u.discuz.net" target="_blank">UCenter Home</a> <span title="20080910">1.5RC2</span>
+&copy; 2001-2008 <a  href="http://www.comsenz.com" target="_blank">Comsenz Inc.</a>
+</p>
+Manyou开发者站点 - 
+<a href="mailto:noreply@comsenz.com">联系我们</a>
+</div>
+
+<div id="submenu">
+<div id="subfriend" class="submenu">
+<ul>
+<li><a href="space.php?do=friend">好友列表</a></li>
+<li><a href="space.php?do=friend&view=visitor">我的访客</a></li>
+<li><a href="space.php?do=friend&view=trace">我的足迹</a></li>
+<li><a href="space.php?do=friend&view=online">在线用户</a></li>
+<li class="line"><a href="cp.php?ac=friend&op=find">寻找好友</a></li>
+<li><a href="cp.php?ac=invite">邀请好友</a></li>
+</ul>
+</div>
+<div id="subpm" class="submenu">
+<ul>
+<li><a href="space.php?do=pm">查看未读</a></li>
+<li><a href="space.php?do=pm&view=inbox">收件箱</a></li>
+<li><a href="space.php?do=pm&view=outbox">发件箱</a></li>
+<li><a href="space.php?do=notice">通知</a></li>
+<li><a href="space.php?do=notice&view=userapp">应用消息</a></li>
+<li class="line"><a href="cp.php?ac=pm">发送私信</a></li>
+</ul>
+</div>
+<div id="subapp" class="submenu">
+<ul class="app_list">
+<li class="app-setting"><a href="cp.php?ac=userapp"><img src="image/app/setting.gif" alt="管理应用" />管理应用</a><em><a href="cp.php?ac=userapp&my_suffix=%2Fapp%2Flist">添加</a></em></li>
+<li class="app-share"><a href="space.php?do=developer"><img src="image/app/developer.gif" alt="开发者" />开发者</a><em><a href="space.php?do=developer?uid=817893&do=developer&type=myapp&action=new">创建</a></em></li>
+<li class="app-doing"><a href="space.php?do=doing"><img src="image/app/doing.gif" alt="迷你博客" />迷你博客</a></li>
+<li class="app-blog"><em><a href="cp.php?ac=blog">发表</a></em><a href="space.php?do=blog"><img src="image/app/blog.gif" alt="日志" />日志</a></li>
+<li class="app-photo"><em><a href="cp.php?ac=upload">上传</a></em><a href="space.php?do=album"><img src="image/app/album.gif" alt="相册" />相册</a></li>
+<li class="app-mtag"><em><a href="cp.php?ac=thread">发起</a></em><a href="space.php?do=thread"><img src="image/app/mtag.gif" alt="群组" />群组</a></li>
+<li class="app-share"><a href="space.php?do=share"><img src="image/app/share.gif" alt="分享" />分享</a></li>
+
+<li class="userapp-1000043"><a href="userapp.php?id=1000043"><img src="http://appicon.manyou.com/icons/1000043" alt="电影" />电影</a></li>
+<li class="userapp-1001538"><a href="userapp.php?id=1001538"><img src="http://appicon.manyou.com/icons/1001538" alt="lwx的应用" />lwx的应用</a></li>
+<li class="userapp-1001519"><a href="userapp.php?id=1001519"><img src="http://appicon.manyou.com/icons/1001519" alt="争车位" />争车位</a></li>
+<li class="userapp-1001474"><a href="userapp.php?id=1001474"><img src="http://appicon.manyou.com/icons/1001474" alt="朋友印象" />朋友印象</a></li>
+<li class="userapp-1002988"><a href="userapp.php?id=1002988"><img src="http://appicon.manyou.com/icons/1002988" alt="潮男潮女" />潮男潮女</a></li>
+<li class="userapp-1009092"><a href="userapp.php?id=1009092"><img src="http://appicon.manyou.com/icons/1009092" alt="很有想法！" />很有想法！</a></li>
+<li class="userapp-1008404"><a href="userapp.php?id=1008404"><img src="http://appicon.manyou.com/icons/1008404" alt="反恐精英" />反恐精英</a></li>
+<li class="userapp-1008167"><a href="userapp.php?id=1008167"><img src="http://appicon.manyou.com/icons/1008167" alt="速战五指棋" />速战五指棋</a></li>
+<li class="userapp-1000394"><a href="userapp.php?id=1000394"><img src="http://appicon.manyou.com/icons/1000394" alt="茶花女" />茶花女</a></li>
+<li class="userapp-1006780"><a href="userapp.php?id=1006780"><img src="http://appicon.manyou.com/icons/1006780" alt="分享我的快乐！" />分享我的快乐！</a></li>
+<li class="userapp-1007292"><a href="userapp.php?id=1007292"><img src="http://appicon.manyou.com/icons/1007292" alt="超级玛丽" />超级玛丽</a></li>
+<li class="userapp-1006752"><a href="userapp.php?id=1006752"><img src="http://appicon.manyou.com/icons/1006752" alt="疯狂出租车" />疯狂出租车</a></li>
+<li class="userapp-1003049"><a href="userapp.php?id=1003049"><img src="http://appicon.manyou.com/icons/1003049" alt="每天进步" />每天进步</a></li>
+<li class="userapp-1010249"><a href="userapp.php?id=1010249"><img src="http://appicon.manyou.com/icons/1010249" alt="鲜花传情" />鲜花传情</a></li>
+<li class="userapp-1004804"><a href="userapp.php?id=1004804"><img src="http://appicon.manyou.com/icons/1004804" alt="葵花点穴手" />葵花点穴手</a></li>
+<li class="userapp-1010415"><a href="userapp.php?id=1010415"><img src="http://appicon.manyou.com/icons/1010415" alt="大盗贼" />大盗贼</a></li>
+<li class="userapp-1006424"><a href="userapp.php?id=1006424"><img src="http://appicon.manyou.com/icons/1006424" alt="投票" />投票</a></li>
+<li class="userapp-1009255"><a href="userapp.php?id=1009255"><img src="http://appicon.manyou.com/icons/1009255" alt="好友比比看" />好友比比看</a></li>
+<li class="userapp-1011734"><a href="userapp.php?id=1011734"><img src="http://appicon.manyou.com/icons/1011734" alt="闪游集中营" />闪游集中营</a></li>
+<li class="userapp-1006616"><a href="userapp.php?id=1006616"><img src="http://appicon.manyou.com/icons/1006616" alt="博客园IT新闻" />博客园IT新闻</a></li>
+<li class="userapp-1015817"><a href="userapp.php?id=1015817"><img src="http://appicon.manyou.com/icons/1015817" alt="同城" />同城</a></li>
+
+
+<li><a href="cp.php?ac=userapp&my_suffix=%2Fapp%2Flist"><img src="image/app/setting.gif" alt="全部应用" />全部应用</a></li>
+
+</ul>
+<p id="app-expand"><span>关闭</span><a href="javascript:;" onclick="appExpand();" rel="menufocus">更多</a></p>
+</div>
+<div id="subnetwork" class="submenu">
+<ul>
+<li><a href="network.php?ac=doing">迷你博客</a></li>
+<li><a href="network.php?ac=blog">日志</a></li>
+<li><a href="network.php?ac=album">相册</a></li>
+<li><a href="network.php?ac=share">分享</a></li>
+<li><a href="network.php?ac=thread">话题</a></li>
+<li><a href="network.php?ac=mtag">群组</a></li>
+<li class="line"><a href="network.php?ac=space">成员</a></li>
+<li class="line"><a href="space.php?do=rank">排行榜</a></li>
+<li class="line"><a href="cp.php?ac=friend&op=rand">串门</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<script language="javascript" type="text/javascript" src="source/script_manage.js"></script>
+<script language="javascript"  type="text/javascript" src="cp.php?ac=friend&op=syn&rand=1228480476"></script>
+
+
+</body>
+</html>

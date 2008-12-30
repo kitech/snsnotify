@@ -1,0 +1,340 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh" xml:lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<title>首页_海内</title>
+<meta name="description" content="海内是一个真人网络，提供个人空间，迷你博客，相册，群组，电台以及电影评论等服务。" />
+<link rel="shortcut icon" href="http://static.hainei.com/img/favicon.ico" />
+<link rel="stylesheet" href="http://static.hainei.com/css/all.css?11321.css" type="text/css" media="screen" charset="utf-8" /><script type="text/javascript" charset="utf-8" src="http://cn.yui.yahooapis.com/2.5.2/build/utilities/utilities.js"></script><script type="text/javascript" charset="utf-8" src="http://static.hainei.com/js/hn.js?11321.js"></script><script type="text/javascript" charset="utf-8" src="http://static.hainei.com/js/w-nameselector.js?11321.js"></script><script type="text/javascript" charset="utf-8" src="http://static.hainei.com/js/w-misc.js?11321.js"></script><script type="text/javascript" charset="utf-8" src="http://static.hainei.com/js/w-thread.js?11321.js"></script><script type="text/javascript" charset="utf-8" src="http://static.hainei.com/js/app-share.js?11321.js"></script><script type="text/javascript" charset="utf-8" src="http://static.hainei.com/js/app-feed.js?11321.js"></script><script type="text/javascript" charset="utf-8" src="http://static.hainei.com/js/app-account.js?11321.js"></script><script type="text/javascript" charset="utf-8" src="http://static.hainei.com/js/app-poke.js?11321.js"></script>
+<script type="text/javascript">
+	YAHOO.util.Event.onDOMReady(function(){
+		var cb = HN.app.Share.__addShareHelp;
+		HN.widget.Complexlink.init();
+		HN.app.Share.shareObj();
+		HN.app.Share.videoShare(cb);
+		HN.app.Share.musicShare(cb);
+		//HN.app.Share.playRecomendVideos();
+		HN.app.Feed.showMoreTypes("show-feedmore","hidden-feednav");
+		HN.widget.selectAndCopy("invite-links");
+		HN.widget.Thread.initFlatCmt('content');
+		HN.app.Poke.ignoreAll();
+		HN.widget.QuickPost.init();
+		HN.util.disableOutline('qp-switch');
+		HN.util.disableOutline('gswitchtab');
+		HN.app.Account.delRecommendedUser("might_know");HN.app.Account.checkMessage(1220666270,60,"91f0f65b");HN.util.preloadJS('http://static.hainei.com/js/app-blog.js?11321.js','http://static.hainei.com/js/app-group.js?11321.js','http://static.hainei.com/js/app-miniblog.js?11321.js','http://static.hainei.com/js/app-movie.js?11321.js','http://static.hainei.com/js/app-photo.js?11321.js','http://static.hainei.com/js/app-pmsg.js?11321.js','http://static.hainei.com/js/app-radio.js?11321.js','http://static.hainei.com/js/app-reg.js?11321.js','http://static.hainei.com/js/app-wall.js?11321.js','http://static.hainei.com/js/w-editor2.js?11321.js','http://static.hainei.com/js/w-location.js?11321.js');	});
+</script>
+</head>
+<body>
+<div id="doc">
+<div id="globalheader">
+	<h1><a href="/home"><img src="http://static.hainei.com/img/logo.gif?0.gif" alt="海内" /></a></h1>
+	<ul id="globalnav">
+		<li><a href="/home">首页</a></li>
+		<li><a href="/user?r=110622">我的空间</a><a href="/profile?a=basic" class="edit">编辑</a></li>
+		<li class="withmenu">
+			<a href="/friends" class="line">好友</a><a href="#" class="drop">ˇ</a>
+			<ul class="menu">
+				<li><a href="/friends">好友列表</a></li>
+				<li><a href="/friends?a=timeline&r=110622">好友图谱</a></li>
+				<li class="dummy"></li>
+				<li><a href="/finder">寻找好友</a></li>
+				<li><a href="/invite">邀请好友</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="/network?r=1">随便看看</a>
+		</li>
+		<li class="withmenu">
+			<a id="globalnav-pmsg" href="/pmsgs" 
+				 class="line" title="查看以前的私信" >私信</a>
+			<a href="#" class="drop">ˇ</a>
+			<ul class="menu">
+				<li><a href="/pmsgs">收件箱</a></li>
+				<li><a href="/pmsgs?a=sent">发件箱</a></li>
+				<li><a href="/notification">通知</a></li>
+				<li class="dummy"></li>
+				<li><a href="/pmsg?a=new">写私信</a></li>
+			</ul>
+		</li>
+	</ul>
+	<div id="globalutil">
+		<a href="/settings?a=account">账号</a><span class="pipe">|</span><a href="/privacy?a=profile">隐私设置</a><span class="pipe">|</span><a href="/account?a=logout&r=0070da3d77a3f32c90bc6be554dfb7bf">退出</a>
+	</div>
+	<div id="notifications" class="notifications-has"><a href="/notification" title="你有1个新通知" target="_blank"><span class="count">1</span></a></div>
+</div>
+	<div id="globalsidebar">
+		<form method="get" action="/search" id="globalsearch">
+			<h4><a href="/search">搜索</a></h4>
+			<div class="globalusersearch">
+			<fieldset>
+				<input type="hidden" name="a" value="name" />
+				<input type="text" class="f-text" name="r" id="globalsearch-query" title="输入姓名查找" autocomplete="off"/>
+				<input type="submit" class="f-button" id="globalsearch-go" value="" title="搜索" />
+			</fieldset>
+			</div>
+		</form>
+		<div id="apps">
+		<div class="apps-user-edit"><a href="http://www.hainei.com/apps" class="edit-link">编辑</a><strong><a href="http://www.hainei.com/apps">应用程序</a></strong></div>
+		<div id="apps-dd-tip" style="display:none;"><p>拖动进行排序</p></div>
+		<ul id="apps-top"><li id="apps-101"><a href="http://www.hainei.com/miniblogs?a=all&fr=sidenav" id="app-miniblog" style="background-image:url(http://static.hainei.com/icon/miniblog.gif);">迷你博客</a></li>
+
+<li id="apps-102" class="haslink">
+	<a href="http://www.hainei.com/photos?a=all&fr=sidenav" id="app-album" style="background-image:url(http://static.hainei.com/icon/album.gif);">相册</a>
+	<a href="/photos?a=upload&amp;fr=sidenav" class="sublink" title="上传新照片">上传</a>
+</li>
+
+<li id="apps-103" class="haslink">
+	<a href="http://www.hainei.com/blogs?a=all&fr=sidenav" id="app-blog" style="background-image:url(http://static.hainei.com/icon/blog.gif);">日志</a>
+	<a href="/blog?a=new&amp;fr=sidenav" class="sublink" title="发表新日志">发表</a>
+</li>
+<li id="apps-10001"><a href="http://www.hainei.com/rewen?fr=sidenav" id="app-rewen" style="background-image:url(http://static.hainei.com/icon/rewen.gif);">热文</a></li>
+<li id="apps-104"><a href="http://www.hainei.com/movies?a=all&fr=sidenav" id="app-movie" style="background-image:url(http://static.hainei.com/icon/movie.gif);">电影</a></li>
+<li id="apps-10004"><a href="http://www.hainei.com/parking?fr=sidenav" id="app-parking" style="background-image:url(http://static.hainei.com/icon/parking.gif);">停车大战</a></li>
+<li id="apps-10002"><a href="http://www.hainei.com/usersale?fr=sidenav" id="app-usersale" style="background-image:url(http://static.hainei.com/icon/usersale.gif);">买卖好友</a></li>
+<li id="apps-106"><a href="http://www.hainei.com/votes?fr=sidenav" id="app-vote" style="background-image:url(http://static.hainei.com/icon/vote.gif);">投票</a></li>
+<li id="apps-10003"><a href="http://www.hainei.com/similar?fr=sidenav" id="app-similar" style="background-image:url(http://static.hainei.com/icon/similar.gif);">相似度</a></li>
+<li id="apps-107"><a href="http://www.hainei.com/shares?fr=sidenav" id="app-share" style="background-image:url(http://static.hainei.com/icon/share.gif);">分享</a></li>
+<li id="apps-105"><a href="http://www.hainei.com/sheep?fr=sidenav" id="app-sheep" style="background-image:url(http://static.hainei.com/icon/sheep.gif);">扎绵羊</a></li>
+<li id="apps-108"><a href="http://www.hainei.com/groups?a=all&fr=sidenav" id="app-group" style="background-image:url(http://static.hainei.com/icon/group.gif);">群组</a></li>
+<li id="apps-110"><a href="http://www.hainei.com/radio?fr=sidenav" id="app-radio" style="background-image:url(http://static.hainei.com/icon/radio.gif);">电台</a></li>
+</ul><ul id="apps-bottom" >
+<li id="apps-111"><a href="http://www.hainei.com/mobile?fr=sidenav" id="app-mobile" style="background-image:url(http://static.hainei.com/icon/mobile.gif);">手机</a></li>
+<li id="apps-109"><a href="http://www.hainei.com/class/home?fr=sidenav" id="app-class" style="background-image:url(http://static.hainei.com/icon/class.gif);">校友录</a></li>
+<li id="apps-112"><a href="http://www.hainei.com/notepad?fr=sidenav" id="app-notepad" style="background-image:url(http://static.hainei.com/icon/notepad.gif);">记事本</a></li>
+</ul><div id="apps-more"><a href="javascript:void 0" id="apps-more-link" class="apps-expend apps-fold">收起</a></div>	</div>
+	</div>
+<div id="container">
+	<div id="content">
+	
+	
+
+<div class="ui-t1">
+	<div class="ui-gf" id="hainei-home">
+		<div class="sect" id="quick-post">
+			<ul id="qp-switch">
+				<li class="current" id="qp-switch-mb"><a href="#qpminiblog"><span class="ico-minblog">写迷你博客</span></a></li>
+				<li id="qp-switch-share"><a href="#qpshare"><span class="ico-share">分享</span></a></li>
+			</ul>
+			<div class="sect-content" id="qpminiblog">
+				<form action="javascript:void 0" method="post">
+					<p><input type="text" class="f-text" name="content" id="quick-miniblog" /><input type="hidden" name="method" value="10" /><input type="submit" class="f-button" value="发布" /></p>
+				</form>
+			</div>
+			<div class="sect-content" id="qpshare">
+				<form action="javascript:void 0" method="post">
+					<p><input type="text" class="f-text" name="url" id="quick-shareurl"/><input type="submit" class="f-button" value="确定" /></p>
+				</form>
+			</div>
+		</div>
+		<div class="sect" id="visit">
+			<div id="toc">
+				<ul id="gswitchtab" class="gflattab">
+					<li class="current" id="home-visitor-tab"><a href="#homevisitor">谁来看过我</a></li>
+					<li id="home-visit-tab"><a href="#homevisit">我去看过谁</a></li>
+				</ul>
+			</div>
+			<div class="sect-content" id="homevisitor">
+			<ul class="al"><li><a href="/user?r=539053"><img src="http://photo.hainei.com/x0/00/mm/1v19197.jpg" alt="张华" /><span>张华</span></a>2 周前</li><li class="need-hot">人气不旺？<br><a href="/finder?fr=jy">看看 MSN/QQ 好友在不在海内 &raquo;</a></li></ul>			</div>
+			<div class="sect-content" id="homevisit" style="display:none">
+			<ul class="al"><li><a href="/user?r=164343"><img src="http://photo.hainei.com/x0/00/aj/k319965.jpg" alt="陈浩" /><span>陈浩</span></a>2 周前</li><li><a href="/user?r=124118"><img src="http://photo.hainei.com/x0/00/a3/3v19997.jpg" alt="饶洪福" /><span>饶洪福</span></a>1 月前</li><li><a href="/user?r=155432"><img src="http://photo.hainei.com/x0/00/8c/a811514.jpg" alt="石瑞" /><span>石瑞</span></a>1 月前</li></ul>			</div>
+		</div>
+		<div class="sect" id="newsfeed">
+			<div class="sect-link">
+				<ul id="show-feednav">
+					<li><a class="ico-minblog" title="迷你博客" href="/newsfeed?r%5B0%5D=1&r%5B1%5D=46&h=89586baa">miniblog</a></li>
+					<li><a class="ico-album" title="相册" href="/newsfeed?r%5B0%5D=2&r%5B1%5D=46&h=a2c8e3c3">album</a></li>
+					<li><a class="ico-blog" title="日志" href="/newsfeed?r%5B0%5D=9&r%5B1%5D=46&h=c41b4f19">blog</a></li>
+					<li><a class="ico-movie" title="电影" href="/newsfeed?r%5B0%5D=10&r%5B1%5D=46&h=fa0225f6">movie</a></li>
+					<li><a class="ico-share" title="分享" href="/newsfeed?r%5B0%5D=4&r%5B1%5D=46&h=c00bacd2">share</a></li>
+					<li><a class="ico-friend" title="好友" href="/newsfeed?r%5B0%5D=6&r%5B1%5D=46&h=8c11a869">friend</a></li>
+					<li><a id="show-feedmore" title="更多" href="javascript:void 0" class="drop">ˇ</a>
+						<ul id="hidden-feednav">
+							<li><a class="ico-profile" title="个人资料" href="/newsfeed?r%5B0%5D=5&r%5B1%5D=46&h=4d603c77">个人资料</a></li>
+							<li><a class="ico-vote" title="投票" href="/newsfeed?r%5B0%5D=15&r%5B1%5D=46&h=e03788eb">投票</a></li>
+							<li><a class="ico-group" title="群组" href="/newsfeed?r%5B0%5D=7&r%5B1%5D=46&h=bd85e27d">群组</a></li>
+							<li><a class="ico-class" title="校友录" href="/newsfeed?r%5B0%5D=13&r%5B1%5D=46&h=29865c13">校友录</a></li>
+							<li><a class="ico-sheep" title="扎绵羊" href="/newsfeed?r%5B0%5D=16&r%5B1%5D=46&h=e79a4a93">扎绵羊</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<h3><a href="/newsfeed?r%5B0%5D=0&r%5B1%5D=46&p=1&h=dd63b1df">最新动态</a></h3>			<div class="sect-content">
+			<h4>昨天</h4><ul><li>
+	<div class="feed feed-app-outer">
+		<a href="javascript:void(0)" class="type">应用</a>
+		<div class="brief"><a href="/user?r=164343&fr=nf" target="_blank">陈浩</a>、<a href="/user?r=102938&fr=nf" target="_blank">潘瑞</a>、<a href="/user?r=104182&fr=nf" target="_blank">郭琪</a> 启用了 <a href="http://app.hainei.com/cat">圈猫</a>。</div>
+	</div></li><li><div class="feed feed-friend">
+		<a href="/newsfeed?r%5B0%5D=6&r%5B1%5D=46&h=8c11a869&fr=nf" target="_blank" class="type">好友</a>
+		<div class="brief"><a href="/user?r=164343&fr=nf" target="_blank">陈浩</a> 邀请 <a href="/user?r=684744&fr=nf" target="_blank">萧萧</a> 加入海内了。</div>
+	</div></li><li><div class="feed feed-friend">
+		<a href="/newsfeed?r%5B0%5D=6&r%5B1%5D=46&h=8c11a869&fr=nf" class="type">好友</a>
+		<div class="brief"><a href="/user?r=164343&fr=nf" target="_blank">陈浩</a> 和 <a href="/user?r=101004&fr=nf" target="_blank">戴志康</a>、<a href="/user?r=161618&fr=nf" target="_blank">陈传文</a> 成为好友了。</div>
+	</div></li><li><div class="feed feed-friend">
+		<a href="/newsfeed?r%5B0%5D=6&r%5B1%5D=46&h=8c11a869&fr=nf" class="type">好友</a>
+		<div class="brief"><a href="/user?r=102938&fr=nf" target="_blank">潘瑞</a> 和 <a href="/user?r=105258&fr=nf" target="_blank">赵雪清</a> 成为好友了。</div>
+	</div></li><li><div class="feed feed-network">
+		<a href="/newsfeed?r%5B0%5D=5&r%5B1%5D=46&h=4d603c77&fr=nf" target="_blank" class="type">用户网络</a>
+		<div class="brief"><a href="/user?r=164343&fr=nf" target="_blank">陈浩</a> 加入网络： 北京。</div>
+	</div></li><li><div class="feed feed-group">
+		<a href="/newsfeed?r%5B0%5D=7&r%5B1%5D=46&h=bd85e27d&fr=nf" target="_blank" class="type">群组</a>
+		<div class="brief"><a href="/user?r=104182&fr=nf" target="_blank">郭琪</a> 加入了群 <a href="/group?r=109827&fr=nf" target="_blank">海内开放平台</a>。</div>
+	</div></li><li><div class="feed feed-group">
+		<a href="/newsfeed?r%5B0%5D=7&r%5B1%5D=46&h=bd85e27d&fr=nf" target="_blank" class="type">群组</a>
+		<div class="brief"><a href="/user?r=102938&fr=nf" target="_blank">潘瑞</a> 加入了群 <a href="/group?r=109827&fr=nf" target="_blank">海内开放平台</a>。</div>
+	</div></li><li><div class="feed feed-group">
+		<a href="/newsfeed?r%5B0%5D=7&r%5B1%5D=46&h=bd85e27d&fr=nf" target="_blank" class="type">群组</a>
+		<div class="brief"><a href="/user?r=164343&fr=nf" target="_blank">陈浩</a> 加入了群 <a href="/group?r=109827&fr=nf" target="_blank">海内开放平台</a>。</div>
+	</div></li></ul><h4>2008-09-04</h4><ul><li><div class="feed feed-friend">
+		<a href="/newsfeed?r%5B0%5D=6&r%5B1%5D=46&h=8c11a869&fr=nf" class="type">好友</a>
+		<div class="brief"><a href="/user?r=104182&fr=nf" target="_blank">郭琪</a> 和 <a href="/user?r=170755&fr=nf" target="_blank">胡丹</a> 成为好友了。</div>
+	</div></li><li><div class="feed feed-pw-">
+		<a href="/newsfeed?r=17&fr=nf" target="_blank" class="type">停车大战</a>
+        <div class="brief"><a href="/user?r=102938&fr=nf" target="_blank">潘瑞</a> 在 <a href="/parking?fr=nf" target="_blank">停车大战</a> 中购买了一辆 夏利 。</div>
+    </div></li></ul><h4>2008-09-03</h4><ul><li><div class="feed feed-friend">
+		<a href="/newsfeed?r%5B0%5D=6&r%5B1%5D=46&h=8c11a869&fr=nf" class="type">好友</a>
+		<div class="brief"><a href="/user?r=164343&fr=nf" target="_blank">陈浩</a> 和 <a href="/user?r=136886&fr=nf" target="_blank">邵霞</a> 成为好友了。</div>
+	</div></li><li><div class="feed feed-vote">
+        <a href="/newsfeed?r%5B0%5D=15&r%5B1%5D=46&h=e03788eb&fr=nf" target="_blank" class="type">投票</a>
+        <div class="brief"><a href="/user?r=102938&fr=nf" target="_blank">潘瑞</a> 参加了投票：<a href="/vote?r[0]=108061&r[1]=108217&fr=nf" target="_blank">你最近一次去电影院看电影是什么时候？</a> 去看看<a href="/vote?r[0]=108061&r[1]=108217&r[2]=1&fr=nf" target="_blank">投票结果</a>。</div>
+    </div></li><li><div class="feed feed-group">
+		<a href="/newsfeed?r%5B0%5D=7&r%5B1%5D=46&h=bd85e27d&fr=nf" target="_blank" class="type">群组</a>
+		<div class="brief"><a href="/user?r=104182&fr=nf" target="_blank">郭琪</a> 加入了群 <a href="/group?r=108401&fr=nf" target="_blank">51开放平台</a>。</div>
+	</div></li><li><div class="feed feed-miniblog">
+		<a href="/newsfeed?r%5B0%5D=1&r%5B1%5D=46&h=89586baa&fr=nf" target="_blank" class="type">迷你博客</a>
+		<div class="brief"><a href="/user?r=164343&fr=nf" target="_blank">陈浩</a>：<p class="quote"><q>买了一辆S600，把其他的都卖了。 停车浪费时间。</q></p>
+		<div class="flatcmt-list"><p class="flatcmt-add"><a id="addcomment-524409" class="flatcmt-get" rel="/miniblog?a=cmt&r=524409&t=json" href="javascript:void 0">回复(1)</a></p></div></div>
+	</div></li><li><div class="feed feed-miniblog">
+		<a href="/newsfeed?r%5B0%5D=1&r%5B1%5D=46&h=89586baa&fr=nf" target="_blank" class="type">迷你博客</a>
+		<div class="brief"><a href="/user?r=124118&fr=nf" target="_blank">饶洪福</a> <span class="feed-method">通过 <a href="/settings?a=im" title="通过 GTalk 发布迷你博客">GTalk</a></span>：<p class="quote"><q>上周北戴河之旅,最大的收获是跑了几公里,可以说是自我超越了一小步,可惜的是当初应该&quot;祼奔&quot;</q></p>
+		<div class="flatcmt-list"><p class="flatcmt-add"><a id="addcomment-524352" class="flatcmt-get" rel="/miniblog?a=cmt&r=524352&t=json" href="javascript:void 0">回复</a></p></div></div>
+	</div></li></ul><h4>2008-09-02</h4><ul><li><div class="feed feed-friend">
+		<a href="/newsfeed?r%5B0%5D=6&r%5B1%5D=46&h=8c11a869&fr=nf" class="type">好友</a>
+		<div class="brief"><a href="/user?r=102938&fr=nf" target="_blank">潘瑞</a> 和 <a href="/user?r=187134&fr=nf" target="_blank">米心</a>、<a href="/user?r=211480&fr=nf" target="_blank">王昭力</a>、<a href="/user?r=109998&fr=nf" target="_blank">仝永波</a>、<a href="/user?r=256104&fr=nf" target="_blank">王瑞燡</a>、<a href="/user?r=363094&fr=nf" target="_blank">刘爽</a> 成为好友了。</div>
+	</div></li><li><div class="feed feed-friend">
+		<a href="/newsfeed?r%5B0%5D=6&r%5B1%5D=46&h=8c11a869&fr=nf" class="type">好友</a>
+		<div class="brief"><a href="/user?r=104182&fr=nf" target="_blank">郭琪</a> 和 <a href="/user?r=253291&fr=nf" target="_blank">李帆</a> 成为好友了。</div>
+	</div></li><li><div class="feed feed-friend">
+		<a href="/newsfeed?r%5B0%5D=6&r%5B1%5D=46&h=8c11a869&fr=nf" class="type">好友</a>
+		<div class="brief"><a href="/user?r=155432&fr=nf" target="_blank">石瑞</a> 和 <a href="/user?r=102430&fr=nf" target="_blank">李国德</a>、<a href="/user?r=103386&fr=nf" target="_blank">王武敏</a>、<a href="/user?r=363094&fr=nf" target="_blank">刘爽</a> 成为好友了。</div>
+	</div></li></ul><h4>2008-09-01</h4><ul><li><div class="feed feed-group">
+		<a href="/newsfeed?r%5B0%5D=7&r%5B1%5D=46&h=bd85e27d&fr=nf" target="_blank" class="type">群组</a>
+		<div class="brief"><a href="/user?r=164343&fr=nf" target="_blank">陈浩</a> 加入了群 <a href="/group?r=105237&fr=nf" target="_blank">海淀台球娱乐</a>。</div>
+	</div></li><li><div class="feed feed-friend">
+		<a href="/newsfeed?r%5B0%5D=6&r%5B1%5D=46&h=8c11a869&fr=nf" class="type">好友</a>
+		<div class="brief"><a href="/user?r=104182&fr=nf" target="_blank">郭琪</a> 和 <a href="/user?r=136886&fr=nf" target="_blank">邵霞</a> 成为好友了。</div>
+	</div></li></ul><h4>2008-08-31</h4><ul><li><div class="feed feed-miniblog">
+		<a href="/newsfeed?r%5B0%5D=1&r%5B1%5D=46&h=89586baa&fr=nf" target="_blank" class="type">迷你博客</a>
+		<div class="brief"><a href="/user?r=124118&fr=nf" target="_blank">饶洪福</a> <span class="feed-method">通过 <a href="/settings?a=im" title="通过 GTalk 发布迷你博客">GTalk</a></span>：<p class="quote"><q>我妈曾经说我的度量没有我哥的大,从这次&quot;螃蟹&quot;事件验证!哈哈</q></p>
+		<div class="flatcmt-list"><p class="flatcmt-add"><a id="addcomment-517666" class="flatcmt-get" rel="/miniblog?a=cmt&r=517666&t=json" href="javascript:void 0">回复(2)</a></p></div></div>
+	</div></li><li><div class="feed feed-friend">
+		<a href="/newsfeed?r%5B0%5D=6&r%5B1%5D=46&h=8c11a869&fr=nf" class="type">好友</a>
+		<div class="brief"><a href="/user?r=124118&fr=nf" target="_blank">饶洪福</a> 和 <a href="/user?r=103386&fr=nf" target="_blank">王武敏</a> 成为好友了。</div>
+	</div></li></ul><h4>2008-08-30</h4><ul><li><div class="feed feed-friend">
+		<a href="/newsfeed?r%5B0%5D=6&r%5B1%5D=46&h=8c11a869&fr=nf" class="type">好友</a>
+		<div class="brief"><a href="/user?r=104182&fr=nf" target="_blank">郭琪</a> 和 <a href="/user?r=363094&fr=nf" target="_blank">刘爽</a> 成为好友了。</div>
+	</div></li><li><div class="feed feed-group">
+		<a href="/newsfeed?r%5B0%5D=7&r%5B1%5D=46&h=bd85e27d&fr=nf" target="_blank" class="type">群组</a>
+		<div class="brief"><a href="/user?r=164343&fr=nf" target="_blank">陈浩</a> 加入了群 <a href="/group?r=109796&fr=nf" target="_blank">zend framew</a>。</div>
+	</div></li></ul><h4>2008-08-29</h4><ul><li><div class="feed feed-friend">
+		<a href="/newsfeed?r%5B0%5D=6&r%5B1%5D=46&h=8c11a869&fr=nf" class="type">好友</a>
+		<div class="brief"><a href="/user?r=164343&fr=nf" target="_blank">陈浩</a> 和 <a href="/user?r=363094&fr=nf" target="_blank">刘爽</a> 成为好友了。</div>
+	</div></li><li><div class="feed feed-friend">
+		<a href="/newsfeed?r%5B0%5D=6&r%5B1%5D=46&h=8c11a869&fr=nf" class="type">好友</a>
+		<div class="brief"><a href="/user?r=104182&fr=nf" target="_blank">郭琪</a> 和 <a href="/user?r=105380&fr=nf" target="_blank">马睿涛</a>、<a href="/user?r=144546&fr=nf" target="_blank">叶琳</a>、<a href="/user?r=119514&fr=nf" target="_blank">余文</a>、<a href="/user?r=115816&fr=nf" target="_blank">田雨</a>、<a href="/user?r=376244&fr=nf" target="_blank">杨忠伟</a> 成为好友了。</div>
+	</div></li><li><div class="feed feed-friend">
+		<a href="/newsfeed?r%5B0%5D=6&r%5B1%5D=46&h=8c11a869&fr=nf" class="type">好友</a>
+		<div class="brief"><a href="/user?r=102938&fr=nf" target="_blank">潘瑞</a> 和 <a href="/user?r=119514&fr=nf" target="_blank">余文</a>、<a href="/user?r=104949&fr=nf" target="_blank">李明顺</a>、<a href="/user?r=127621&fr=nf" target="_blank">刘伟</a> 成为好友了。</div>
+	</div></li></ul><h4>2008-08-27</h4><ul><li><div class="feed feed-friend">
+		<a href="/newsfeed?r%5B0%5D=6&r%5B1%5D=46&h=8c11a869&fr=nf" target="_blank" class="type">好友</a>
+		<div class="brief"><a href="/user?r=164343&fr=nf" target="_blank">陈浩</a> 邀请 <a href="/user?r=919940&fr=nf" target="_blank">阿方提</a> 加入海内了。</div>
+	</div></li><li><div class="feed feed-group">
+		<a href="/newsfeed?r%5B0%5D=7&r%5B1%5D=46&h=bd85e27d&fr=nf" target="_blank" class="type">群组</a>
+		<div class="brief"><a href="/user?r=164343&fr=nf" target="_blank">陈浩</a> 加入了群 <a href="/group?r=100150&fr=nf" target="_blank">facebook</a>。</div>
+	</div></li><li><div class="feed feed-friend">
+		<a href="/newsfeed?r%5B0%5D=6&r%5B1%5D=46&h=8c11a869&fr=nf" class="type">好友</a>
+		<div class="brief"><a href="/user?r=164343&fr=nf" target="_blank">陈浩</a> 和 <a href="/user?r=109221&fr=nf" target="_blank">李益民</a>、<a href="/user?r=136935&fr=nf" target="_blank">李月斌</a> 成为好友了。</div>
+	</div></li></ul>			</div>
+			<div class="feed-ft">
+								<a href="/apps?a=newsfeed">动态设置</a>
+			</div>
+		</div>
+					</div>
+	<div class="ui-g">
+				<div class="sect" id="req-filter" style="display:none;">
+					<h3>请求</h3>
+					<div class="sect-content">
+							<ul class="filter" id="req-filter-list"></ul>
+					</div></div>		<div class="sect" id="noti">
+			<h3>通知</h3>
+			<div class="sect-content" id="noti-content">
+				<p><a href="/notification"><strong>1</strong> 个新通知</a></p>			</div>
+		</div>
+				<div class="sect" id="poke">
+			<h3>招呼</h3>
+			<div class="sect-content">
+									<p class="dummy">最近没有收到招呼</p>
+						
+			</div>
+			<div class="sect-link"><a href="/pokes">查看全部</a></div>
+		</div>
+
+				<div class="sect" id="might_know">
+			<h3>你可能认识的人</h3>
+			<div class="sect-content ">
+				<ul class="al notip">
+				<li><a href="/user?r=301862" class="avatar" target="_blank"><img src="http://photo.hainei.com/x0/00/fv/ok19711.jpg" alt="赵聪慧" /></a><a href="/user?r=301862" target="_blank">赵聪慧</a><br /><a class="complexlink friend-add" href="javascript:void 0" rel="/friend?a=sendreq&r[0]=301862&r[1]=96" onclick="HN.util.gaTrackOnClick('/recom/homeadd')">加为好友</a><a class="mk-del" rel="/userpush?a=close&amp;r=301862" onclick="HN.util.gaTrackOnClick('/recom/homedel')" href="javascript:void 0">删除</a></li><li><a href="/user?r=187134" class="avatar" target="_blank"><img src="http://photo.hainei.com/x0/00/l1/n111256.jpg" alt="米心" /></a><a href="/user?r=187134" target="_blank">米心</a><br /><a class="complexlink friend-add" href="javascript:void 0" rel="/friend?a=sendreq&r[0]=187134&r[1]=96" onclick="HN.util.gaTrackOnClick('/recom/homeadd')">加为好友</a><a class="mk-del" rel="/userpush?a=close&amp;r=187134" onclick="HN.util.gaTrackOnClick('/recom/homedel')" href="javascript:void 0">删除</a></li><li><a href="/user?r=218176" class="avatar" target="_blank"><img src="http://photo.hainei.com/x0/00/ho/od19193.jpg" alt="李乐摄" /></a><a href="/user?r=218176" target="_blank">李乐摄</a><br /><a class="complexlink friend-add" href="javascript:void 0" rel="/friend?a=sendreq&r[0]=218176&r[1]=96" onclick="HN.util.gaTrackOnClick('/recom/homeadd')">加为好友</a><a class="mk-del" rel="/userpush?a=close&amp;r=218176" onclick="HN.util.gaTrackOnClick('/recom/homedel')" href="javascript:void 0">删除</a></li><li><a href="/user?r=170755" class="avatar" target="_blank"><img src="http://photo.hainei.com/x0/00/60/8l19738.jpg" alt="胡丹" /></a><a href="/user?r=170755" target="_blank">胡丹</a><br /><a class="complexlink friend-add" href="javascript:void 0" rel="/friend?a=sendreq&r[0]=170755&r[1]=96" onclick="HN.util.gaTrackOnClick('/recom/homeadd')">加为好友</a><a class="mk-del" rel="/userpush?a=close&amp;r=170755" onclick="HN.util.gaTrackOnClick('/recom/homedel')" href="javascript:void 0">删除</a></li><li><a href="/user?r=197924" class="avatar" target="_blank"><img src="http://photo.hainei.com/x0/00/66/l811551.jpg" alt="郝晓琳" /></a><a href="/user?r=197924" target="_blank">郝晓琳</a><br /><a class="complexlink friend-add" href="javascript:void 0" rel="/friend?a=sendreq&r[0]=197924&r[1]=96" onclick="HN.util.gaTrackOnClick('/recom/homeadd')">加为好友</a><a class="mk-del" rel="/userpush?a=close&amp;r=197924" onclick="HN.util.gaTrackOnClick('/recom/homedel')" href="javascript:void 0">删除</a></li><li><a href="/user?r=250782" class="avatar" target="_blank"><img src="http://photo.hainei.com/x0/00/a1/sl19225.jpg" alt="张晴" /></a><a href="/user?r=250782" target="_blank">张晴</a><br /><a class="complexlink friend-add" href="javascript:void 0" rel="/friend?a=sendreq&r[0]=250782&r[1]=96" onclick="HN.util.gaTrackOnClick('/recom/homeadd')">加为好友</a><a class="mk-del" rel="/userpush?a=close&amp;r=250782" onclick="HN.util.gaTrackOnClick('/recom/homedel')" href="javascript:void 0">删除</a></li><li><a href="/user?r=170582" class="avatar" target="_blank"><img src="http://photo.hainei.com/x0/00/5p/6i18473.jpg" alt="石春丽" /></a><a href="/user?r=170582" target="_blank">石春丽</a><br /><a class="complexlink friend-add" href="javascript:void 0" rel="/friend?a=sendreq&r[0]=170582&r[1]=96" onclick="HN.util.gaTrackOnClick('/recom/homeadd')">加为好友</a><a class="mk-del" rel="/userpush?a=close&amp;r=170582" onclick="HN.util.gaTrackOnClick('/recom/homedel')" href="javascript:void 0">删除</a></li><li><a href="/user?r=250228" class="avatar" target="_blank"><img src="http://photo.hainei.com/x0/00/ed/g419199.jpg" alt="王琳" /></a><a href="/user?r=250228" target="_blank">王琳</a><br /><a class="complexlink friend-add" href="javascript:void 0" rel="/friend?a=sendreq&r[0]=250228&r[1]=96" onclick="HN.util.gaTrackOnClick('/recom/homeadd')">加为好友</a><a class="mk-del" rel="/userpush?a=close&amp;r=250228" onclick="HN.util.gaTrackOnClick('/recom/homedel')" href="javascript:void 0">删除</a></li><li><a href="/user?r=303611" class="avatar" target="_blank"><img src="http://photo.hainei.com/x0/00/cn/bn19452.jpg" alt="李宏" /></a><a href="/user?r=303611" target="_blank">李宏</a><br /><a class="complexlink friend-add" href="javascript:void 0" rel="/friend?a=sendreq&r[0]=303611&r[1]=96" onclick="HN.util.gaTrackOnClick('/recom/homeadd')">加为好友</a><a class="mk-del" rel="/userpush?a=close&amp;r=303611" onclick="HN.util.gaTrackOnClick('/recom/homedel')" href="javascript:void 0">删除</a></li><li><a href="/user?r=172208" class="avatar" target="_blank"><img src="http://photo.hainei.com/x0/00/7e/f111263.jpg" alt="刘昊" /></a><a href="/user?r=172208" target="_blank">刘昊</a><br /><a class="complexlink friend-add" href="javascript:void 0" rel="/friend?a=sendreq&r[0]=172208&r[1]=96" onclick="HN.util.gaTrackOnClick('/recom/homeadd')">加为好友</a><a class="mk-del" rel="/userpush?a=close&amp;r=172208" onclick="HN.util.gaTrackOnClick('/recom/homedel')" href="javascript:void 0">删除</a></li><li><a href="/user?r=301609" class="avatar" target="_blank"><img src="http://photo.hainei.com/x0/00/bk/qn11259.jpg" alt="陈建军" /></a><a href="/user?r=301609" target="_blank">陈建军</a><br /><a class="complexlink friend-add" href="javascript:void 0" rel="/friend?a=sendreq&r[0]=301609&r[1]=96" onclick="HN.util.gaTrackOnClick('/recom/homeadd')">加为好友</a><a class="mk-del" rel="/userpush?a=close&amp;r=301609" onclick="HN.util.gaTrackOnClick('/recom/homedel')" href="javascript:void 0">删除</a></li><li><a href="/user?r=287968" class="avatar" target="_blank"><img src="http://photo.hainei.com/x0/00/ef/4511002.jpg" alt="黄佳彬" /></a><a href="/user?r=287968" target="_blank">黄佳彬</a><br /><a class="complexlink friend-add" href="javascript:void 0" rel="/friend?a=sendreq&r[0]=287968&r[1]=96" onclick="HN.util.gaTrackOnClick('/recom/homeadd')">加为好友</a><a class="mk-del" rel="/userpush?a=close&amp;r=287968" onclick="HN.util.gaTrackOnClick('/recom/homedel')" href="javascript:void 0">删除</a></li><li><a href="/user?r=376055" class="avatar" target="_blank"><img src="http://photo.hainei.com/x0/00/bs/nf11804.jpg" alt="刘靖" /></a><a href="/user?r=376055" target="_blank">刘靖</a><br /><a class="complexlink friend-add" href="javascript:void 0" rel="/friend?a=sendreq&r[0]=376055&r[1]=96" onclick="HN.util.gaTrackOnClick('/recom/homeadd')">加为好友</a><a class="mk-del" rel="/userpush?a=close&amp;r=376055" onclick="HN.util.gaTrackOnClick('/recom/homedel')" href="javascript:void 0">删除</a></li><li><a href="/user?r=363094" class="avatar" target="_blank"><img src="http://photo.hainei.com/x0/00/eb/dd19740.jpg" alt="刘爽" /></a><a href="/user?r=363094" target="_blank">刘爽</a><br /><a class="complexlink friend-add" href="javascript:void 0" rel="/friend?a=sendreq&r[0]=363094&r[1]=96" onclick="HN.util.gaTrackOnClick('/recom/homeadd')">加为好友</a><a class="mk-del" rel="/userpush?a=close&amp;r=363094" onclick="HN.util.gaTrackOnClick('/recom/homedel')" href="javascript:void 0">删除</a></li><li><a href="/user?r=278027" class="avatar" target="_blank"><img src="http://photo.hainei.com/x0/00/eq/1019998.jpg" alt="王志军" /></a><a href="/user?r=278027" target="_blank">王志军</a><br /><a class="complexlink friend-add" href="javascript:void 0" rel="/friend?a=sendreq&r[0]=278027&r[1]=96" onclick="HN.util.gaTrackOnClick('/recom/homeadd')">加为好友</a><a class="mk-del" rel="/userpush?a=close&amp;r=278027" onclick="HN.util.gaTrackOnClick('/recom/homedel')" href="javascript:void 0">删除</a></li><li><a href="/user?r=168448" class="avatar" target="_blank"><img src="http://photo.hainei.com/x0/00/5t/7b14913.jpg" alt="王毅亮" /></a><a href="/user?r=168448" target="_blank">王毅亮</a><br /><a class="complexlink friend-add" href="javascript:void 0" rel="/friend?a=sendreq&r[0]=168448&r[1]=96" onclick="HN.util.gaTrackOnClick('/recom/homeadd')">加为好友</a><a class="mk-del" rel="/userpush?a=close&amp;r=168448" onclick="HN.util.gaTrackOnClick('/recom/homedel')" href="javascript:void 0">删除</a></li><li><a href="/user?r=286244" class="avatar" target="_blank"><img src="http://photo.hainei.com/x0/00/nl/1119231.jpg" alt="韩冬辉" /></a><a href="/user?r=286244" target="_blank">韩冬辉</a><br /><a class="complexlink friend-add" href="javascript:void 0" rel="/friend?a=sendreq&r[0]=286244&r[1]=96" onclick="HN.util.gaTrackOnClick('/recom/homeadd')">加为好友</a><a class="mk-del" rel="/userpush?a=close&amp;r=286244" onclick="HN.util.gaTrackOnClick('/recom/homedel')" href="javascript:void 0">删除</a></li><li><a href="/user?r=272919" class="avatar" target="_blank"><img src="http://photo.hainei.com/x0/00/8a/8l11771.jpg" alt="霍东明" /></a><a href="/user?r=272919" target="_blank">霍东明</a><br /><a class="complexlink friend-add" href="javascript:void 0" rel="/friend?a=sendreq&r[0]=272919&r[1]=96" onclick="HN.util.gaTrackOnClick('/recom/homeadd')">加为好友</a><a class="mk-del" rel="/userpush?a=close&amp;r=272919" onclick="HN.util.gaTrackOnClick('/recom/homedel')" href="javascript:void 0">删除</a></li><li><a href="/user?r=160074" class="avatar" target="_blank"><img src="http://photo.hainei.com/x0/00/7f/f711773.jpg" alt="刘嘉辉" /></a><a href="/user?r=160074" target="_blank">刘嘉辉</a><br /><a class="complexlink friend-add" href="javascript:void 0" rel="/friend?a=sendreq&r[0]=160074&r[1]=96" onclick="HN.util.gaTrackOnClick('/recom/homeadd')">加为好友</a><a class="mk-del" rel="/userpush?a=close&amp;r=160074" onclick="HN.util.gaTrackOnClick('/recom/homedel')" href="javascript:void 0">删除</a></li><li><a href="/user?r=265878" class="avatar" target="_blank"><img src="http://photo.hainei.com/x0/00/il/ca11291.jpg" alt="张佳平" /></a><a href="/user?r=265878" target="_blank">张佳平</a><br /><a class="complexlink friend-add" href="javascript:void 0" rel="/friend?a=sendreq&r[0]=265878&r[1]=96" onclick="HN.util.gaTrackOnClick('/recom/homeadd')">加为好友</a><a class="mk-del" rel="/userpush?a=close&amp;r=265878" onclick="HN.util.gaTrackOnClick('/recom/homedel')" href="javascript:void 0">删除</a></li><li><a href="/user?r=317569" class="avatar" target="_blank"><img src="http://photo.hainei.com/x0/00/gr/7411260.jpg" alt="张颖" /></a><a href="/user?r=317569" target="_blank">张颖</a><br /><a class="complexlink friend-add" href="javascript:void 0" rel="/friend?a=sendreq&r[0]=317569&r[1]=96" onclick="HN.util.gaTrackOnClick('/recom/homeadd')">加为好友</a><a class="mk-del" rel="/userpush?a=close&amp;r=317569" onclick="HN.util.gaTrackOnClick('/recom/homedel')" href="javascript:void 0">删除</a></li><li><a href="/user?r=175071" class="avatar" target="_blank"><img src="http://photo.hainei.com/x0/00/a3/gs19740.jpg" alt="刘文学" /></a><a href="/user?r=175071" target="_blank">刘文学</a><br /><a class="complexlink friend-add" href="javascript:void 0" rel="/friend?a=sendreq&r[0]=175071&r[1]=96" onclick="HN.util.gaTrackOnClick('/recom/homeadd')">加为好友</a><a class="mk-del" rel="/userpush?a=close&amp;r=175071" onclick="HN.util.gaTrackOnClick('/recom/homedel')" href="javascript:void 0">删除</a></li><li><a href="/user?r=374363" class="avatar" target="_blank"><img src="http://photo.hainei.com/x0/00/bv/ch11000.jpg" alt="王媛" /></a><a href="/user?r=374363" target="_blank">王媛</a><br /><a class="complexlink friend-add" href="javascript:void 0" rel="/friend?a=sendreq&r[0]=374363&r[1]=96" onclick="HN.util.gaTrackOnClick('/recom/homeadd')">加为好友</a><a class="mk-del" rel="/userpush?a=close&amp;r=374363" onclick="HN.util.gaTrackOnClick('/recom/homedel')" href="javascript:void 0">删除</a></li><li><a href="/user?r=271366" class="avatar" target="_blank"><img src="http://photo.hainei.com/x0/00/94/bu11033.jpg" alt="羽佳" /></a><a href="/user?r=271366" target="_blank">羽佳</a><br /><a class="complexlink friend-add" href="javascript:void 0" rel="/friend?a=sendreq&r[0]=271366&r[1]=96" onclick="HN.util.gaTrackOnClick('/recom/homeadd')">加为好友</a><a class="mk-del" rel="/userpush?a=close&amp;r=271366" onclick="HN.util.gaTrackOnClick('/recom/homedel')" href="javascript:void 0">删除</a></li><li><a href="/user?r=183514" class="avatar" target="_blank"><img src="http://photo.hainei.com/x0/00/cr/jl11547.jpg" alt="丁亚军" /></a><a href="/user?r=183514" target="_blank">丁亚军</a><br /><a class="complexlink friend-add" href="javascript:void 0" rel="/friend?a=sendreq&r[0]=183514&r[1]=96" onclick="HN.util.gaTrackOnClick('/recom/homeadd')">加为好友</a><a class="mk-del" rel="/userpush?a=close&amp;r=183514" onclick="HN.util.gaTrackOnClick('/recom/homedel')" href="javascript:void 0">删除</a></li><li><a href="/user?r=245462" class="avatar" target="_blank"><img src="http://photo.hainei.com/x0/00/bj/6a11551.jpg" alt="方士伟" /></a><a href="/user?r=245462" target="_blank">方士伟</a><br /><a class="complexlink friend-add" href="javascript:void 0" rel="/friend?a=sendreq&r[0]=245462&r[1]=96" onclick="HN.util.gaTrackOnClick('/recom/homeadd')">加为好友</a><a class="mk-del" rel="/userpush?a=close&amp;r=245462" onclick="HN.util.gaTrackOnClick('/recom/homedel')" href="javascript:void 0">删除</a></li><li><a href="/user?r=191098" class="avatar" target="_blank"><img src="http://photo.hainei.com/x0/00/kr/2g19480.jpg" alt="张媛" /></a><a href="/user?r=191098" target="_blank">张媛</a><br /><a class="complexlink friend-add" href="javascript:void 0" rel="/friend?a=sendreq&r[0]=191098&r[1]=96" onclick="HN.util.gaTrackOnClick('/recom/homeadd')">加为好友</a><a class="mk-del" rel="/userpush?a=close&amp;r=191098" onclick="HN.util.gaTrackOnClick('/recom/homedel')" href="javascript:void 0">删除</a></li><li><a href="/user?r=253291" class="avatar" target="_blank"><img src="http://photo.hainei.com/x0/00/dt/4e19451.jpg" alt="李帆" /></a><a href="/user?r=253291" target="_blank">李帆</a><br /><a class="complexlink friend-add" href="javascript:void 0" rel="/friend?a=sendreq&r[0]=253291&r[1]=96" onclick="HN.util.gaTrackOnClick('/recom/homeadd')">加为好友</a><a class="mk-del" rel="/userpush?a=close&amp;r=253291" onclick="HN.util.gaTrackOnClick('/recom/homedel')" href="javascript:void 0">删除</a></li><li><a href="/user?r=159093" class="avatar" target="_blank"><img src="http://photo.hainei.com/x0/00/cl/7h11550.jpg" alt="窦伟伟" /></a><a href="/user?r=159093" target="_blank">窦伟伟</a><br /><a class="complexlink friend-add" href="javascript:void 0" rel="/friend?a=sendreq&r[0]=159093&r[1]=96" onclick="HN.util.gaTrackOnClick('/recom/homeadd')">加为好友</a><a class="mk-del" rel="/userpush?a=close&amp;r=159093" onclick="HN.util.gaTrackOnClick('/recom/homedel')" href="javascript:void 0">删除</a></li><li><a href="/user?r=206118" class="avatar" target="_blank"><img src="http://photo.hainei.com/x0/00/hl/gn11258.jpg" alt="周薇薇" /></a><a href="/user?r=206118" target="_blank">周薇薇</a><br /><a class="complexlink friend-add" href="javascript:void 0" rel="/friend?a=sendreq&r[0]=206118&r[1]=96" onclick="HN.util.gaTrackOnClick('/recom/homeadd')">加为好友</a><a class="mk-del" rel="/userpush?a=close&amp;r=206118" onclick="HN.util.gaTrackOnClick('/recom/homedel')" href="javascript:void 0">删除</a></li>				</ul>
+			</div>
+						<div class="sect-link"><a href="/finder#might_know_all" onclick="HN.util.gaTrackOnClick('/recom/homemore')">查看更多</a></div>
+					</div>
+				
+		<div class="sect" id="birthday">
+			<h3>好友生日</h3>
+			<div class="sect-content">
+								<dl>
+				<dt>后天</dt><dd><span><a href="/user?r=155432">石瑞</a></span></dd>				</dl>
+							</div>
+			<div class="sect-link"><a href="/friends?a=birthday">查看全部</a></div>
+		</div>
+				<div class="sect" id="system-tips">
+			<h3>海内小贴士</h3>
+			<div class="sect-content">
+				<p class="haslogo">
+				<a href="/similar?fr=hntip"><img src="http://static.hainei.com/img/loginfeeds-similar.jpg"></a>用<a href="/similar?fr=hntip">相似度</a>来算算自己和好友像不像。				</p>
+			</div>
+		</div>
+				<div class="sect" id="findfriends">
+			<h3>寻找好友</h3>
+			<div class="sect-content">
+				<p><a href="/finder"><img src="http://static.hainei.com/img/finder-wml.gif" style="float:left;margin:3px 3px 0 0" /></a>已经有朋友在海内？<br /><a href="/finder">立即找到他！</a></p>
+			</div>
+		</div>
+		<div class="sect" id="friends-invite-home">
+			<h3>邀请好友</h3>
+			<div class="sect-content">
+				<p>把下面的网址通过 MSN、QQ 发给好友，邀请他们加入海内</p>
+				<p>
+					<input type="text" class="f-text" id="invite-links" value="http://www.hainei.com/account?a=urlreg&r=8phGkFGczOCp5iQAgrAaAQ" />
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+	</div>
+</div>
+
+<div id="globalfooter">
+	<p class="copyright">
+		&copy; <span title="q: 176; s: 29; co: 64; cf: 1, t: 242	">2008</span> 海内 <a href="http://www.miibeian.gov.cn" target="_blank">京ICP备07017692号</a>
+	</p>
+	<p>
+		<a href="http://www.hainei.com/guestbook">意见反馈</a>
+		<a href="http://www.hainei.com/job">加入海内</a>
+		<a href="http://www.hainei.com/about?a=terms">使用协议</a>
+		<a href="http://www.hainei.com/about?a=privacy">隐私声明</a>
+	</p>
+	</div>
+</div>
+<script type="text/javascript">HN.cst.URI = "/home";</script></body>
+</html>

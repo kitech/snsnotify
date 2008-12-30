@@ -1,0 +1,1189 @@
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="Description" content="校内是一个真实的社交网络，联络你和你周围的朋友。加入校内网你可以：联络朋友，了解他们的最新动态；和朋友分享相片、音乐和电影；找到老同学，结识新朋友；用照片和日志记录生活,展示自我。" />
+	<meta name="Keywords" content="Xiaonei,校内,校内网,大学,同学,同事,白领,个人主页,博客,相册,群组,社区,交友,聊天,音乐,视频,校园" />
+	<link href="http://xnimg.cn/csspro/base/layout.css?ver=68517.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="http://xnimg.cn/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<script type="text/javascript" src="http://xnimg.cn/jspro/xn.core.js?ver=68517.js"></script>
+	<script type="text/javascript" src="http://xnimg.cn/jspro/xn.ui.js?ver=68517.js"></script>
+	<script type="text/javascript" src="http://xnimg.cn/jspro/xn.form.js?ver=68517.js"></script>
+	<script type="text/javascript" src="http://xnimg.cn/jspro/xn.widgets.js?ver=68517.js"></script>
+	<link href="http://xnimg.cn/csspro/apps/home.css?ver=68517.css" rel="stylesheet" type="text/css" media="all" />
+	<script type="text/javascript" src="http://xnimg.cn/jspro/xn.app.feed.js?ver=68517.js"></script>
+	<script type="text/javascript" src="http://xnimg.cn/jspro/xn.app.status.js?ver=68517.js"></script>
+	<script type="text/javascript" src="http://xnimg.cn/jspro/xn.page.home.js?ver=68517.js"></script>
+	<!-- Wait for rewrite -->
+	<script type="text/javascript" src="http://xnimg.cn/js/util.js?ver=68517.js"></script>
+	<script type="text/javascript" src="http://xnimg.cn/js/prototype.js?ver=68517.js"></script>
+	<script type="text/javascript" src="http://xnimg.cn/js/xn/base.js?ver=68517.js"></script>
+	<script type="text/javascript" src="http://xnimg.cn/js/xn/extended.js?ver=68517.js"></script>
+	<script type="text/javascript" src="http://xnimg.cn/js/xn/string.js?ver=68517.js"></script>
+	<script type="text/javascript" src="http://xnimg.cn/js/xn/deprecated.js?ver=68517.js"></script>
+	<script type="text/javascript" src="http://xnimg.cn/js/xn/dialogpro.js?ver=68517.js"></script>
+	<script type="text/javascript" src="http://xnimg.cn/js/json.js?ver=68517.js"></script>
+
+	<script type="text/javascript" src="http://xnimg.cn/js/xn/typeaheadpro.js?ver=68517.js"></script>
+	<script type="text/javascript" src="http://xnimg.cn/js/dispatch.js?ver=68517.js"></script>
+	<script type="text/javascript" src="http://xnimg.cn/js/xn/shares.js?ver=68517.js"></script>
+	<script type="text/javascript" src="http://xnimg.cn/js/newjs/replydoing.js?ver=68517.js"></script>
+<script>
+function hideInfo() {
+	var mydate = new Date();
+	mydate.setTime(mydate.getTime() + 864000000);
+	SetCookie("homeinfo25104182420080814", "0", mydate, "/", ".xiaonei.com");
+	if($('info').style) $('info').style.display = "none";
+}
+function showInfo() {
+	if(GetCookie("homeinfo25104182420080814") == null) {
+		if($('info').style) $('info').style.display = "block";
+	}
+}
+</script>
+	<!-- Wait for rewrite -->
+	
+	<!--[if lte IE 6]><style type="text/css" media="screen">/* <![CDATA[ */ @import url(http://xnimg.cn/csspro/patch/ie6.css?ver=68517.css); /* ]]> */</style><![endif]-->
+	<!--[if gte IE 7]><style type="text/css" media="screen">/* <![CDATA[ */ @import url(http://xnimg.cn/csspro/patch/ie7.css?ver=68517.css); /* ]]> */</style><![endif]-->
+
+	<title>校内网 - 刘光照</title>
+</head>
+
+
+<body id="home" class="home">
+	
+	
+	<div id="dropmenuHolder" class="dropmenu-holder">
+		<div id="appMenu" class="menu-dropdown" style="display:none;left:-99999px;top:-99999px;" >
+			<div class="menu-dropdown-border">
+			<div class="app-actions">
+				<ul>
+					<li class="title">设置</li>
+					<li><a href="http://app.xiaonei.com/apps/editapps.do">管理我的应用程序 <span>(11)</span></a></li>
+					<li><a href="http://app.xiaonei.com/apps/apps.do?selected=3&type=1">浏览更多应用程序</a></li>
+				</ul>
+			</div>
+			<!--div class="separator"></div>
+			<div class="menu-holder">
+				<ul class="menu-item recently">
+					<li class="title">最近使用</li>
+					<li><a href="#nogo" style="background-image: url(http://xnimg.cn/imgpro/icons/blog.gif);">日志</a></li>
+					<li><a href="#nogo" style="background-image: url(http://xnimg.cn/imgpro/icons/photo.gif);">相册</a></li>
+					<li><a href="#nogo" style="background-image: url(http://xnimg.cn/imgpro/icons/share.gif);">分享</a></li>
+					<li><a href="#nogo" style="background-image: url(http://xnimg.cn/imgpro/icons/group.gif);">群组</a></li>
+					<li><a href="#nogo" style="background-image: url(http://xnimg.cn/imgpro/icons/film.gif);">电影</a></li>
+				</ul>
+			</div-->
+			<div class="separator"></div>
+			<div class="menu-holder">
+				<div class="scroll-menu"><a id="navMenuScrollUp" href="#nogo" class="scroll-up no-up"></a></div>
+				<ul id="navMenuAllApps" class="menu-item app-list">
+					<li id="appid_2"><a href="http://blog.xiaonei.com/BlogHome.do" style="background-image: url(http://app.xnimg.cn/application/20080819/16/02/L295188914535MOH.gif);">日志</a></li><li id="appid_3"><a href="http://photo.xiaonei.com/friendsalbum.do?fb" style="background-image: url(http://app.xnimg.cn/application/20080812/20/23/L380863340384HED.gif);">相册</a></li><li id="appid_4"><a href="http://group.xiaonei.com/TribeNav.do" style="background-image: url(http://app.xnimg.cn/application/20080812/19/29/L056480094880JIA.gif);">群组</a></li><li id="appid_6"><a href="http://share.xiaonei.com/share/ShareList.do" style="background-image: url(http://app.xnimg.cn/application/20080812/19/44/L147120198188JIA.gif);">分享</a></li><li id="appid_14"><a href="http://market.xiaonei.com/index.do" style="background-image: url(http://app.xnimg.cn/application/20080616/20/50/L065533078099CHI.jpg);">跳蚤市场</a></li><li id="appid_15"><a href="http://movie.xiaonei.com/" style="background-image: url(http://app.xnimg.cn/application/20080812/19/22/L016757515356JIA.gif);">电影</a></li><li id="appid_9998"><a href="http://xiaoyou.xiaonei.com" style="background-image: url(http://app.xnimg.cn/application/20080822/07/47/L245793350291MOH.gif);">校友会</a></li>
+					<li id="appid_9"><a href="http://class.xiaonei.com" style="background-image: url(http://app.xnimg.cn/application/20080812/19/30/L065930831445JIA.gif);">班级</a></li><li id="appid_13"><a href="http://club.xiaonei.com/" style="background-image: url(http://app.xnimg.cn/application/20080812/19/32/L074511291014JIA.gif);">论坛</a></li><li id="appid_8"><a href="http://gift.xiaonei.com/" style="background-image: url(http://app.xnimg.cn/application/20080812/19/26/L039279785515JIA.gif);">礼物</a></li><li id="appid_18"><a href="http://sports.xiaonei.com/" style="background-image: url(http://static.xiaonei.com/img/app/icon/ico_citybattle.gif);">约战</a></li>
+				</ul>
+				<div class="scroll-menu"><a id="navMenuScrollDown" href="#nogo" class="scroll-down"></a></div>
+			</div>
+			<!--div class="separator"></div>
+			<div class="menu-holder">
+				<ul class="menu-item folder">
+					<li><a href="#nogo">游戏</a></li>
+					<li><a href="#nogo">推荐的应用</a></li>
+				</ul>
+			</div-->
+			</div>
+		</div>
+
+		<div id="searchdropdownMenu" class="menu-dropdown search-menu" style="display:none;left:-99999px;top:-99999px;" >
+		<div class="menu-dropdown-border">
+			<div class="search-menu">
+				<ul>
+					<li>
+						<a href="http://browse.xiaonei.com/os.do">基本搜索</a>
+					</li>
+					<li>
+						<a href="http://browse.xiaonei.com/ns.do?action=classmates">搜索同学</a>
+					</li>
+					<li>
+						<a href="http://browse.xiaonei.com/ns.do?action=coworkers">搜索同事</a>
+					</li>
+					<li>
+						<a href="http://browse.xiaonei.com/advanced.do">高级搜索</a>
+					</li>
+					<li>
+						<a href="http://browse.xiaonei.com/b.do">随便看看</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		</div>
+	</div>
+	
+	<div id="navBar" class="menu-bar">
+		
+		
+		
+		<div class="navigation-wrapper">
+			<div class="navigation clearfix">
+				<div class="blank-holder">
+					
+						
+							
+							
+							
+							
+							
+						
+					
+				</div>
+				<div id="logo">
+					<h1><a href="http://home.xiaonei.com/Home.do?id=251041824" title="校内网">校内网</a></h1>
+				</div>
+				<div class="nav-body clearfix">
+					
+					<div class="nav-main">
+						<div class="menu">
+							<div class="menu-title"><a href="http://home.xiaonei.com/Home.do?id=251041824">首页</a></div>
+						</div>
+						<div class="menu" style="margin:0">
+							<div class="menu-title"><a href="http://xiaonei.com/profile.do?id=251041824">个人主页</a></div>
+						</div>
+						<div class="menu info-edit">
+							<div class="menu-title"><a href="http://www.xiaonei.com/BasicInfo.do">修改</a></div>
+						</div>
+						<div class="menu">
+							<div class="menu-title"><a href="http://friend.xiaonei.com/myfriendlistx.do">好友</a></div>
+						</div>
+						<div class="menu">
+							<div class="menu-title with-arrow"><a href="javascript:void(0);" id="showAppMenu">应用</a></div>
+						</div>
+						
+						<div class="menu">
+							<div class="menu-title"><a href="http://xiaonei.com/Invite.do" id="showAppMenu">邀请</a></div>
+						</div>
+						
+						
+						
+						<div class="menu">
+							<div class="menu-title"><a id="global_inbox_link" href="http://msg.xiaonei.com">站内信<span class="count">(1)</span></a></div>
+						</div>
+					</div>
+					
+					
+					<div class="nav-other">
+						
+						<div id="searchMenu" class="menu">
+							<div class="menu-title"><a id="searchMenuAction" href="http://browse.xiaonei.com/os.do">搜索</a></div>
+						</div>
+						<div id="navSearch">
+							<form method="post" id="globalSearchForm" action="http://browse.xiaonei.com/os.do?from=opensearch">
+								<div id="search-input">
+									<input type="text" size="25" maxlength="100" id="navSearchInput" name="q" class="input-text" value="" tabindex="1" />
+								</div>
+								<div id="search-submit">
+									<a href="#nogo" onclick="$('globalSearchForm').submit();"><span class="search-mag-glass">&nbsp;</span></a>
+								</div>
+							</form>
+						</div>
+						<div class="menu">
+							<div class="menu-title"><a href="http://i.xiaonei.com/">会员</a></div>
+						</div>
+						<div id="navAccount" class="menu">
+							<div class="menu-title"><a href="http://www.xiaonei.com/personallink.do">帐号</a></div>
+						</div>
+						<div class="menu">
+							<div class="menu-title"><a href="http://www.xiaonei.com/privacyhome.do">隐私</a></div>
+						</div>
+						<div class="menu last">
+							<div class="menu-title"><a href="http://www.xiaonei.com/Logout.do">退出</a></div>
+						</div>
+						
+						
+					</div>
+				</div>
+			</div>
+			<div class="nav-shadow"></div>
+		</div>
+	</div>
+	
+	<div id="opi" class="page-wrapper clearfix">
+		<div class="full-page-holder">
+			<div class="full-page clearfix">
+	<div class="nav-column">
+		<div class="rounded-box" id="appNavHolder">
+			<div class="corner tl">
+				<div class="corner tr">
+					<div class="corner bl">
+						<div class="corner br">
+							<div class="corner-body">
+								<div class="side-item bookmarks">
+									<div id="showMoreAppShortcuts" class="side-item-header clearfix">
+										<h4>应用 <a id="manageApps" href="http://app.xiaonei.com/apps/editapps.do">(管理)</a></h4>
+									</div>
+									<div class="side-item-body clearfix">
+										
+										
+											
+										<ul class="icon-list">
+											
+												
+												<li style="background-image: url(http://app.xnimg.cn/application/20080819/16/02/L295188914535MOH.gif);"><a href="http://blog.xiaonei.com/BlogHome.do">日志</a></li>
+											
+												
+												<li style="background-image: url(http://app.xnimg.cn/application/20080812/20/23/L380863340384HED.gif);"><a href="http://photo.xiaonei.com/friendsalbum.do?fb">相册</a></li>
+											
+												
+												<li style="background-image: url(http://app.xnimg.cn/application/20080812/19/29/L056480094880JIA.gif);"><a href="http://group.xiaonei.com/TribeNav.do">群组</a></li>
+											
+												
+												<li style="background-image: url(http://app.xnimg.cn/application/20080812/19/44/L147120198188JIA.gif);"><a href="http://share.xiaonei.com/share/ShareList.do">分享</a></li>
+											
+												
+												<li style="background-image: url(http://app.xnimg.cn/application/20080616/20/50/L065533078099CHI.jpg);"><a href="http://market.xiaonei.com/index.do">跳蚤市场</a></li>
+											
+												
+												<li style="background-image: url(http://app.xnimg.cn/application/20080812/19/22/L016757515356JIA.gif);"><a href="http://movie.xiaonei.com/">电影</a></li>
+											
+												
+												<li style="background-image: url(http://app.xnimg.cn/application/20080822/07/47/L245793350291MOH.gif);"><a href="http://xiaoyou.xiaonei.com">校友会</a></li>
+											
+											
+												
+													
+													<li style="background-image: url(http://app.xnimg.cn/application/20080812/19/30/L065930831445JIA.gif);"><a href="http://class.xiaonei.com">班级</a></li>
+												
+													
+													<li style="background-image: url(http://app.xnimg.cn/application/20080812/19/32/L074511291014JIA.gif);"><a href="http://club.xiaonei.com/">论坛</a></li>
+												
+													
+													<li style="background-image: url(http://app.xnimg.cn/application/20080812/19/26/L039279785515JIA.gif);"><a href="http://gift.xiaonei.com/">礼物</a></li>
+												
+													
+													<li style="background-image: url(http://static.xiaonei.com/img/app/icon/ico_citybattle.gif);"><a href="http://sports.xiaonei.com/">约战</a></li>
+												
+											
+										</ul>
+										<ul id="moreAppShortcuts" class="icon-list expand">
+											
+											
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<div class="main-page">
+		<div class="home-content-holder clearfix">
+			<div class="home-body">
+
+
+
+
+				<div id="info" style="display:none">
+
+			<div class="notice-holder">
+				<div class="clearfix notice" style="padding-left:100px;background:#F2F4F7 url(http://xnimg.cn/img/add_people.png) no-repeat 10px 20px;">
+					<span class="float-right"><a onclick="hideInfo()" href="javascript:void(0)">关闭</a></span>
+					<h2 style="color:#CC3300;margin-top:10px;">在千万用户中，看看有哪些朋友在校内！</h2>
+					<p style="line-height:25px;">输入MSN或者邮箱，立刻找到你的朋友。</p>
+					<form method="post" action="http://xiaonei.com/inviteDispatch.do">
+					<div style="margin-top:14px;">
+						<div id="msna">
+							<label>
+								你的MSN或邮箱帐号：<input type="text" style="font-weight:normal;" class="inputtext" name="uAccount" id="uAccount"/>&nbsp;@
+							</label>
+							<select name="importer">
+								<option selected value="@hotmail.com">hotmail.com</option>
+								<option value="@163.com">163.com</option>
+								<option value="@126.com">126.com</option>
+								<option value="@sina.com">sina.com</option>
+								<option value="@yahoo.com.cn">yahoo.com.cn</option>
+								<option value="@gmail.com">gmail.com</option>
+								<option value="@live.cn">live.cn</option>
+								<option value="@live.com">live.com</option>
+								<option value="@msn.com">msn.com</option>
+								<option value="@yahoo.cn">yahoo.cn</option>
+								<option value="@yahoo.com">yahoo.com</option>
+							</select>
+							<div style="margin:10px 0 0 130px;"><input type="button" onclick="msnNext()" class="input-button" value="下一步" /></div>
+						</div>
+
+						<div id="msnp" style="display:none">
+							<img style="float:right;padding-right:5px;margin-top:-20px;" src="http://xnimg.cn/img/attention.png" alt="" />
+							<label>
+								你的MSN或邮箱密码：<input style="font-weight:normal;width:119px;" type="password" class="inputtext" name="pwd" id="pwd"/>
+							</label>
+							<div style="margin:10px 0 0 130px;"><input id="msnsub" type="submit" class="input-button" value="搜索好友" disabled="true"/></div>
+						</div>
+					</div>
+						<input type="hidden" name="appId" value=""/>
+						<input type="hidden" name="url" value=""/>
+						<input type="hidden" name="app_html" value=""/>
+						<input type="hidden" name="inv_id" value=""/>
+					</form>
+
+					<p style="color:#3A64E9;margin:20px 0 0 130px;background:url(http://xnimg.cn/img/16_info.png) no-repeat;padding-left:20px;">已有上百万名用户通过这种方式找到了在校内网的老朋友</p>
+				</div>
+			</div>
+
+			<script>
+				function msnNext()
+				{
+					$("msna").style.display = "none";
+					$("msnp").style.display = "block";
+					$("msnsub").disabled = false;
+				}
+			</script>
+
+				</div>
+<script>showInfo();</script>
+
+
+				<div class="xn-publisher">
+					
+<div class="m-composer">	
+
+	<div class="m-composer-header">
+		<div class="headerimg" onclick="javascript:window.location.href='http://photo.xiaonei.com/getalbumprofile.do?owner=251041824'" style="cursor:pointer; background-image:url(http://hd36.xiaonei.com/photos/hd36/20080819/22/42/head_7607b150.jpg)"></div>
+		<div class="statuspanel">
+			<h1>刘光照</h1>
+			<div style="width:480px;">
+				<span id="currentStatus" class="currentStatus">对opera的支持不错</span><span id="currentStatus_bak" class="currentStatus" style="display:none;">对opera的支持不错</span><span id="statusUpdateTime" class="changetime">2天前</span><span><a id="statusUpdateLink" href="javascript:void(0)">编辑</a><span class="pipe">|</span><a href="http://xiaonei.com/getdoing.do">更多</a></span>
+			</div>
+		</div>
+		<div class="m-composer-channel clearfix">
+			<ul>
+				<li id="publisher_statusTab"><span><a class="c-status" onfocus="this.blur();" href="javascript:void(0);" >改状态</a></span></li>
+				<li id="publisher_blogTab"><span><a class="c-blog" onfocus="this.blur();" href="javascript:void(0);" >写日志</a></span></li>
+				<li id="publisher_albumTab"><span><a class="c-album" onfocus="this.blur();" href="javascript:void(0);">传照片</a></span></li>
+				<li id="publisher_shareTab"><span><a class="c-share" onfocus="this.blur();" href="javascript:void(0);">分享</a></span></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div id="publisherModule" class="m-composer-content" style="display:none;">
+		<!--status-->
+		
+<div id="publisher_statusContent" class="status-composer">
+	<input class="input-button gray float-right" tabindex="3" onclick="$('publisherModule').hide();$('publisher_statusTab').className=''" type="submit" value="取消" />
+	<input type="button" id="publisher_statusSubmit" tabindex="2" class="input-button float-right" value="提交" />
+	<input id="publisher_myStatus" tabindex="1" type="text" class="input-text input-status" value="输入你的最新状态..." /><small id="publisher_statusInputCount" class="count"><span id="left">0</span>/<span>70</span></small>
+	<input type="hidden" name="tsc" id="publisher_status_tsc" />
+</div>
+		<!--status END-->
+		
+		<!--blog-->
+		
+<div id="publisher_blogContent" style="display:none;">
+	<form id="publisher_blogPostForm" name="shit" method="post" action="http://blog.xiaonei.com/NewEntry.do">
+			<div class="blog-composer clearfix">
+					<dl>
+						<dt><label for="title" class="displayblock">标题：</label></dt>
+						<dd><input id="blog_title" name="title" rule="blank" error="请填写日志内容" type="text" class="input-text" value="" /></dd>
+						
+						<dt><label for="publisher_blogBody" class="displayblock">内容：</label></dt>
+						<dd><textarea id="publisher_blogBody" class="publisher-blogBody" name="body" rows="12" rule="blank" error="请填写日志内容"></textarea></dd>
+						
+						<dt><label class="displayblock">点名：</label></dt>
+						<dd><div id="publisher_blogFriendSelector"></div></dd>
+						
+						<dt><label class="displayblock">隐私：</label></dt>
+						<dd><div class="clearfix">
+							<div class="privacy-widget clearfix">
+								<div class="lock">
+									<div class="lockbg"></div>
+									<div class="lockbottomborder"></div>
+								</div>
+								<div class="who-canctab">哪些人可以看到？</div>
+								<div class="setprivacy">
+									<select name="blogControl">
+									 <option value="-1">只有我自己</option>
+									 <option value="1">我的好友</option>
+									 <option value="3">我的好友及所有同网络的人</option>
+									 <option value="99" selected>所有人</option>
+									</select>
+								</div>
+							</div>
+							</div></dd>
+					</dl>
+				
+			</div>
+			<input type="hidden" name="tsc" id="publisher_blog_tsc" />
+			<div class="postbtn"><p><a href="http://blog.xiaonei.com/NewEntry.do" style="float:left">切换到编辑器模式 »</a></p><input id="publisher_blogSubmit" type="submit" class="input-button" value="发布" /> <input class="input-button gray" onclick="$('publisherModule').hide();$('publisher_blogTab').className='';" type="button" value="取消" /></div>
+		</form>
+</div>
+
+
+		<!--blog END-->
+		
+		<!--album-->
+		
+			<div id='publisher_albumContent' style="display:none;">
+			<form id="publisher_albumPostForm" method="post" action="http://photo.xiaonei.com/createalbum.do">
+			<div  class="album-composer">
+				<div class="album-action">
+					<a id="publisher_createAlbumTab" href="javascript:void(0);" onfocus="this.blur();"><span>创建相册</span></a>
+					<a id="publisher_selectAlbumTab" href="javascript:void(0);" onfocus="this.blur();"><span>选择相册</span></a>
+				</div>
+				
+				<div style="display:none;" id="publisher_createAlbumContent" class="create-album">
+					<dl>
+							<dt><label for="a-name">名字：</label></dt>
+							<dd><input  id="publisher_albumTitle" rule="blank" error="请填写相册的名称" name="title" class="input-text" /></dd>
+							
+							<dt><label for="a-description">相册描述：</label></dt>
+							<dd><textarea id="publisher_albumDescription" rows="4" name="description"></textarea></dd>
+							
+							<dt><label for="select-privacy">隐私：</label></dt>
+							<dd>
+								<div class="clearfix">
+								<div class="privacy-widget clearfix">
+									<div class="lock">
+										<div class="lockbg"></div>
+										<div class="lockbottomborder"></div>
+									</div>
+									<div class="who-canctab">哪些人可以看到？</div>
+									<div class="setprivacy">
+										<select id="control" name="control">
+											<option value="-1">只有我自己</option>
+											<option value="1">我的好友</option>
+											<option value="3">我的好友及所有同网络的人</option>
+											<option value="99" selected="selected">所有人</option>
+										</select>
+									</div>
+								</div>
+								</div>
+							</dd>
+						</dl>
+				</div>
+				
+				<div id="publisher_selectAlbumContent" class="selectalbum">
+						<dl>							
+							<dt><label for="selectphoto" class="allalbums">选择相册：</label></dt>
+							<dd>
+								<select id="publisher_albums" name="allalbums" style="width:320px;" >
+									<option>加载中...</option>
+								</select>
+							</dd>
+						</dl>
+				</div>
+				
+			</div>
+			<input type="hidden" id="publisher_albumLocation" name="location" />
+			<div class="postbtn">
+				<input id="publisher_ablumSubmit" type="submit" class="input-button" value="确定" />
+				<input class="input-button gray" onclick="$('publisherModule').hide();$('publisher_albumTab').className='';" type="button" value="取消" />
+			</div>
+			
+			</form>
+			</div>
+
+		<!--album END-->
+		
+		<!--share-composer-->
+		
+<div id="publisher_shareContent" style="display:none;">
+<form id="publisher_sharelinkForm" name="sharelink"  action="http://share.xiaonei.com/share/ShareOperate.do"  method="post" onsubmit="return false;">
+	<div class="share-composer">
+		<dl>
+			<dt><label for="publisher_shareWeblink">分享：</label></dt>
+			<dd><input name="weblink" id="publisher_shareWeblink" class="input-text" rule="blank#sharelink" error="请填写合适的分享链接" value="http://" /></dd>
+			<dt><label for="publisher_shareComment">添加评论：</label></dt>
+			<dd><textarea id="publisher_shareComment" name="sharecomment" rows="4"></textarea></dd>
+			<input type="hidden" name="action" value="sharelink"/>
+			<dt><label for="select-privacy">隐私：</label></dt>
+			<dd>
+				<div class="clearfix">
+				<div class="privacy-widget clearfix">
+					<div class="lock"><div class="lockbg"></div></div>
+					<div class="who-canctab">哪些人可以看到？</div>
+					<div class="setprivacy">
+						<select name="share-auth">
+							<option value="99" selected="selected">所有人</option>
+							<option value="0">我的好友</option>
+							<option value="-1">自己收藏</option>
+						</select>
+					</div>
+				</div>
+				</div>
+			</dd>
+		</dl>
+	</div>
+	<div class="postbtn" >
+	<input type="hidden" name="tsc" id="publisher_share_tsc" />
+	<input id="publisher_shareSubmit" type="submit" class="input-button" value="确定"/>
+	<input class="input-button gray" onclick="$('publisherModule').hide();$('publisher_shareTab').className=''" type="button" value="取消" /></div>
+</form>
+</div>
+		<!--share-composer END-->
+	</div>
+	<!--module composer end-->
+</div>
+				</div>
+
+				
+				
+				<div id="replyDiv" class="reply-notify" style="display:none">
+					<div class="section-header">
+						<h2>新留言及回复<span class="stat"><a id="gossipReplyCount" href="http://www.xiaonei.com/myreplylist.do"></a></span></h2>
+						<span class="more" id="replyMoreDiv"><a href="http://www.xiaonei.com/myreplylist.do">更多</a></span>
+					</div>
+					<div id="opilist"></div>
+				</div>
+<script>
+	showtype = 1;
+	bAtHome = 2;
+	gCurPage = 0;
+	var alldatanew={"tcount":1,"count":0};
+	CampusInfo.buildNewRepInfo(1);
+</script>
+				<div class="news-feed">
+					<div class="section-header">
+						<h2>
+							<div id="newsfeed-dropmenu-holder" class="newsfeed-dropmenu-holder">
+							 <a class="float-left" style=" display:block;" href="http://www.xiaonei.com/stories.do?f=-1">新鲜事</a>
+							 <a id="dropaction" onfocus="this.blur();" class="dropaction" href="javascript:void(0);"></a>
+							</div>
+							<div id="newsfeeddropmenu" class="newsfeed-dropmenu" style="display:none;left:-99999px;top:-99999px;">
+							<div class="newsfeed-dropmenu-border">
+								<ul>
+								 <li><a class="noico" href="http://www.xiaonei.com/stories.do?f=-1">所有分类</a></li>
+								 <li><a class="ac_blog" href="http://www.xiaonei.com/stories.do?f=6">日志</a></li>
+								 <li><a class="ac_album" href="http://www.xiaonei.com/stories.do?f=7">照片</a></li>
+								 <li><a class="ac_status" href="http://www.xiaonei.com/stories.do?f=5">状态</a></li>
+								 <li><a class="ac_share" href="http://www.xiaonei.com/stories.do?f=1">分享</a></li>
+								 <li><a class="ac_group" href="http://www.xiaonei.com/stories.do?f=2">群组</a></li>
+								 <li><a class="ac_acts" href="http://www.xiaonei.com/stories.do?f=3">活动</a></li>
+								</ul>
+							</div>
+							</div>
+						</h2>
+						<span id="feedCountDiv" class="indexfeedcount">(20)</span>
+						<span><a href="http://www.xiaonei.com/feedprefs.do">新鲜事设置</a></span>
+					</div>
+					<div class="feed-holder">
+						<div id="feedHome">
+						
+							<div class="opi opi-blog" id="1522208681">
+  <div class="opi-icon"><a href="/stories.do?f=6.3.1" target="_blank"><img src="http://xnimg.cn/img/newsfeed/blog.gif" /></a></div>
+  <div class="opi-content">
+			<div class="headline"><span class="title">
+          <div class="share-n-hide"><a class="x-2-hide" href="javascript:void(0);" onclick="readHomeFeed('1522208681')">&nbsp;</a></div>
+          <h2><a href="http://xiaonei.com/getuser.do?id=251443781" target="_blank" >亚历山大</a> 发表日志 <span class="date">16:29</span>
+                    </h2></span>
+      </div>
+      <div class="feedbody">
+          <h3><a href="http://blog.xiaonei.com/GetEntry.do?id=317002489&owner=251443781" target="_blank" onclick="readHomeFeed('1522208681')">cc</a></h3>
+          <p>榜样的力量 <a href="http://blog.xiaonei.com/GetEntry.do?id=317002489&owner=251443781" target="_blank" onclick="readHomeFeed('1522208681')">&raquo; 继续阅读</a></p>
+      </div>
+  </div>
+</div><div class="opi" id="1522110152">
+    <div class="opi-icon"><a href="http://xiaonei.com/stories.do?f=5.3.2" target="_blank"><img src="http://xnimg.cn/img/newsfeed/status.gif"/></a></div>
+    <div class="opi-content"><div class="headline"><span class="title">
+          <div class="share-n-hide">
+      <a href="javascript:void(0);" onclick="javascript:readHomeFeed('1522110152');" class="x-2-hide">&nbsp;</a></div>
+      <h2><a href="http://xiaonei.com/getuser.do?id=251443781" target="_blank">亚历山大</a> 更新状态：  真人不露相 	  <span class="date">16:25</span>
+      	  		<span class="rep_font12" ><a href="#nogo" id="replyKey1522110152" onClick="getReplyOfTheDoing('1522110152',251443781,'亚历山大','157475699','251041824','f')">回复</a></span>
+	        </h2>
+            </span></div>
+        <div id="feedbody1522110152" style="display:none;" class="feedbody"></div>
+    </div>
+</div><div class="opi" feedcategory="13" id="1419400052">
+    <div class="opi-icon"><img src="http://xnimg.cn/img/newsfeed/friends.gif" /></div>
+    <div class="opi-content">
+        <div class="headline">
+        <span class="title">
+        			<div class="share-n-hide"><a class="x-2-hide" href="javascript:void(0)" onclick="readHomeFeed('1419400052')">&nbsp;</a></div>
+			<div class="newsfeed-actions" ><a id="bar1419400052" href="javascript:void(0)" class="settings">设置</a></div>
+			<h2><a href="http://xiaonei.com/getuser.do?id=221657477" target="_blank">胡东海</a> 和 
+            	            	            <a href="http://xiaonei.com/getuser.do?id=200652684" target="_blank" onclick="readHomeFeed('1419400052')">
+	          		            	            	            林智其7:20</a>
+	          		            	            	            <a href="http://xiaonei.com/getuser.do?id=236661581" target="_blank" onclick="readHomeFeed('1419400052')">
+	          		            	            王志慧</a>
+	          		            	            	            	            <a href="http://xiaonei.com/getuser.do?id=243210632" target="_blank" onclick="readHomeFeed('1419400052')">
+	          		            张媛Mikko</a>
+	          		            	            	            	            	            <a href="http://xiaonei.com/getuser.do?id=231079256" target="_blank" onclick="readHomeFeed('1419400052')">
+	          	宋洋</a>
+	          	 成为好友 <span class="date">08-08-22 09:58</span></h2> 
+       	        </span>
+        </div>
+    </div>
+</div>
+<div class="opi opi-apps" id="1419570221">
+<div class="opi-icon">
+	<img src="http://xnimg.cn/img/newsfeed/developer.gif"/>
+</div>
+<div class="opi-content">
+	<div class="headline">
+		<span class="title">
+			        <div class="share-n-hide"><a class="x-2-hide" href="javascript:void(0);" onclick="readHomeFeed('1419570221')"> </a></div>
+	    			<h2>                        <a href="http://xiaonei.com/getuser.do?id=221657477" target="_blank">          	 胡东海</a>
+          				 安装了 <a target="_blank" href="http://app.xiaonei.com/apps/application.do?id=18468">京城浮生记</a> 应用程序。</h2>
+		</span>
+	</div>
+	<div class="feedbody">
+								<a style="background-image: url(http://app.xnimg.cn/application/logo/20080815/16/17/L825122393429JIA.gif);" class="app-icon" href="http://app.xiaonei.com/apps/application.do?id=18468&ref=nf1"></a>
+							<div class="app-info">
+			<p class="quote"><q>2000元现金，5500元日利息10%的贷款，10万元无息贷款，100天的时间。黑市、流氓、突...</q></p>
+							<p class="app-link"><a href="http://app.xiaonei.com/apps/application.do?id=18468&ref=nf1">我也要安装</a></p>
+					</div>
+	</div>
+</div>
+</div><div class="opi opi-apps" id="1474170098">
+<div class="opi-icon">
+	<img src="http://xnimg.cn/img/newsfeed/developer.gif"/>
+</div>
+<div class="opi-content">
+	<div class="headline">
+		<span class="title">
+			        <div class="share-n-hide"><a class="x-2-hide" href="javascript:void(0);" onclick="readHomeFeed('1474170098')"> </a></div>
+	    			<h2>                        <a href="http://xiaonei.com/getuser.do?id=221657477" target="_blank">          	 胡东海</a>
+          				 安装了 <a target="_blank" href="http://app.xiaonei.com/apps/application.do?id=18340">反恐精英</a> 应用程序。</h2>
+		</span>
+	</div>
+	<div class="feedbody">
+								<a style="background-image: url(http://app.xnimg.cn/application/logo/20080821/10/56/L737156657605JIA.gif);" class="app-icon" href="http://app.xiaonei.com/apps/application.do?id=18340&ref=nf1"></a>
+							<div class="app-info">
+			<p class="quote"><q>Counter-Strike？反恐精英？没错！这里就是CS！试试你的身手，装备你自己，来战斗吧...</q></p>
+							<p class="app-link"><a href="http://app.xiaonei.com/apps/application.do?id=18340&ref=nf1">我也要安装</a></p>
+					</div>
+	</div>
+</div>
+</div><div class="opi opi-apps" feedcategory="18073" id="1473131919">
+<div class="opi-icon">
+
+	<img src="http://app.xnimg.cn/application/20080807/20/11/L108278452914JIA.gif"/>
+
+</div>
+<div class="opi-content">
+	<div class="headline">
+		<span class="title">
+			        <div class="share-n-hide"><a class="x-2-hide" href="javascript:void(0);" onclick="readHomeFeed('1473131919')"> </a></div>
+			<div class="newsfeed-actions" ><a id="bar1473131919" href="javascript:void(0)" class="settings">设置</a></div>
+	    			<h2>
+			<a href="http://xiaonei.com/getuser.do?id=221657477" target="_blank">胡东海</a>  正在点播■高清动画■ 的节目噢！ <span class="date">08-08-22 09:58</span></h2>
+		</span>
+	</div>
+		<div class="feedbody">
+		<!--div class="photo-box">
+			<a href="#nogo"><img src="img/head_8628c171.jpg"/></a>
+		</div-->
+		<div class="text-box">
+			还不知道什么叫高清？ 试试吧，真的很棒噢！<a href="http://apps.xiaonei.com/cartoons">高清动画</a> 介绍：高清动画使用HD-WMV技术，把DVD视频文件应用到网络传播的新技术，能够把普通的低清晰画面瞬间转变成高清画质！
+		</div>
+	</div>
+	</div>
+</div><div class="opi opi-apps" id="1473129946">
+<div class="opi-icon">
+	<img src="http://xnimg.cn/img/newsfeed/developer.gif"/>
+</div>
+<div class="opi-content">
+	<div class="headline">
+		<span class="title">
+			        <div class="share-n-hide"><a class="x-2-hide" href="javascript:void(0);" onclick="readHomeFeed('1473129946')"> </a></div>
+	    			<h2>                        <a href="http://xiaonei.com/getuser.do?id=221657477" target="_blank">          	 胡东海</a>
+          				 安装了 <a target="_blank" href="http://app.xiaonei.com/apps/application.do?id=18073">高清动画</a> 应用程序。</h2>
+		</span>
+	</div>
+	<div class="feedbody">
+								<a style="background-image: url(http://app.xnimg.cn/application/logo/20080807/21/18/L510304093482JIA.gif);" class="app-icon" href="http://app.xiaonei.com/apps/application.do?id=18073&ref=nf1"></a>
+							<div class="app-info">
+			<p class="quote"><q>非P2P模式的,高清动漫点播,看动画也需要享受!</q></p>
+							<p class="app-link"><a href="http://app.xiaonei.com/apps/application.do?id=18073&ref=nf1">我也要安装</a></p>
+					</div>
+	</div>
+</div>
+</div><div class="opi opi-apps" id="1469971695">
+<div class="opi-icon">
+	<img src="http://xnimg.cn/img/newsfeed/developer.gif"/>
+</div>
+<div class="opi-content">
+	<div class="headline">
+		<span class="title">
+			        <div class="share-n-hide"><a class="x-2-hide" href="javascript:void(0);" onclick="readHomeFeed('1469971695')"> </a></div>
+	    			<h2>                        <a href="http://xiaonei.com/getuser.do?id=221657477" target="_blank">          	 胡东海</a>
+          				 安装了 <a target="_blank" href="http://app.xiaonei.com/apps/application.do?id=18071">我该怎么办</a> 应用程序。</h2>
+		</span>
+	</div>
+	<div class="feedbody">
+								<a style="background-image: url(http://app.xnimg.cn/application/logo/20080819/18/43/L261859991132MOH.gif);" class="app-icon" href="http://app.xiaonei.com/apps/application.do?id=18071&ref=nf1"></a>
+							<div class="app-info">
+			<p class="quote"><q>每个人都有难以启齿的秘密，无论是棘手的问题，还是困惑和无助，在盒子的世界里，你都可以戴上面具，...</q></p>
+							<p class="app-link"><a href="http://app.xiaonei.com/apps/application.do?id=18071&ref=nf1">我也要安装</a></p>
+					</div>
+	</div>
+</div>
+</div><div class="opi opi-apps" id="1385683130">
+<div class="opi-icon">
+	<img src="http://xnimg.cn/img/newsfeed/developer.gif"/>
+</div>
+<div class="opi-content">
+	<div class="headline">
+		<span class="title">
+			        <div class="share-n-hide"><a class="x-2-hide" href="javascript:void(0);" onclick="readHomeFeed('1385683130')"> </a></div>
+	    			<h2>                        <a href="http://xiaonei.com/getuser.do?id=221657477" target="_blank">          	 胡东海</a>
+          				 安装了 <a target="_blank" href="http://app.xiaonei.com/apps/application.do?id=17961">开心大头贴</a> 应用程序。</h2>
+		</span>
+	</div>
+	<div class="feedbody">
+								<a style="background-image: url(http://app.xnimg.cn/application/logo/20080808/11/24/L589252135653JIA.gif);" class="app-icon" href="http://app.xiaonei.com/apps/application.do?id=17961&ref=nf1"></a>
+							<div class="app-info">
+			<p class="quote"><q>赶紧和你的校内好友来张大头贴吧
+不需要摄像头，直接用校内头像生成
+简单，有趣
+留住最珍贵...</q></p>
+							<p class="app-link"><a href="http://app.xiaonei.com/apps/application.do?id=17961&ref=nf1">我也要安装</a></p>
+					</div>
+	</div>
+</div>
+</div><div class="opi opi-apps" id="1385631528">
+<div class="opi-icon">
+	<img src="http://xnimg.cn/img/newsfeed/developer.gif"/>
+</div>
+<div class="opi-content">
+	<div class="headline">
+		<span class="title">
+			        <div class="share-n-hide"><a class="x-2-hide" href="javascript:void(0);" onclick="readHomeFeed('1385631528')"> </a></div>
+	    			<h2>                        <a href="http://xiaonei.com/getuser.do?id=221657477" target="_blank">          	 胡东海</a>
+          				 安装了 <a target="_blank" href="http://app.xiaonei.com/apps/application.do?id=17914">今天吃什么</a> 应用程序。</h2>
+		</span>
+	</div>
+	<div class="feedbody">
+								<a style="background-image: url(http://app.xnimg.cn/application/logo/20080813/15/38/L312736388763MOH.gif);" class="app-icon" href="http://app.xiaonei.com/apps/application.do?id=17914&ref=nf1"></a>
+							<div class="app-info">
+			<p class="quote"><q>校内第一个美食分享平台，快来看看你的同学和同城的朋友今天都吃什么了。会有魔球给你推荐哦！</q></p>
+							<p class="app-link"><a href="http://app.xiaonei.com/apps/application.do?id=17914&ref=nf1">我也要安装</a></p>
+					</div>
+	</div>
+</div>
+</div><div class="opi opi-apps" feedcategory="17828" id="1385687163">
+<div class="opi-icon">
+
+	<img src="http://app.xnimg.cn/application/20080808/11/34/L648546434497MOH.gif"/>
+
+</div>
+<div class="opi-content">
+	<div class="headline">
+		<span class="title">
+			        <div class="share-n-hide"><a class="x-2-hide" href="javascript:void(0);" onclick="readHomeFeed('1385687163')"> </a></div>
+			<div class="newsfeed-actions" ><a id="bar1385687163" href="javascript:void(0)" class="settings">设置</a></div>
+	    			<h2>
+			<a href="http://xiaonei.com/getuser.do?id=221657477" target="_blank">胡东海</a> 又在<a href="http://apps.xiaonei.com/allsuperman/">全民超人</a>中和朋友一起疯狂了。 <span class="date">08-08-22 09:58</span></h2>
+		</span>
+	</div>
+		<div class="feedbody">
+		<!--div class="photo-box">
+			<a href="#nogo"><img src="img/head_8628c171.jpg"/></a>
+		</div-->
+		<div class="text-box">
+			<a href="http://apps.xiaonei.com/allsuperman/">全民超人</a>，想了解你朋友最真实一面吗？还不快来看看！
+		</div>
+	</div>
+	</div>
+</div><div class="opi opi-apps" feedcategory="17828" id="1385694273">
+<div class="opi-icon">
+
+	<img src="http://app.xnimg.cn/application/20080808/11/34/L648546434497MOH.gif"/>
+
+</div>
+<div class="opi-content">
+	<div class="headline">
+		<span class="title">
+			        <div class="share-n-hide"><a class="x-2-hide" href="javascript:void(0);" onclick="readHomeFeed('1385694273')"> </a></div>
+			<div class="newsfeed-actions" ><a id="bar1385694273" href="javascript:void(0)" class="settings">设置</a></div>
+	    			<h2>
+			<a href="http://xiaonei.com/getuser.do?id=221657477" target="_blank">胡东海</a> 认为null比他理想更远大 <span class="date">08-08-22 09:58</span></h2>
+		</span>
+	</div>
+		<div class="feedbody">
+		<!--div class="photo-box">
+			<a href="#nogo"><img src="img/head_8628c171.jpg"/></a>
+		</div-->
+		<div class="text-box">
+			你的朋友中谁的理想更远大？<a href="http://apps.xiaonei.com/allsuperman/?scid=105" >快把TA选出来</a>
+		</div>
+	</div>
+	</div>
+</div><div class="opi opi-apps" id="1385586104">
+<div class="opi-icon">
+	<img src="http://xnimg.cn/img/newsfeed/developer.gif"/>
+</div>
+<div class="opi-content">
+	<div class="headline">
+		<span class="title">
+			        <div class="share-n-hide"><a class="x-2-hide" href="javascript:void(0);" onclick="readHomeFeed('1385586104')"> </a></div>
+	    			<h2>                        <a href="http://xiaonei.com/getuser.do?id=221657477" target="_blank">          	 胡东海</a>
+          				 安装了 <a target="_blank" href="http://app.xiaonei.com/apps/application.do?id=17816">发泄墙</a> 应用程序。</h2>
+		</span>
+	</div>
+	<div class="feedbody">
+								<a style="background-image: url(http://app.xnimg.cn/application/logo/20080806/23/51/L788907515848JIA.gif);" class="app-icon" href="http://app.xiaonei.com/apps/application.do?id=17816&ref=nf1"></a>
+							<div class="app-info">
+			<p class="quote"><q>今天你郁闷吗？怨恨吗？气愤吗？火爆吗？想痛痛快快的发泄下吗？！没错，来到发泄墙你可以任意发泄心...</q></p>
+							<p class="app-link"><a href="http://app.xiaonei.com/apps/application.do?id=17816&ref=nf1">我也要安装</a></p>
+					</div>
+	</div>
+</div>
+</div><div class="opi opi-apps" feedcategory="15506" id="1385552305">
+<div class="opi-icon">
+
+	<img src="http://app.xnimg.cn/application/20080723/17/29/L537561988958JIA.gif"/>
+
+</div>
+<div class="opi-content">
+	<div class="headline">
+		<span class="title">
+			        <div class="share-n-hide"><a class="x-2-hide" href="javascript:void(0);" onclick="readHomeFeed('1385552305')"> </a></div>
+			<div class="newsfeed-actions" ><a id="bar1385552305" href="javascript:void(0)" class="settings">设置</a></div>
+	    			<h2>
+			<a href="http://xiaonei.com/getuser.do?id=221657477" target="_blank">胡东海</a> 刚刚生成了TA的<a target="blank" href="http://apps.xiaonei.com/bigapple/">"好友圈子"</a> <span class="date">08-08-22 09:58</span></h2>
+		</span>
+	</div>
+		<div class="feedbody">
+		<!--div class="photo-box">
+			<a href="#nogo"><img src="img/head_8628c171.jpg"/></a>
+		</div-->
+		<div class="text-box">
+			你和TA是一个圈子吗？<a href="http://lamfeeling.chinajsp.net/map/221657477.gif">到这里看看吧！
+		</div>
+	</div>
+	</div>
+</div><div class="opi opi-apps" id="1385531682">
+<div class="opi-icon">
+	<img src="http://xnimg.cn/img/newsfeed/developer.gif"/>
+</div>
+<div class="opi-content">
+	<div class="headline">
+		<span class="title">
+			        <div class="share-n-hide"><a class="x-2-hide" href="javascript:void(0);" onclick="readHomeFeed('1385531682')"> </a></div>
+	    			<h2>                        <a href="http://xiaonei.com/getuser.do?id=221657477" target="_blank">          	 胡东海</a>
+          				 安装了 <a target="_blank" href="http://app.xiaonei.com/apps/application.do?id=15506">好友圈子</a> 应用程序。</h2>
+		</span>
+	</div>
+	<div class="feedbody">
+								<a style="background-image: url(http://app.xnimg.cn/application/logo/20080728/12/46/L037821929090JIA.gif);" class="app-icon" href="http://app.xiaonei.com/apps/application.do?id=15506&ref=nf1"></a>
+							<div class="app-info">
+			<p class="quote"><q>每个人都有唯一的圈子，看看你的吧! 该程序依据您的好友关系生成一幅由您“社交网络”决定的抽象图...</q></p>
+							<p class="app-link"><a href="http://app.xiaonei.com/apps/application.do?id=15506&ref=nf1">我也要安装</a></p>
+					</div>
+	</div>
+</div>
+</div><div class="opi opi-apps" id="1385463951">
+<div class="opi-icon">
+	<img src="http://xnimg.cn/img/newsfeed/developer.gif"/>
+</div>
+<div class="opi-content">
+	<div class="headline">
+		<span class="title">
+			        <div class="share-n-hide"><a class="x-2-hide" href="javascript:void(0);" onclick="readHomeFeed('1385463951')"> </a></div>
+	    			<h2>                        <a href="http://xiaonei.com/getuser.do?id=221657477" target="_blank">          	 胡东海</a>
+          				 安装了 <a target="_blank" href="http://app.xiaonei.com/apps/application.do?id=15233">24小时让你变漂亮</a> 应用程序。</h2>
+		</span>
+	</div>
+	<div class="feedbody">
+								<a style="background-image: url(http://app.xnimg.cn/application/logo/20080730/12/44/L308599092350MOH.gif);" class="app-icon" href="http://app.xiaonei.com/apps/application.do?id=15233&ref=nf1"></a>
+							<div class="app-info">
+			<p class="quote"><q>你以为美女是天生的？？？每天从1200位Photoshop顶极高手的几百个巨作中挑选5个，原来...</q></p>
+							<p class="app-link"><a href="http://app.xiaonei.com/apps/application.do?id=15233&ref=nf1">我也要安装</a></p>
+					</div>
+	</div>
+</div>
+</div><div class="opi opi-apps" feedcategory="14293" id="1474503547">
+<div class="opi-icon">
+
+	<img src="http://app.xnimg.cn/application/20080711/12/15/L970788558467HEI.gif"/>
+
+</div>
+<div class="opi-content">
+	<div class="headline">
+		<span class="title">
+			        <div class="share-n-hide"><a class="x-2-hide" href="javascript:void(0);" onclick="readHomeFeed('1474503547')"> </a></div>
+			<div class="newsfeed-actions" ><a id="bar1474503547" href="javascript:void(0)" class="settings">设置</a></div>
+	    			<h2>
+			<a href="http://xiaonei.com/getuser.do?id=221657477" target="_blank">胡东海</a> 刚刚买了一辆超炫的赛车。 <span class="date">08-08-22 09:58</span></h2>
+		</span>
+	</div>
+		<div class="feedbody">
+		<!--div class="photo-box">
+			<a href="#nogo"><img src="img/head_8628c171.jpg"/></a>
+		</div-->
+		<div class="text-box">
+			<a href="http://apps.xiaonei.com/speedracer/view/cars.php">点击这里</a>看你想要什么样的车。我们的车行经常有新车到货。
+		</div>
+	</div>
+	</div>
+</div><div class="opi opi-apps" feedcategory="14190" id="1385676305">
+<div class="opi-icon">
+
+	<img src="http://app.xnimg.cn/application/20080813/09/28/L090001754603MOH.gif"/>
+
+</div>
+<div class="opi-content">
+	<div class="headline">
+		<span class="title">
+			        <div class="share-n-hide"><a class="x-2-hide" href="javascript:void(0);" onclick="readHomeFeed('1385676305')"> </a></div>
+			<div class="newsfeed-actions" ><a id="bar1385676305" href="javascript:void(0)" class="settings">设置</a></div>
+	    			<h2>
+			<a href="http://xiaonei.com/getuser.do?id=221657477" target="_blank">胡东海</a>  <span class="date">08-08-22 09:58</span></h2>
+		</span>
+	</div>
+		<div class="feedbody">
+		<!--div class="photo-box">
+			<a href="#nogo"><img src="img/head_8628c171.jpg"/></a>
+		</div-->
+		<div class="text-box">
+			邀请了|夏远辉|安装 <a href="http://apps.xiaonei.com/marriagesystem" >结婚办事处</a> 应用程序
+		</div>
+	</div>
+	</div>
+</div><div class="opi opi-apps" id="1385532928">
+<div class="opi-icon">
+	<img src="http://xnimg.cn/img/newsfeed/developer.gif"/>
+</div>
+<div class="opi-content">
+	<div class="headline">
+		<span class="title">
+			        <div class="share-n-hide"><a class="x-2-hide" href="javascript:void(0);" onclick="readHomeFeed('1385532928')"> </a></div>
+	    			<h2>                        <a href="http://xiaonei.com/getuser.do?id=221657477" target="_blank">          	 胡东海</a>
+          				 安装了 <a target="_blank" href="http://app.xiaonei.com/apps/application.do?id=14190">结婚办事处</a> 应用程序。</h2>
+		</span>
+	</div>
+	<div class="feedbody">
+								<a style="background-image: url(http://app.xnimg.cn/application/logo/20080813/10/09/L334016075589MOH.gif);" class="app-icon" href="http://app.xiaonei.com/apps/application.do?id=14190&ref=nf1"></a>
+							<div class="app-info">
+			<p class="quote"><q>为情侣们提供一个平台</q></p>
+							<p class="app-link"><a href="http://app.xiaonei.com/apps/application.do?id=14190&ref=nf1">我也要安装</a></p>
+					</div>
+	</div>
+</div>
+</div><div class="opi opi-apps" id="1473140327">
+<div class="opi-icon">
+	<img src="http://xnimg.cn/img/newsfeed/developer.gif"/>
+</div>
+<div class="opi-content">
+	<div class="headline">
+		<span class="title">
+			        <div class="share-n-hide"><a class="x-2-hide" href="javascript:void(0);" onclick="readHomeFeed('1473140327')"> </a></div>
+	    			<h2>                        <a href="http://xiaonei.com/getuser.do?id=221657477" target="_blank">          	 胡东海</a>
+          				 安装了 <a target="_blank" href="http://app.xiaonei.com/apps/application.do?id=33">爱听</a> 应用程序。</h2>
+		</span>
+	</div>
+	<div class="feedbody">
+								<a style="background-image: url(http://app.xnimg.cn/application/logo/20080820/11/47/L403233383779MOH.gif);" class="app-icon" href="http://app.xiaonei.com/apps/application.do?id=33&ref=nf1"></a>
+							<div class="app-info">
+			<p class="quote"><q>在线听歌，收藏音乐，结交朋友</q></p>
+							<p class="app-link"><a href="http://app.xiaonei.com/apps/application.do?id=33&ref=nf1">我也要安装</a></p>
+					</div>
+	</div>
+</div>
+</div>
+						
+						</div>
+					</div>
+					<div class="more-feed">
+						<span class="mark-read"><a id="setAllFeedsAsRead" href="#nogo">全部标记为已读</a></span>
+						<span><a href="http://www.xiaonei.com/stories.do?curpage=1&f=-1">更多新鲜事</a></span>
+					</div>
+				</div>
+				
+			</div>
+			<div class="home-sidebar">
+				<div class="rounded-box sidebar-holder">
+					<div class="corner tl">
+						<div class="corner tr">
+							<div class="corner bl">
+								<div class="corner br">
+									<div class="corner-body">								
+
+										
+											<div class="side-item footprint">
+												<div class="side-item-header clearfix">
+													<h4>最近来访<span>(共1人看过)</span></h4>
+													<div class="option">
+														<a href="http://xiaonei.com/myfoot.do">更多</a>
+													</div>
+												</div>
+												<div class="side-item-body clearfix">
+													<ul class="people-list">
+														
+															<li><a href="http://xiaonei.com/getuser.do?portal=home&id=221657477" title="查看胡东海的个人主页" style="background-image:url('http://hd40.xiaonei.com/photos/hd40/20071015/18/08/tiny_9521j171.jpg');"></a><span class="olname"><img src="http://xnimg.cn/imgpro/icons/online.gif" title="胡东海 在线" /><a href="http://xiaonei.com/getuser.do?id=221657477">胡东海</a></span><span class="small">8月22日</span></li>
+															
+													</ul>
+												</div>
+											</div>
+											<div class="separator"></div>
+										
+
+										
+											<div class="side-item pymk">
+												<div class="side-item-header clearfix">
+													<h4>你可能认识的人</h4>
+													<div class="option">
+														<a href="/myrelationperson.do">更多</a>
+													</div>
+												</div>
+												<div class="side-item-body clearfix">
+													<ul class="people-list">
+														
+															<li id="commonFriend_10131">
+																<a href="http://xiaonei.com/getuser.do?id=10131" title="查看梁栋的个人主页" style="background-image:url('http://hd22.xiaonei.com/photos/hd22/20071123/23/30/tiny_7076k107.jpg');"></a>
+																<span>
+																	<a href="http://xiaonei.com/getuser.do?id=10131" class="name">梁栋</a>
+																	<a href="javascript:void(0);" class="x-to-hide" onclick="delCommonFriend('10131');return false;"></a>
+																</span>
+															</li>
+														
+															<li id="commonFriend_30578">
+																<a href="http://xiaonei.com/getuser.do?id=30578" title="查看叶凯的个人主页" style="background-image:url('http://hd20.xiaonei.com/photos/hd20/20070927/02/52/tiny_13712d172.jpg');"></a>
+																<span>
+																	<a href="http://xiaonei.com/getuser.do?id=30578" class="name">叶凯</a>
+																	<a href="javascript:void(0);" class="x-to-hide" onclick="delCommonFriend('30578');return false;"></a>
+																</span>
+															</li>
+														
+															<li id="commonFriend_227242153">
+																<a href="http://xiaonei.com/getuser.do?id=227242153" title="查看陈格雷的个人主页" style="background-image:url('http://hd15.xiaonei.com/photos/hd15/20080530/21/10/tiny_3230b169.jpg');"></a>
+																<span>
+																	<a href="http://xiaonei.com/getuser.do?id=227242153" class="name">陈格雷</a>
+																	<a href="javascript:void(0);" class="x-to-hide" onclick="delCommonFriend('227242153');return false;"></a>
+																</span>
+															</li>
+														
+															<li id="commonFriend_228978143">
+																<a href="http://xiaonei.com/getuser.do?id=228978143" title="查看亢焜的个人主页" style="background-image:url('http://hd28.xiaonei.com/photos/hd28/20080703/14/10/tiny_2082f150.jpg');"></a>
+																<span>
+																	<a href="http://xiaonei.com/getuser.do?id=228978143" class="name">亢焜</a>
+																	<a href="javascript:void(0);" class="x-to-hide" onclick="delCommonFriend('228978143');return false;"></a>
+																</span>
+															</li>
+														
+															<li id="commonFriend_231471860">
+																<a href="http://xiaonei.com/getuser.do?id=231471860" title="查看yangxia的个人主页" style="background-image:url('http://hd11.xiaonei.com/photos/hd11/20070920/13/47/tiny_3157g171.jpg');"></a>
+																<span>
+																	<a href="http://xiaonei.com/getuser.do?id=231471860" class="name">yangxia</a>
+																	<a href="javascript:void(0);" class="x-to-hide" onclick="delCommonFriend('231471860');return false;"></a>
+																</span>
+															</li>
+														
+															<li id="commonFriend_234816417">
+																<a href="http://xiaonei.com/getuser.do?id=234816417" title="查看陈镇波的个人主页" style="background-image:url('http://hd31.xiaonei.com/photos/hd31/20071106/21/40/tiny_495n177.jpg');"></a>
+																<span>
+																	<a href="http://xiaonei.com/getuser.do?id=234816417" class="name">陈镇波</a>
+																	<a href="javascript:void(0);" class="x-to-hide" onclick="delCommonFriend('234816417');return false;"></a>
+																</span>
+															</li>
+														
+															<li id="commonFriend_236637938">
+																<a href="http://xiaonei.com/getuser.do?id=236637938" title="查看张小荣的个人主页" style="background-image:url('http://hd70.xiaonei.com/photos/hd70/20071203/11/02/tiny_1064l107.jpg');"></a>
+																<span>
+																	<a href="http://xiaonei.com/getuser.do?id=236637938" class="name">张小荣</a>
+																	<a href="javascript:void(0);" class="x-to-hide" onclick="delCommonFriend('236637938');return false;"></a>
+																</span>
+															</li>
+														
+															<li id="commonFriend_239017174">
+																<a href="http://xiaonei.com/getuser.do?id=239017174" title="查看杨坤林的个人主页" style="background-image:url('http://hd52.xiaonei.com/photos/hd52/20080612/11/39/tiny_1295i107.jpg');"></a>
+																<span>
+																	<a href="http://xiaonei.com/getuser.do?id=239017174" class="name">杨坤林</a>
+																	<a href="javascript:void(0);" class="x-to-hide" onclick="delCommonFriend('239017174');return false;"></a>
+																</span>
+															</li>
+														
+															<li id="commonFriend_240566189">
+																<a href="http://xiaonei.com/getuser.do?id=240566189" title="查看雷军的个人主页" style="background-image:url('http://hd33.xiaonei.com/photos/hd33/20080219/20/41/tiny_894g169.jpg');"></a>
+																<span>
+																	<a href="http://xiaonei.com/getuser.do?id=240566189" class="name">雷军</a>
+																	<a href="javascript:void(0);" class="x-to-hide" onclick="delCommonFriend('240566189');return false;"></a>
+																</span>
+															</li>
+														
+													</ul>
+												</div>
+											</div>
+											<div class="separator"></div>
+										
+
+
+										
+
+										
+										<div class="side-item selected">
+
+											<div class="side-item-header clearfix">
+												<h4>抢车位</h4>
+											</div>
+											<div class="side-item-body clearfix">
+												<div class="png-holder">
+													<div style="background-image: url(http://xnimg.cn/img/gift/ndd7.gif);" class="png-img" onclick="window.location.href='http://apps.xiaonei.com/carpark';"><a href="http://apps.xiaonei.com/carpark/">&nbsp;</a></div>
+												</div>
+												<div class="info">
+													<div class="text">现在车位很紧张，时间就是车位。大家快去抢车位吧！</div>
+												</div>
+												<div class="more-actions"><a href="http://apps.xiaonei.com/carpark/">查看详细内容</a></div>
+											</div>
+
+										</div>
+
+
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+				<div class="blank-bar">
+				
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="blank-holder">
+			
+				
+					
+					
+					
+						
+					
+				
+			
+		</div>
+		<div class="copyright">
+			<span class="float-right">
+				<a href="http://xiaonei.com/getsysupdateinfo.do">校内日志</a><span class="pipe">|</span><a href="http://xiaonei.com/info/About.do">关于</a><span class="pipe">|</span><a href="http://app.xiaonei.com/developers/portal.do">开放平台</a><span class="pipe">|</span><a href="http://xiaonei.com/info/jobs.jsp">招聘</a><span class="pipe">|</span><a href="http://supprot.xiaonei.com/GetGuestbookList.do">客服</a><span class="pipe">|</span><a href="http://xiaonei.com/info/Help.do">帮助</a><span class="pipe">|</span><a href="http://xiaonei.com/info/PrivacyClaim.do">隐私声明</a>
+			</span>
+			<span>千橡公司 <span title="revision68517; milan.xiaonei.com">&copy;</span> 2008</span>
+		</div>
+	</div>
+	<div class="hidden-area"></div>
+
+<div id="imuiroot" class="hide"></div>
+<iframe id="imengine" name="imengine" src="http://wpi.xiaonei.com/wtalk/ime.htm?ver=68517" frameBorder="0"  style="position:absolute;left:-1000pt;top:20pt;width:200pt;height:100pt;"></iframe>
+
+
+<script src="http://xnimg.cn/utm/urchin.js" type="text/javascript">
+</script> 
+<script type="text/javascript"> 
+   _userv=0; 
+   urchinTracker(); 
+</script> 
+</body>
+</html>

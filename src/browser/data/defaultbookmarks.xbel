@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xbel>
+<xbel version="1.0">
+    <folder folded="yes">
+        <title>Bookmarks Bar</title>
+        <bookmark href="http://www.qtchina.net/">
+            <title>qtchina</title>
+        </bookmark>
+
+    </folder>
+
+</xbel>

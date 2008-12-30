@@ -1,0 +1,42 @@
+<ui version="4.0" >
+ <class>About</class>
+ <widget class="QDialog" name="About" >
+  <property name="windowModality" >
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>313</width>
+    <height>104</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>About...</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" >
+   <item>
+    <widget class="QLabel" name="label" >
+     <property name="text" >
+      <string>&lt;br>
+&amp;nbsp;&amp;nbsp;&amp;nbsp; SNS Live Messager 0.1
+&lt;br>
+&lt;br>
+&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;a href="http://www.qtchina.net">http://www.qtchina.net&lt;/a>
+&lt;br>
+&lt;br></string>
+     </property>
+     <property name="openExternalLinks" >
+      <bool>true</bool>
+     </property>
+     <property name="textInteractionFlags" >
+      <set>Qt::TextBrowserInteraction</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,73 @@
+这个网站的登陆错误显示机制很奇怪，是用js控制的：
+
+注意这一行：  var obj = $("prompt" + "4");
+其中的 4 是会变的，可能的值为 0-7, 其中0为成功登陆，或者不需要显示错误的时候出现，
+其他几个号表示几种不同的错误类型，比较全面。
+
+解析办法：通过查找这个代码值，确定错误信息DIV的ID，然后再去取到错误信息。
+
+
+下面是完整的代码：
+
+<script language=javascript>
+
+function _bodyonload()
+{
+	var obj = $("prompt" + "4");
+	if (obj)
+	{
+		$("prompt0").style.display = "none";
+		obj.style.display = "block";
+	}
+	
+	if (document.loginform.email.value.length == 0)
+	{
+		document.loginform.email.value = getCookie('_email');
+	}
+
+	if (document.loginform.email.value.length)
+	{
+		document.loginform.password.focus();
+	}
+	else
+	{
+		document.loginform.email.focus();
+	}
+}
+
+</script>
+<br/>
+<div class="tac">
+	<div style="width:800px;margin:0 auto;">
+		<div id=prompt0 style="display:block; height:35px; padding:8px 20px; margin-top:10px; overflow:hidden; font-size:14px;"></div>
+		
+		<div  id=prompt1 style="display:none" class="box-login">
+			<p>您需要登录后才能继续浏览或操作！</p>
+		</div>
+		
+		<div  id=prompt2 style="display:none" class="box-login">
+			<p>帐号或密码不太对吧！ 重试一次？&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="/reg/sendpass.php" class="sl">找回密码</A></p>
+
+			
+		</div>
+		
+		<div  id=prompt3 style="display:none" class="box-login">
+			<p>该帐号尚未完成注册步骤，请点击注册确认邮件的确认链接！<br><a class="sl" href="/reg/reg_mail.php?email=drswinghead%40163.com">点击这里</a>重新发送确认邮件。</p>
+		</div>
+		
+		<div  id=prompt4 style="display:none" class="box-login">
+			<p>帐号或密码好像不太对吧！ 重试一次？</p>
+		</div>
+		
+		<div  id=prompt5 style="display:none" class="box-login">
+			<p>请输入您作为开心网注册帐号的Email地址！</p>
+		</div>
+		
+		<div  id=prompt6 style="display:none" class="box-login">
+			<p>请输入密码！</p>
+		</div>
+
+		<div id=prompt7 style="display:none" class="tsk mb10" style="width:338px;">
+			<div class="f14 mb5"><img src="http://img.kaixin001.com.cn/i/fzcg_dh.gif" align="absmiddle" />&nbsp;Email地址修改成功！</div>
+			<div>&nbsp;&nbsp;&nbsp;&nbsp;请用此Email地址重新登录你的开心帐户</div>
+		</div>

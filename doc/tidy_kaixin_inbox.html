@@ -1,0 +1,462 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux/x86 (vers 1 September 2005), see www.w3.org" />
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=utf-8" />
+
+  <title>短消息 - 开心网</title>
+  <link href="http://img.kaixin001.com.cn/css/s.css" rel=
+  "stylesheet" type="text/css" />
+<script src="http://img.kaixin001.com.cn/js/head-7.js" language=
+"JavaScript" type="text/javascript">
+</script>
+<script src="http://img.kaixin001.com.cn/js/common-1.js" type=
+"text/javascript">
+</script>
+<script src="http://img.kaixin001.com.cn/js/prototype-1.4.0.js"
+language="JavaScript" type="text/javascript">
+</script>
+<script src="http://img.kaixin001.com.cn/js/s.js" language=
+"JavaScript" type="text/javascript">
+</script>
+<script src="http://img.kaixin001.com.cn/js/cookie.js" type=
+"text/javascript">
+</script>
+<script src="http://img.kaixin001.com.cn/js/dialog.js" language=
+"JavaScript" type="text/javascript">
+</script>
+<script src="http://img.kaixin001.com.cn/js/app_friend.js"
+language="JavaScript" type="text/javascript">
+</script>
+<script src="http://img.kaixin001.com.cn/js/swfobject.js" type=
+"text/javascript">
+</script>
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+AC_FL_RunContent = 0;
+//]]>
+</script>
+<script src="http://img.kaixin001.com.cn/js/AC_RunActiveContent.js"
+type="text/javascript">
+</script>
+<script src="http://pic.kaixin001.com/js/webeditor/editor.js"
+language="JavaScript" type="text/javascript">
+</script>
+<script src="http://pic.kaixin001.com/js/friend_supersuggest.js"
+type="text/javascript">
+</script>
+<script src="http://pic.kaixin001.com/js/music.js" type=
+"text/javascript">
+</script>
+<script src="http://pic.kaixin001.com/js/addfriend-1.js" type=
+"text/javascript">
+</script>
+<script language="javascript" src=
+"http://pic.kaixin001.com/js/friend_singlesuggest.js" type=
+"text/javascript">
+</script>
+<style type="text/css">
+/*<![CDATA[*/
+                .aa{
+                table-layout : fixed;
+                        }
+                td{
+                overflow:hidden;
+                height:90px;
+                        }
+/*]]>*/
+</style>
+</head>
+
+<body onload=
+"javascript:if ('function' == typeof(_bodyonload)) { _bodyonload(event); };"
+onunload=
+"javascript:if ('function' == typeof(_bodyonunload)) { _bodyonunload(event); };"
+onbeforeunload=
+"javascript:if ('function' == typeof(_bodyonbeforeunload)) { _bodyonbeforeunload(event); };">
+<script language="JavaScript" type="text/javascript">
+//<![CDATA[
+outputHead();
+setTimeout(checkNewMsg, 20000);
+init();
+//]]>
+</script><script language="JavaScript" type="text/javascript">
+//<![CDATA[
+g_allapp_num=8;
+g_prevapp_num=20;
+
+g_app_num=20;
+g_appnum = 0;
+g_bappmore = false;
+document.writeln('<div id=head_applist>');
+setApplistHiddenHead();
+outputApp("http://img.kaixin001.com.cn/i/ico_zp.gif", "/photo/albumlist.php", "照片", "1", "1");
+setApplistHiddenHead();
+outputApp("http://img.kaixin001.com.cn/i/ico_rj.gif", "/diary/", "日记", "2", "1");
+setApplistHiddenHead();
+outputApp("http://img.kaixin001.com.cn/i/record/ico_jl2.gif", "/app/app.php?aid=1018", "记录", "1018", "1");
+setApplistHiddenHead();
+outputApp("http://img.kaixin001.com.cn/i/z/ico_dtyx1.gif", "/dongta/", "动他一下", "1000", "0");
+setApplistHiddenHead();
+outputApp("http://img.kaixin001.com.cn/i/gift/ico_lw_bg.gif", "/gift/", "礼物", "1001", "1");
+setApplistHiddenHead();
+outputApp("http://img.kaixin001.com.cn/i/music/ico_music_bg.gif", "/app/app.php?aid=1006", "音乐", "1006", "1");
+setApplistHiddenHead();
+outputApp("http://img.kaixin001.com.cn/i/hard_disk/ico_yp2.gif", "/app/app.php?aid=1008", "网盘", "1008", "1");
+setApplistHiddenHead();
+outputApp("http://img.kaixin001.com.cn/i/yuan/ico_match2.gif", "/app/app.php?aid=1004", "姓名缘分", "1004", "0");
+setApplistHiddenTail();
+document.writeln('<\/div>');
+
+g_app_num=20;
+g_appnum = 0;
+g_bappmore = false;
+outputAppInfo();
+
+outputHead2();
+//]]>
+</script><script type="text/javascript">
+//<![CDATA[
+function msgOnmouseover(order)
+{
+
+        $("message"+order).className = 'dxx_on';
+        $("icon"+order).className = 'l50_s_msg';
+        s("delete"+order);
+        
+}
+
+function msgOnmouseout(order)
+{
+
+        $("message"+order).className = 'dxx_of';
+        $("icon"+order).className = 'l50_s';
+        h("delete"+order);
+        
+}
+
+function deleteAll()
+{
+        var r = confirm("你确定要清除收件箱的所有消息吗？");
+        if(r == true)
+        {
+                window.location.href = "/msg/clear.php";
+        }
+}
+
+function _bodyonload()
+{
+        var obj = $("prompt" + "0");
+        if (obj)
+        {
+                obj.style.display = "block";
+        }
+        
+        var totalnum = "3";
+        if(totalnum == "0")
+        {
+                $("emptyinfo").style.display = "block";
+                $("rightinfo").style.display = "none";
+        }
+}
+//]]>
+</script>
+
+  <div class="m2 wr1">
+    <div id="r2_2" style="height:auto;">
+      <div id="r3">
+        <div class="l">
+          <img src="http://img.kaixin001.com.cn/i/ico_dxx.gif"
+          align="absmiddle" /> <b class="f14">短消息</b>
+        </div>
+
+        <div class="r">
+          <a href="javascript:window.history.back();" class=
+          "sl">&lt;&lt;返回上一页</a>
+        </div>
+
+        <div class="c"></div>
+      </div>
+
+      <div class="gw">
+        <div class="bqd_bg">
+          <div class="bqd_on">
+            收件箱
+          </div>
+
+          <div class="bqd_of" onmouseover=
+          "this.className='bqd_of_mo';" onmouseout=
+          "this.className='bqd_of';" onclick=
+          "window.location.href='send.php'">
+            发件箱
+          </div>
+
+          <div class="l">
+            <img src="http://img.kaixin001.com.cn/i/bqd_or.gif"
+            width="5" height="29" />
+          </div>
+
+          <div class="hn_xx ml12">
+            <a href="/msg/write.php" class="sl" title=
+            "发短消息">发短消息</a>
+          </div>
+
+          <div class="r mt10">
+            <a href="/msg/history.php" class="sl"><img src=
+            "http://img.kaixin001.com.cn/i/magnifier.gif" align=
+            "absmiddle" alt="历史消息查找" /></a>
+          </div>
+        </div>
+
+        <div id="prompt1" style="display:none;width:638px;" class=
+        "tsk mb10">
+          <div class="f14 mb5">
+            <img src="http://img.kaixin001.com.cn/i/fzcg_dh.gif"
+            align="absmiddle" />&nbsp;消息删除成功！<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class=
+            "f12">此条消息包含的所有会话同时被删除。此操作大约2分钟后生效，请耐心等待。</span>
+          </div>
+        </div>
+
+        <div id="prompt2" style="display:none;width:638px;" class=
+        "tsk mb10">
+          <div class="f14 mb5">
+            <img src="http://img.kaixin001.com.cn/i/fzcg_dh.gif"
+            align="absmiddle" />&nbsp;退出对话成功！<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class=
+            "f12">退出该对话后，你将不会再收到该对话新的回复消息。</span>
+          </div>
+        </div>
+
+        <div id="prompt3" style="display:none;width:638px;" class=
+        "tsk mb10">
+          <div class="f14 mb5">
+            <img src="http://img.kaixin001.com.cn/i/fzcg_dh.gif"
+            align="absmiddle" />&nbsp;收件箱已清空！
+          </div>
+        </div>
+
+        <div class="dxx_of" id="message1" onmouseover=
+        "msgOnmouseover(1)" onmouseout="msgOnmouseout(1)">
+          <div class="dxx1" style="padding:15px 10px;"></div>
+
+          <div class="dxx4">
+            <div class="l50_s" id="icon1">
+              <a href="/home/?uid=3881849" title="刘光照"><img src=
+              "http://img.kaixin001.com.cn/i/50_0_0.gif" width="50"
+              height="50" /></a>
+            </div>
+
+            <div style="text-align:center;margin-top:-8px;">
+              <a href="/home/?uid=3881849" class="sl" title=
+              "刘光照">刘光照</a>
+            </div>
+          </div>
+
+          <div class="dxx5">
+            <span class="c9 f10">22小时前</span>
+          </div>
+
+          <div class="dxx6">
+            <table class="aa" border="0" cellpadding="0"
+            cellspacing="0">
+              <colgroup>
+                <col width="463" />
+              </colgroup>
+
+              <tbody>
+                <tr basestyle="oRowLine2">
+                  <td valign="top">dfdfsdf</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="dxx4">
+            <div>
+              <a class="sl" href=
+              "/msg/view.php?thread_mid=54847174&amp;pos=0" title=
+              "查看该消息">查看该消息</a>
+            </div>
+
+            <div>
+              <a class="sl" href=
+              "/msg/view.php?thread_mid=54847174&amp;pos=0#editor"
+              title="回复短消息">回复短消息</a>
+            </div>
+          </div>
+
+          <div class="dxx7" id="delete1">
+            <a href="delthread.php?thread_mid=54847174" class="gb"
+            title="删除该条消息包含的所有会话"><b>×</b></a>
+          </div>
+
+          <div class="c"></div>
+        </div>
+
+        <div class="dxx_of" id="message2" onmouseover=
+        "msgOnmouseover(2)" onmouseout="msgOnmouseout(2)">
+          <div class="dxx1" style="padding:15px 10px;"></div>
+
+          <div class="dxx4">
+            <div class="l50_s" id="icon2">
+              <a href="/home/?uid=3881849" title="刘光照"><img src=
+              "http://img.kaixin001.com.cn/i/50_0_0.gif" width="50"
+              height="50" /></a>
+            </div>
+
+            <div style="text-align:center;margin-top:-8px;">
+              <a href="/home/?uid=3881849" class="sl" title=
+              "刘光照">刘光照</a>
+            </div>
+          </div>
+
+          <div class="dxx5">
+            <span class="c9 f10">3天前</span>
+          </div>
+
+          <div class="dxx6">
+            <table class="aa" border="0" cellpadding="0"
+            cellspacing="0">
+              <colgroup>
+                <col width="463" />
+              </colgroup>
+
+              <tbody>
+                <tr basestyle="oRowLine2">
+                  <td valign="top">
+                    shuo !!!!!!!!!!!!二战时的美军轰炸机飞行员如何保暖？
+
+                    <div>
+                      <span class='c9'>共4条会话</span><a href=
+                      "view.php?thread_mid=49085953&amp;pos=1"
+                      class="sl">+展开</a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="dxx4">
+            <div>
+              <a class="sl" href=
+              "/msg/view.php?thread_mid=49085953&amp;pos=1" title=
+              "查看该消息">查看该消息</a>
+            </div>
+
+            <div>
+              <a class="sl" href=
+              "/msg/view.php?thread_mid=49085953&amp;pos=1#editor"
+              title="回复短消息">回复短消息</a>
+            </div>
+          </div>
+
+          <div class="dxx7" id="delete2">
+            <a href="delthread.php?thread_mid=49085953" class="gb"
+            title="删除该条消息包含的所有会话"><b>×</b></a>
+          </div>
+
+          <div class="c"></div>
+        </div>
+
+        <div class="dxx_of" id="message3" onmouseover=
+        "msgOnmouseover(3)" onmouseout="msgOnmouseout(3)">
+          <div class="dxx1" style="padding:15px 10px;"></div>
+
+          <div class="dxx4">
+            <div class="l50_s" id="icon3">
+              <a href="/home/?uid=3881849" title="刘光照"><img src=
+              "http://img.kaixin001.com.cn/i/50_0_0.gif" width="50"
+              height="50" /></a>
+            </div>
+
+            <div style="text-align:center;margin-top:-8px;">
+              <a href="/home/?uid=3881849" class="sl" title=
+              "刘光照">刘光照</a>
+            </div>
+          </div>
+
+          <div class="dxx5">
+            <span class="c9 f10">3天前</span>
+          </div>
+
+          <div class="dxx6">
+            <table class="aa" border="0" cellpadding="0"
+            cellspacing="0">
+              <colgroup>
+                <col width="463" />
+              </colgroup>
+
+              <tbody>
+                <tr basestyle="oRowLine2">
+                  <td valign="top"><img onload=
+                  '_commentImageResize(this,350);' src=
+                  "http://img.kaixin001.com.cn/i/face/30.gif"
+                  title="魅力四射" />hahaha</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="dxx4">
+            <div>
+              <a class="sl" href=
+              "/msg/view.php?thread_mid=49070197&amp;pos=2" title=
+              "查看该消息">查看该消息</a>
+            </div>
+
+            <div>
+              <a class="sl" href=
+              "/msg/view.php?thread_mid=49070197&amp;pos=2#editor"
+              title="回复短消息">回复短消息</a>
+            </div>
+          </div>
+
+          <div class="dxx7" id="delete3">
+            <a href="delthread.php?thread_mid=49070197" class="gb"
+            title="删除该条消息包含的所有会话"><b>×</b></a>
+          </div>
+
+          <div class="c"></div>
+        </div>
+
+        <div id="rightinfo" style="display:block;">
+          <div class="c9 mt5">
+            共3条短消息 <a href="javascript:deleteAll();" class="sl"
+            title="清空收件箱">清空收件箱</a>
+          </div>
+
+          <div class="fy_p">
+            <div class="tac"></div>
+
+            <div class="h50"></div>
+          </div>
+        </div>
+
+        <div id="emptyinfo" style="display:none;">
+          <div class="c9 mt5">
+            &nbsp;&nbsp;你的收件箱没有任何消息
+
+            <div style="height:350px;">
+              &nbsp;
+            </div>
+          </div>
+        </div>
+
+        <div class="h50"></div>
+      </div>
+    </div>
+
+    <div class="c"></div>
+  </div>
+
+  <div class="c"></div><script language="javascript" type=
+  "text/javascript">
+//<![CDATA[
+outputTail();
+//]]>
+</script>
+</body>
+</html>

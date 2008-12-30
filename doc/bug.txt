@@ -1,0 +1,60 @@
+2008/09/16
+	当第一次登陆出现错误的时候，随后即使修改用户的密码也还是会提示用户已经登陆。
+	对于加载提示动画，是不是应该再给letter窗口一个独立的，不影响相互的使用。
+	
+##########
+处理网络返回不全面：
+Http headers:  504
+"Cache-Control" :  "no-cache"
+"Connection" :  "close"
+"Content-Type" :  "text/html"
+false "Unknown error"
+Http headers:
+"Cache-Control" :  "no-cache"
+"Connection" :  "close"
+"Content-Type" :  "text/html"
+fetch feed result parser for kaixin
+ASSERT: "ibegin != -1" in file /home/gzl/notify/src/systemoption.cpp, line 655
+已放弃
+
+Http headers:
+"Date" :  "Mon, 01 Sep 2008 06:48:15 GMT"
+"Server" :  "Apache/2.2.6 (Unix) PHP/5.2.4"
+"X-Powered-By" :  "PHP/5.2.4"
+"Location" :  "/login/?flag=1&url=%2Fhome%2Fnews.php"
+"Vary" :  "Accept-Encoding,User-Agent"
+"Content-Length" :  "0"
+"Connection" :  "close"
+"Content-Type" :  "text/html"
+fetch feed result parser for kaixin
+ASSERT: "ibegin != -1" in file /home/gzl/snsnotify/src/systemoption.cpp, line 660
+已放弃
+
+Debug: Http headers:  302
+Debug: "Date" :  "Fri, 12 Sep 2008 06:38:39 GMT"
+Debug: "Server" :  "Apache/2.2.6 (Unix) PHP/5.2.4"
+Debug: "X-Powered-By" :  "PHP/5.2.4"
+Debug: "Location" :  "/login/?flag=1&url=%2Fhome%2Fnews.php"
+Debug: "Vary" :  "Accept-Encoding,User-Agent"
+Debug: "Content-Length" :  "0"
+Debug: "Connection" :  "close"
+Debug: "Content-Type" :  "text/html"
+Debug: false "Unknown error"
+Debug: Http headers:
+Debug: "Date" :  "Fri, 12 Sep 2008 06:38:39 GMT"
+Debug: "Server" :  "Apache/2.2.6 (Unix) PHP/5.2.4"
+Debug: "X-Powered-By" :  "PHP/5.2.4"
+Debug: "Location" :  "/login/?flag=1&url=%2Fhome%2Fnews.php"
+Debug: "Vary" :  "Accept-Encoding,User-Agent"
+Debug: "Content-Length" :  "0"
+Debug: "Connection" :  "close"
+Debug: "Content-Type" :  "text/html"
+Debug: fetch feed result parser for kaixin
+Fatal: ASSERT: "i >= 0 && i < size()" in file /usr/include/qt4/QtCore/qstring.h, line 650
+已放弃
+
+
+上面这个bug可能是由于cookie过期导致的，需要及时更新cookie的有效期。
+
+
+对于uchome官网，当天的消息中会有部分内容一直改变“5秒前", 这是时间段。情致每次取feed时都提示有消息。

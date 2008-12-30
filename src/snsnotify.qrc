@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="icons" >
+    <file>icons/hainei/favicon.ico</file>
+    <file>icons/uchome/favicon.ico</file>
+    <file>icons/xiaonei/favicon.ico</file>
+    <file>icons/ico_match2.gif</file>
+  </qresource>
+</RCC>

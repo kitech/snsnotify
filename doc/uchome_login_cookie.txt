@@ -1,0 +1,34 @@
+C:\Documents and Settings\Administrator\Cookies
+C:\Documents and Settings\Administrator\Application Data\Mozilla\Firefox\Profiles\3cmvbdf1.default\sessionstore.js
+cookies.sqlite
+
+http://www.opera.com/docs/fileformats/
+
+
+从浏览器的cookie库中找到登陆cookie是可行的。
+
+win32平台： 一个问题是，是否能找到这些存储cookie文件。如果都在默认位置还好，不在就麻烦点。
+1. IE: 非常好解析　
+
+cookie文件格式：每个域名下的cookie存储在一个文件中。文件名命名规则:
+username@hostnamedroplastdotpart[1|2].txt
+
+name
+value
+domain
+1024    未知
+28247808  过期时间
+30687477  未知
+686682288  未知
+29953222   未知
+*                            cookie分隔，下面是另一个cookie变量的相关值。文件最后一般带个*
+
+
+2. Opera: 有点复杂，但也有公开的cookie存储文件格式。
+
+3. firefox: cookie存储在一个sqlite数据库中，表为moz_cookies, 也能够完全解析出来。
+CREATE TABLE moz_cookies (id INTEGER PRIMARY KEY, name TEXT, value TEXT, host TEXT, path TEXT,expiry INTEGER, lastAccessed INTEGER, isSecure INTEGER, isHttpOnly INTEGER)
+
+
+label中的链接可以在点击的时候捕捉到。
+

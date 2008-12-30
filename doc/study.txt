@@ -1,0 +1,8 @@
+
+1. 指向类的成员的成员指针的用法
+
+2. g++ 的typeof的用法，在此使用更高机的功能，它的参数不但可以是一个变量，还可以是一个函数调用。
+
+   像本程序中使用了  typeof(tidyGetAppData(tdoc)) 为 tidySetAppData 的参数做类型转换。
+
+

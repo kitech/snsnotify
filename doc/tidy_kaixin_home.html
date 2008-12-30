@@ -1,0 +1,992 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux/x86 (vers 1 September 2005), see www.w3.org" />
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=utf-8" />
+
+  <title>好友动态 - 开心网</title>
+  <link href="http://img.kaixin001.com.cn/css/s.css" rel=
+  "stylesheet" type="text/css" />
+<script src="http://img.kaixin001.com.cn/js/head-6.js" language=
+"JavaScript" type="text/javascript">
+</script>
+<script src="http://img.kaixin001.com.cn/js/common-1.js" type=
+"text/javascript">
+</script>
+<script src="http://img.kaixin001.com.cn/js/prototype-1.4.0.js"
+language="JavaScript" type="text/javascript">
+</script>
+<script src="http://img.kaixin001.com.cn/js/s.js" language=
+"JavaScript" type="text/javascript">
+</script>
+<script src="http://img.kaixin001.com.cn/js/cookie.js" type=
+"text/javascript">
+</script>
+<script src="http://img.kaixin001.com.cn/js/dialog.js" language=
+"JavaScript" type="text/javascript">
+</script>
+<script src="http://img.kaixin001.com.cn/js/app_friend.js"
+language="JavaScript" type="text/javascript">
+</script>
+<script src="http://img.kaixin001.com.cn/js/swfobject.js" type=
+"text/javascript">
+</script>
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+AC_FL_RunContent = 0;
+//]]>
+</script>
+<script src="http://img.kaixin001.com.cn/js/AC_RunActiveContent.js"
+type="text/javascript">
+</script>
+  <link href="http://pic.kaixin001.com/css/apppop.css" rel=
+  "stylesheet" type="text/css" />
+<script src="http://pic.kaixin001.com/js/webeditor/editor.js"
+language="JavaScript" type="text/javascript">
+</script>
+<script src="http://pic.kaixin001.com/js/comment.js" type=
+"text/javascript">
+</script>
+<script src="http://pic.kaixin001.com/js/addfriend-1.js" type=
+"text/javascript">
+</script>
+<script src="http://pic.kaixin001.com/js/friend_supersuggest.js"
+type="text/javascript">
+</script>
+<script src="http://pic.kaixin001.com/js/friend_suggest.js" type=
+"text/javascript">
+</script>
+<script src="http://pic.kaixin001.com/js/music.js" type=
+"text/javascript">
+</script>
+<style type="text/css">
+/*<![CDATA[*/
+.dtfl{position:relative; left:-6px; top:20px; width:120px;}
+.dtfl li{padding-left:10px;list-style-type: none;}
+.dtfl li.on{border:1px solid #dcdcdc; border-left:1px solid #fff; background:#fff;}
+/*]]>*/
+</style>
+</head>
+
+<body onload=
+"javascript:if ('function' == typeof(_bodyonload)) { _bodyonload(event); };"
+onunload=
+"javascript:if ('function' == typeof(_bodyonunload)) { _bodyonunload(event); };"
+onbeforeunload=
+"javascript:if ('function' == typeof(_bodyonbeforeunload)) { _bodyonbeforeunload(event); };">
+<script language="JavaScript" type="text/javascript">
+//<![CDATA[
+outputHead();
+setTimeout(checkNewMsg, 20000);
+init();
+//]]>
+</script><script language="JavaScript" type="text/javascript">
+//<![CDATA[
+g_allapp_num=8;
+g_prevapp_num=20;
+
+g_app_num=20;
+g_appnum = 0;
+g_bappmore = false;
+document.writeln('<div id=head_applist>');
+setApplistHiddenHead();
+outputApp("http://img.kaixin001.com.cn/i/ico_zp.gif", "/photo/albumlist.php", "照片", "1", "1");
+setApplistHiddenHead();
+outputApp("http://img.kaixin001.com.cn/i/ico_rj.gif", "/diary/", "日记", "2", "1");
+setApplistHiddenHead();
+outputApp("http://img.kaixin001.com.cn/i/record/ico_jl2.gif", "/app/app.php?aid=1018", "记录", "1018", "1");
+setApplistHiddenHead();
+outputApp("http://img.kaixin001.com.cn/i/z/ico_dtyx1.gif", "/dongta/", "动他一下", "1000", "0");
+setApplistHiddenHead();
+outputApp("http://img.kaixin001.com.cn/i/gift/ico_lw_bg.gif", "/gift/", "礼物", "1001", "1");
+setApplistHiddenHead();
+outputApp("http://img.kaixin001.com.cn/i/music/ico_music_bg.gif", "/app/app.php?aid=1006", "音乐", "1006", "1");
+setApplistHiddenHead();
+outputApp("http://img.kaixin001.com.cn/i/hard_disk/ico_yp2.gif", "/app/app.php?aid=1008", "网盘", "1008", "1");
+setApplistHiddenHead();
+outputApp("http://img.kaixin001.com.cn/i/yuan/ico_match2.gif", "/app/app.php?aid=1004", "姓名缘分", "1004", "0");
+setApplistHiddenTail();
+document.writeln('<\/div>');
+
+g_app_num=20;
+g_appnum = 0;
+g_bappmore = false;
+outputAppInfo();
+
+outputHead2();
+//]]>
+</script>
+
+  <div class="m2 wr1" style=
+  "border-bottom:1px solid #bbb;background:#f7f7f7;">
+    <div style=
+    "height:auto !important;height:630px;min-height:630px;">
+      <div style=
+      "background:#fff; padding:15px; padding-bottom:0;padding-right:0;">
+      <div id="r3" style="margin-bottom:0;">
+          <div class="l">
+            <img src="http://img.kaixin001.com.cn/i/ico_hy.gif"
+            align="absmiddle" /> <b class="f14">好友最近的动态</b>
+          </div>
+
+          <div class="r" style="padding-right:15px;">
+            <a href="javascript:window.history.back();" class="sl"
+            title="返回上一页">&lt;&lt;返回上一页</a>
+          </div>
+
+          <div class="c"></div>
+        </div>
+      </div>
+
+      <div class="srl">
+        <div id="newsdiv" class="srr_rlm">
+          <div id="nonewsdiv" style=
+          "padding:10px;display:none;height:auto !important;height:580px;min-height:580px;">
+          <p class="c9">该分组的好友最近没有动态</p>
+          </div>
+
+          <div id="newslistdiv" style=
+          "height:auto !important;height:580px;min-height:580px;">
+            <div class="gw1">
+              <div class="gw14">
+                <img src=
+                "http://img.kaixin001.com.cn/i/g/ico_qun_small.gif"
+                width="16" />
+              </div>
+
+              <div class="gw12">
+                <div>
+                  <a href="/home/?uid=144631" class="sl" title=
+                  "马立成">马立成</a> 加入了 <a href=
+                  "/group/group.php?gid=48216" class="sl" title=
+                  "中国网络游戏圈(研发、运营、传播推广、玩家）">中国网络游戏圈(研发、运营、传播推广、玩家）</a>
+                  群
+                </div>
+              </div>
+
+              <div class="gw13">
+                2008-09-06 00:45
+              </div>
+
+              <div class="c"></div>
+            </div>
+
+            <div class="gw1">
+              <div class="gw14">
+                <img width="16" src=
+                "http://img.kaixin001.com.cn/i/vote/ico_vote_s.gif"
+                alt="投票" />
+              </div>
+
+              <div class="gw12" style="width:400px;">
+                <a href="http://www.kaixin001.com/home/?uid=144631"
+                class="sl">马立成</a> 参与了<a href=
+                "http://www.kaixin001.com/~vote/detail.php?vid=571870&amp;uid=1471866"
+                class='sl'>偷情短信,你看懂了吗？</a>的投票
+              </div>
+
+              <div class="gw13">
+                2008-09-06 00:38
+              </div>
+
+              <div class="c"></div>
+            </div>
+
+            <div class="gw1">
+              <div class="gw14">
+                <img width="16" src=
+                "http://img.kaixin001.com.cn/i/vote/ico_vote_s.gif"
+                alt="投票" />
+              </div>
+
+              <div class="gw12" style="width:400px;">
+                <a href="http://www.kaixin001.com/home/?uid=144631"
+                class="sl">马立成</a> 参与了<a href=
+                "http://www.kaixin001.com/~vote/detail.php?vid=563464&amp;uid=2251045"
+                class='sl'>在星巴克你一般喝</a>的投票
+              </div>
+
+              <div class="gw13">
+                2008-09-06 00:17
+              </div>
+
+              <div class="c"></div>
+            </div>
+
+            <div class="gw1">
+              <div class="gw14">
+                <img src=
+                "http://img.kaixin001.com.cn/i/sy_dt_hy.gif" width=
+                "16" />
+              </div>
+
+              <div class="gw12">
+                <div>
+                  <a href="/home/?uid=144631" class="sl" title=
+                  "马立成">马立成</a> 与 <a href="/home/?uid=235719"
+                  class="sl" title="吴永强">吴永强</a> <a href=
+                  "/home/?uid=3060966" class="sl" title=
+                  "刘广彦">刘广彦</a> 成为好友
+                </div>
+              </div>
+
+              <div class="gw13">
+                2008-09-06 00:16
+              </div>
+
+              <div class="c"></div>
+            </div>
+
+            <div class="gw1">
+              <div class="gw14">
+                <img width="16" src=
+                "http://img.kaixin001.com.cn/i/vote/ico_vote_s.gif"
+                alt="投票" />
+              </div>
+
+              <div class="gw12" style="width:400px;">
+                <a href="http://www.kaixin001.com/home/?uid=901533"
+                class="sl">沈峥</a> 参与了<a href=
+                "http://www.kaixin001.com/~vote/detail.php?vid=508934&amp;uid=1404645"
+                class='sl'>82年生 现是离婚的女人 该怎么办？</a>的投票
+              </div>
+
+              <div class="gw13">
+                2008-09-05 21:44
+              </div>
+
+              <div class="c"></div>
+            </div>
+
+            <div class="gw1">
+              <div class="gw14">
+                <img src=
+                "http://img.kaixin001.com.cn/i2/review/icon_16.gif"
+                width="16" />
+              </div>
+
+              <div class="gw12">
+                <div>
+                  <a href="/home/?uid=102666" class="sl" title=
+                  "胡东海">胡东海</a> 添加了新组件 <a href="/app/?aid=1052"
+                  class="sl" title="回顾">回顾</a>
+                </div>
+              </div>
+
+              <div class="gw13">
+                2008-09-05 18:01
+              </div>
+
+              <div class="c"></div>
+            </div>
+
+            <div class="gw1">
+              <div class="gw14">
+                <img width="16" src=
+                "http://img.kaixin001.com.cn/i/vote/ico_vote_s.gif"
+                alt="投票" />
+              </div>
+
+              <div class="gw12" style="width:400px;">
+                <div>
+                  <a href=
+                  "http://www.kaixin001.com/home/?uid=102666"
+                  class="sl">胡东海</a>发起了投票<a href=
+                  "http://www.kaixin001.com/~vote/detail.php?vid=566438&amp;uid=102666"
+                  class='sl'>下周就是中秋节了，你们公司有啥表示么？</a>
+                </div>
+
+                <div>
+                  1.发几块月饼
+                </div>
+
+                <div>
+                  2.发一盒月饼
+                </div>
+
+                <div>
+                  3.公司给我家人寄月饼，还不错
+                </div>
+
+                <div>
+                  <div class='l' style='width:200px'>
+                    ...
+                  </div>
+
+                  <div class='l'>
+                    <a href=
+                    "http://www.kaixin001.com/~vote/detail.php?vid=566438&amp;uid=102666"
+                    class='sl'>参与投票&gt;&gt;</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gw13">
+                2008-09-05 16:16
+              </div>
+
+              <div class="c"></div>
+            </div>
+
+            <div class="gw1">
+              <div class="gw14">
+                <img width="16" src=
+                "http://img.kaixin001.com.cn/i/vote/ico_vote_s.gif"
+                alt="投票" />
+              </div>
+
+              <div class="gw12" style="width:400px;">
+                <div>
+                  <a href=
+                  "http://www.kaixin001.com/home/?uid=102666"
+                  class="sl">胡东海</a>发起了投票<a href=
+                  "http://www.kaixin001.com/~vote/detail.php?vid=566168&amp;uid=102666"
+                  class='sl'>接电话，不知道对方是谁，你第1句话会说什么？</a>
+                </div>
+
+                <div>
+                  1.你好
+                </div>
+
+                <div>
+                  2.hello
+                </div>
+
+                <div>
+                  3.mixi mixi
+                </div>
+
+                <div>
+                  <div class='l' style='width:200px'>
+                    ...
+                  </div>
+
+                  <div class='l'>
+                    <a href=
+                    "http://www.kaixin001.com/~vote/detail.php?vid=566168&amp;uid=102666"
+                    class='sl'>参与投票&gt;&gt;</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gw13">
+                2008-09-05 16:10
+              </div>
+
+              <div class="c"></div>
+            </div>
+
+            <div class="gw1">
+              <div class="gw14">
+                <img width="16" src=
+                "http://img.kaixin001.com.cn/i/vote/ico_vote_s.gif"
+                alt="投票" />
+              </div>
+
+              <div class="gw12" style="width:400px;">
+                <div>
+                  <a href=
+                  "http://www.kaixin001.com/home/?uid=102666"
+                  class="sl">胡东海</a>发起了投票<a href=
+                  "http://www.kaixin001.com/~vote/detail.php?vid=566083&amp;uid=102666"
+                  class='sl'>你现在的手机用了几年？从手机看性格。</a>
+                </div>
+
+                <div>
+                  1.10年以上
+                </div>
+
+                <div>
+                  2.5-10年
+                </div>
+
+                <div>
+                  3.4年
+                </div>
+
+                <div>
+                  <div class='l' style='width:200px'>
+                    ...
+                  </div>
+
+                  <div class='l'>
+                    <a href=
+                    "http://www.kaixin001.com/~vote/detail.php?vid=566083&amp;uid=102666"
+                    class='sl'>参与投票&gt;&gt;</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gw13">
+                2008-09-05 16:08
+              </div>
+
+              <div class="c"></div>
+            </div>
+
+            <div class="gw1">
+              <div class="gw14">
+                <img width="16" src=
+                "http://img.kaixin001.com.cn/i/vote/ico_vote_s.gif"
+                alt="投票" />
+              </div>
+
+              <div class="gw12" style="width:400px;">
+                <div>
+                  <a href=
+                  "http://www.kaixin001.com/home/?uid=102666"
+                  class="sl">胡东海</a>发起了投票<a href=
+                  "http://www.kaixin001.com/~vote/detail.php?vid=565979&amp;uid=102666"
+                  class='sl'>你的初恋是在什么时候？单恋也算。</a>
+                </div>
+
+                <div>
+                  1.小学就有了(BT，这么早？)
+                </div>
+
+                <div>
+                  2.初中开始了(早熟啊)
+                </div>
+
+                <div>
+                  3.高中有了(不早不晚，差不多)
+                </div>
+
+                <div>
+                  <div class='l' style='width:200px'>
+                    ...
+                  </div>
+
+                  <div class='l'>
+                    <a href=
+                    "http://www.kaixin001.com/~vote/detail.php?vid=565979&amp;uid=102666"
+                    class='sl'>参与投票&gt;&gt;</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gw13">
+                2008-09-05 16:05
+              </div>
+
+              <div class="c"></div>
+            </div>
+
+            <div class="gw1">
+              <div class="gw14">
+                <img width="16" src=
+                "http://img.kaixin001.com.cn/i/vote/ico_vote_s.gif"
+                alt="投票" />
+              </div>
+
+              <div class="gw12" style="width:400px;">
+                <a href="http://www.kaixin001.com/home/?uid=144631"
+                class="sl">马立成</a> 参与了<a href=
+                "http://www.kaixin001.com/~vote/detail.php?vid=532464&amp;uid=2073654"
+                class='sl'>我女朋友在美国，我在北京，大家觉得我们能走到最后么？</a>的投票
+              </div>
+
+              <div class="gw13">
+                2008-09-05 08:39
+              </div>
+
+              <div class="c"></div>
+            </div>
+
+            <div class="gw1">
+              <div class="gw14">
+                <img width="16" src=
+                "http://img.kaixin001.com.cn/i/vote/ico_vote_s.gif"
+                alt="投票" />
+              </div>
+
+              <div class="gw12" style="width:400px;">
+                <a href="http://www.kaixin001.com/home/?uid=144631"
+                class="sl">马立成</a> 参与了<a href=
+                "http://www.kaixin001.com/~vote/detail.php?vid=541095&amp;uid=2282639"
+                class='sl'>80后生活的10个经典网站，你上了几个？</a>的投票
+              </div>
+
+              <div class="gw13">
+                2008-09-05 08:39
+              </div>
+
+              <div class="c"></div>
+            </div>
+
+            <div class="gw1">
+              <div class="gw14">
+                <img width="16" src=
+                "http://img.kaixin001.com.cn/i/vote/ico_vote_s.gif"
+                alt="投票" />
+              </div>
+
+              <div class="gw12" style="width:400px;">
+                <a href="http://www.kaixin001.com/home/?uid=144631"
+                class="sl">马立成</a> 参与了<a href=
+                "http://www.kaixin001.com/~vote/detail.php?vid=467505&amp;uid=1848005"
+                class='sl'>你认为男人出门身上应该带多少money？</a>的投票
+              </div>
+
+              <div class="gw13">
+                2008-09-05 08:38
+              </div>
+
+              <div class="c"></div>
+            </div>
+
+            <div class="gw1">
+              <div class="gw14">
+                <img width="16" src=
+                "http://img.kaixin001.com.cn/i/vote/ico_vote_s.gif"
+                alt="投票" />
+              </div>
+
+              <div class="gw12" style="width:400px;">
+                <a href="http://www.kaixin001.com/home/?uid=144631"
+                class="sl">马立成</a> 参与了<a href=
+                "http://www.kaixin001.com/~vote/detail.php?vid=538587&amp;uid=2330804"
+                class='sl'>你开车开过的最高时速！！！！！！</a>的投票
+              </div>
+
+              <div class="gw13">
+                2008-09-05 08:38
+              </div>
+
+              <div class="c"></div>
+            </div>
+
+            <div class="gw1">
+              <div class="gw14">
+                <img src=
+                "http://img.kaixin001.com.cn/i/sy_dt_hy.gif" width=
+                "16" />
+              </div>
+
+              <div class="gw12">
+                <div>
+                  <a href="/home/?uid=102666" class="sl" title=
+                  "胡东海">胡东海</a> 与 <a href="/home/?uid=744959"
+                  class="sl" title="叶司">叶司</a> <a href=
+                  "/home/?uid=1215123" class="sl" title="叶林">叶林</a>
+                  <a href="/home/?uid=746334" class="sl" title=
+                  "邹艳芳">邹艳芳</a> <a href="/home/?uid=3041967" class=
+                  "sl" title="黄晓丽">黄晓丽</a> 成为好友
+                </div>
+              </div>
+
+              <div class="gw13">
+                2008-09-04 23:32
+              </div>
+
+              <div class="c"></div>
+            </div>
+
+            <div class="gw1">
+              <div class="gw14">
+                <img src=
+                "http://img.kaixin001.com.cn/i/sy_dt_hy.gif" width=
+                "16" />
+              </div>
+
+              <div class="gw12">
+                <div>
+                  <a href="/home/?uid=261851" class="sl" title=
+                  "蒋宗君">蒋宗君</a> 与 <a href="/home/?uid=1040364"
+                  class="sl" title="王胜">王胜</a> <a href=
+                  "/home/?uid=204010" class="sl" title="万江">万江</a>
+                  <a href="/home/?uid=2918833" class="sl" title=
+                  "杨慧">杨慧</a> 成为好友
+                </div>
+              </div>
+
+              <div class="gw13">
+                2008-09-04 18:15
+              </div>
+
+              <div class="c"></div>
+            </div>
+
+            <div class="gw1">
+              <div class="gw14">
+                <img src=
+                "http://img.kaixin001.com.cn/i/sy_dt_hy.gif" width=
+                "16" />
+              </div>
+
+              <div class="gw12">
+                <div>
+                  <a href="/home/?uid=144631" class="sl" title=
+                  "马立成">马立成</a> 与 <a href="/home/?uid=2968821"
+                  class="sl" title="古桂林">古桂林</a> <a href=
+                  "/home/?uid=3041428" class="sl" title="王瑞">王瑞</a>
+                  成为好友
+                </div>
+              </div>
+
+              <div class="gw13">
+                2008-09-04 16:23
+              </div>
+
+              <div class="c"></div>
+            </div>
+
+            <div class="gw1">
+              <div class="gw14">
+                <img width="16" src=
+                "http://img.kaixin001.com.cn/i/vote/ico_vote_s.gif"
+                alt="投票" />
+              </div>
+
+              <div class="gw12" style="width:400px;">
+                <a href="http://www.kaixin001.com/home/?uid=102666"
+                class="sl">胡东海</a> 参与了<a href=
+                "http://www.kaixin001.com/~vote/detail.php?vid=520081&amp;uid=105921"
+                class='sl'>为域名为U3W.COM的SNS起中文名</a>的投票
+              </div>
+
+              <div class="gw13">
+                2008-09-04 09:35
+              </div>
+
+              <div class="c"></div>
+            </div>
+
+            <div class="gw1">
+              <div class="gw14">
+                <img width="16" src=
+                "http://img.kaixin001.com.cn/i/vote/ico_vote_s.gif"
+                alt="投票" />
+              </div>
+
+              <div class="gw12" style="width:400px;">
+                <a href="http://www.kaixin001.com/home/?uid=901533"
+                class="sl">沈峥</a> 参与了<a href=
+                "http://www.kaixin001.com/~vote/detail.php?vid=482528&amp;uid=207385"
+                class='sl'>小时候一动画片对白：“赐予我力量吧……”后面接的对白是什么？</a>的投票
+              </div>
+
+              <div class="gw13">
+                2008-09-03 18:48
+              </div>
+
+              <div class="c"></div>
+            </div>
+
+            <div class="gw1">
+              <div class="gw14">
+                <img width="16" src=
+                "http://img.kaixin001.com.cn/i/vote/ico_vote_s.gif"
+                alt="投票" />
+              </div>
+
+              <div class="gw12" style="width:400px;">
+                <a href="http://www.kaixin001.com/home/?uid=102666"
+                class="sl">胡东海</a> 参与了<a href=
+                "http://www.kaixin001.com/~vote/detail.php?vid=445369&amp;uid=1123613"
+                class='sl'>有句刚句，上海女孩子最大的优点</a>的投票
+              </div>
+
+              <div class="gw13">
+                2008-09-03 14:31
+              </div>
+
+              <div class="c"></div>
+            </div>
+
+            <div class="gw1">
+              <div class="gw14">
+                <img width="16" src=
+                "http://img.kaixin001.com.cn/i/vote/ico_vote_s.gif"
+                alt="投票" />
+              </div>
+
+              <div class="gw12" style="width:400px;">
+                <a href="http://www.kaixin001.com/home/?uid=102666"
+                class="sl">胡东海</a> 参与了<a href=
+                "http://www.kaixin001.com/~vote/detail.php?vid=478018&amp;uid=1805335"
+                class='sl'>北京的哪个公园你从来没去过？</a>的投票
+              </div>
+
+              <div class="gw13">
+                2008-09-03 13:19
+              </div>
+
+              <div class="c"></div>
+            </div>
+
+            <div class="gw1">
+              <div class="gw14">
+                <img src=
+                "http://img.kaixin001.com.cn/i/g/ico_qun_small.gif"
+                width="16" />
+              </div>
+
+              <div class="gw12">
+                <div>
+                  <a href="/home/?uid=144631" class="sl" title=
+                  "马立成">马立成</a> 加入了 <a href=
+                  "/group/group.php?gid=1414" class="sl" title=
+                  "奴隶买卖交易群">奴隶买卖交易群</a> 群
+                </div>
+              </div>
+
+              <div class="gw13">
+                2008-09-03 12:04
+              </div>
+
+              <div class="c"></div>
+            </div>
+
+            <div class="gw1">
+              <div class="gw14">
+                <img width="16" src=
+                "http://img.kaixin001.com.cn/i/vote/ico_vote_s.gif"
+                alt="投票" />
+              </div>
+
+              <div class="gw12" style="width:400px;">
+                <a href="http://www.kaixin001.com/home/?uid=144631"
+                class="sl">马立成</a> 参与了<a href=
+                "http://www.kaixin001.com/~vote/detail.php?vid=413989&amp;uid=606517"
+                class='sl'>21岁的年轻男女，每天都想ML。。。</a>的投票
+              </div>
+
+              <div class="gw13">
+                2008-09-03 09:10
+              </div>
+
+              <div class="c"></div>
+            </div>
+
+            <div class="gw1">
+              <div class="gw14">
+                <img width="16" src=
+                "http://img.kaixin001.com.cn/i/vote/ico_vote_s.gif"
+                alt="投票" />
+              </div>
+
+              <div class="gw12" style="width:400px;">
+                <a href="http://www.kaixin001.com/home/?uid=144631"
+                class="sl">马立成</a> 参与了<a href=
+                "http://www.kaixin001.com/~vote/detail.php?vid=468970&amp;uid=861870"
+                class='sl'>两个泼妇在公交车上对骂'‘你妈了隔壁’'，你会？</a>的投票
+              </div>
+
+              <div class="gw13">
+                2008-09-03 09:09
+              </div>
+
+              <div class="c"></div>
+            </div>
+
+            <div class="gw1">
+              <div class="gw14">
+                <img width="16" src=
+                "http://img.kaixin001.com.cn/i/vote/ico_vote_s.gif"
+                alt="投票" />
+              </div>
+
+              <div class="gw12" style="width:400px;">
+                <a href="http://www.kaixin001.com/home/?uid=144631"
+                class="sl">马立成</a> 参与了<a href=
+                "http://www.kaixin001.com/~vote/detail.php?vid=494778&amp;uid=772129"
+                class='sl'>如果你现在有3000块在手上一天内要处理掉，你会怎么花？</a>的投票
+              </div>
+
+              <div class="gw13">
+                2008-09-03 09:08
+              </div>
+
+              <div class="c"></div>
+            </div>
+
+            <div class="gw1">
+              <div class="gw14">
+                <img src="/i/sy_dt_rj.gif" />
+              </div>
+
+              <div class="gw12">
+                <div>
+                  <a href="/home/?uid=144631" class="sl" title=
+                  "马立成">马立成</a>发表了1篇日记<a href=
+                  "/diary/view.php?uid=144631&amp;did=707991"
+                  class="sl" title="十一安排讨论">十一安排讨论</a>
+                </div>
+
+                <div>
+                  1、阿尔山自驾七日游如何？？ 2、云台山自驾五日游如何？？ 3、太行山红色游？
+                  &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+                  "/diary/view.php?uid=144631&amp;did=707991"
+                  class="sl" title="查看全文">查看全文&gt;&gt;</a>
+                </div>
+              </div>
+
+              <div class="gw13">
+                2008-09-03 09:07
+              </div>
+
+              <div class="c"></div>
+            </div>
+
+            <div class="gw1">
+              <div class="gw14">
+                <img width="16" src=
+                "http://img.kaixin001.com.cn/i/vote/ico_vote_s.gif"
+                alt="投票" />
+              </div>
+
+              <div class="gw12" style="width:400px;">
+                <a href="http://www.kaixin001.com/home/?uid=901533"
+                class="sl">沈峥</a> 参与了<a href=
+                "http://www.kaixin001.com/~vote/detail.php?vid=491977&amp;uid=2587815"
+                class='sl'>美国著名心理学家的测试：如果只做一件家务事，你会选择？</a>的投票
+              </div>
+
+              <div class="gw13">
+                2008-09-02 22:56
+              </div>
+
+              <div class="c"></div>
+            </div>
+
+            <div class="gw1">
+              <div class="gw14">
+                <img width="16" src=
+                "http://img.kaixin001.com.cn/i/vote/ico_vote_s.gif"
+                alt="投票" />
+              </div>
+
+              <div class="gw12" style="width:400px;">
+                <a href="http://www.kaixin001.com/home/?uid=901533"
+                class="sl">沈峥</a> 参与了<a href=
+                "http://www.kaixin001.com/~vote/detail.php?vid=491983&amp;uid=210747"
+                class='sl'>你小时候最怀念的电视剧/动画片是什么？</a>的投票
+              </div>
+
+              <div class="gw13">
+                2008-09-02 22:56
+              </div>
+
+              <div class="c"></div>
+            </div>
+
+            <div class="gw1">
+              <div class="gw14">
+                <img width="16" src=
+                "http://img.kaixin001.com.cn/i/vote/ico_vote_s.gif"
+                alt="投票" />
+              </div>
+
+              <div class="gw12" style="width:400px;">
+                <a href="http://www.kaixin001.com/home/?uid=901533"
+                class="sl">沈峥</a> 参与了<a href=
+                "http://www.kaixin001.com/~vote/detail.php?vid=491769&amp;uid=134226"
+                class='sl'>以下哪个漫画、动画片风格对你的胃口</a>的投票
+              </div>
+
+              <div class="gw13">
+                2008-09-02 22:50
+              </div>
+
+              <div class="c"></div>
+            </div>
+
+            <div class="gw1">
+              <div class="gw14">
+                <img width="16" src=
+                "http://img.kaixin001.com.cn/i/vote/ico_vote_s.gif"
+                alt="投票" />
+              </div>
+
+              <div class="gw12" style="width:400px;">
+                <a href="http://www.kaixin001.com/home/?uid=901533"
+                class="sl">沈峥</a> 参与了<a href=
+                "http://www.kaixin001.com/~vote/detail.php?vid=491771&amp;uid=539088"
+                class='sl'>没辙了 大家来帮我拿个主意吧～～！！～～</a>的投票
+              </div>
+
+              <div class="gw13">
+                2008-09-02 22:50
+              </div>
+
+              <div class="c"></div>
+            </div>
+
+            <div class="mt30">
+              &nbsp;
+            </div>
+          </div>
+        </div><script language="javascript" type="text/javascript">
+//<![CDATA[
+                        var v_newscount = "30";
+                        if (v_newscount == "0")
+                        {
+                                h("newslistdiv");
+                                s("nonewsdiv");
+                        }
+//]]>
+</script>
+      </div>
+
+      <div class="srr">
+        <ul class="dtfl">
+          <li class="on">全部好友</li>
+
+          <li><a href=
+          "?viewtype=%E7%8E%B0%E5%9C%A8%E5%90%8C%E4%BA%8B" class=
+          "sl2">现在同事</a></li>
+
+          <li><a href=
+          "?viewtype=%E4%BB%A5%E5%89%8D%E5%90%8C%E4%BA%8B" class=
+          "sl2">以前同事</a></li>
+
+          <li><a href=
+          "?viewtype=%E5%A4%A7%E5%AD%A6%E5%90%8C%E5%AD%A6" class=
+          "sl2">大学同学</a></li>
+
+          <li><a href=
+          "?viewtype=%E9%AB%98%E4%B8%AD%E5%90%8C%E5%AD%A6" class=
+          "sl2">高中同学</a></li>
+
+          <li><a href=
+          "?viewtype=%E5%AE%B6%E4%BA%BA%E4%BA%B2%E6%88%9A" class=
+          "sl2">家人亲戚</a></li>
+
+          <li><a href=
+          "?viewtype=%E6%8C%9A%E4%BA%A4%E5%A5%BD%E5%8F%8B" class=
+          "sl2">挚交好友</a></li>
+
+          <li><a href=
+          "?viewtype=%E6%99%AE%E9%80%9A%E6%9C%8B%E5%8F%8B" class=
+          "sl2">普通朋友</a></li>
+
+          <li><a href=
+          "?viewtype=%E6%9C%8B%E5%8F%8B%E7%9A%84%E6%9C%8B%E5%8F%8B"
+          class="sl2">朋友的朋友</a></li>
+
+          <li><a href="?viewtype=%E5%85%B6%E4%BB%96" class=
+          "sl2">其他</a></li>
+        </ul><br />
+
+        <div class="p10 tar">
+          <a href="/friend/group.php?viewtype=forbid" class=
+          "sl"><img src=
+          "http://img.kaixin001.com.cn/i2/friend/pb.gif" width="20"
+          height="17" id="newsimg" alt=
+          "如果你不想收到某个好友的动态，可以将对方加入好友动态屏蔽名单" align="absmiddle" /></a>
+          <a href="/friend/group.php?viewtype=forbid" class=
+          "sl">好友动态屏蔽</a>
+        </div>
+      </div>
+
+      <div class="c"></div>
+    </div>
+  </div><script language="javascript" type="text/javascript">
+//<![CDATA[
+outputTail();
+//]]>
+</script>
+</body>
+</html>
